@@ -1,22 +1,21 @@
-# Windows Subsystem for Linux (WSL) Documentation
+# <a name="windows-subsystem-for-linux-wsl-documentation"></a>Подсистема Windows для документации Linux (WSL)
 
-## Issues
-If you find doc issues / errors or have an improvement you'd like to suggest, please file an issue and/or submit a pull-request - we greatly appreciate PR's in particular :)
+## <a name="issues"></a>Проблемы
+Если вы обнаружили проблемы doc / ошибок или иметь улучшение вы хотите предложить, пожалуйста сообщите о проблеме или отправить запрос на Вытягивание — мы признательны запроса на Вытягивание в частности :)
 
-> **Note:** This repo's issue tracker is only for reporting issues with the WSL docs.
-> Other related issue repo's:
+> **Примечание.** Средство отслеживания вопросов этот репозиторий предназначен только для того, для сообщить о проблеме с WSL документы. Другие проблема, связанная с репозитория:
 > * WSL: https://github.com/Microsoft/WSL/
-> * Windows Console: https://github.com/Microsoft/Console/
+> * Консоль Windows: https://github.com/Microsoft/Console/
 
-## External Links
+## <a name="external-links"></a>Внешние ссылки
 
-[Rendered documentation website](https://docs.microsoft.com/windows/wsl/) 
+[Готовый для просмотра документации по веб-сайта](https://docs.microsoft.com/windows/wsl/) 
 
-[Release notes for WSL](https://docs.microsoft.com/en-us/windows/wsl/release-notes)
+[Заметки о выпуске для WSL](https://docs.microsoft.com/en-us/windows/wsl/release-notes)
 
-## Microsoft Open Source Code of Conduct
+## <a name="microsoft-open-source-code-of-conduct"></a>Открытого кода Майкрософт поведения
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+Этот проект распространяются [Microsoft Open источника поведения](https://opensource.microsoft.com/codeofconduct/).
+Дополнительные сведения см. в разделе [код из поведения часто задаваемые вопросы о](https://opensource.microsoft.com/codeofconduct/faq/) или обратитесь в службу [ opencode@microsoft.com ](mailto:opencode@microsoft.com) с вопросы или комментарии.
 
-Welcome to the markdown source for Microsoft's command-line shells and console documentation.
+Вас приветствует исходного markdown для оболочки командной строки корпорации Майкрософт и консоли документации.
