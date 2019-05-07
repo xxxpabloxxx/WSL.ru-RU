@@ -1,5 +1,5 @@
 ---
-title: Подсистема Windows для Linux для предприятия
+title: Подсистема Windows для Linux для предприятий
 description: Ресурсы и инструкции о том, как лучше использовать подсистему Windows для Linux в среде предприятия.
 keywords: BashOnWindows, bash, wsl, windows, подсистема windows для linux, windowssubsystem, ubuntu, debian, suse, windows 10, enterprise, развертывания, автономной, упаковки, хранилище, распространения, установка, установка
 author: mscraigloewen
@@ -9,13 +9,13 @@ ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
 ms.openlocfilehash: 9d867654d1b66fc14b58bc5e111986a7d38ef79c
-ms.sourcegitcommit: ca08a78925880ed3eccf88edb30def16c83f2543
+ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59063282"
 ---
-# <a name="windows-subsystem-for-linux-for-enterprise"></a>Подсистема Windows для Linux для предприятия
+# <a name="windows-subsystem-for-linux-for-enterprise"></a>Подсистема Windows для Linux для предприятий
 
 Microsoft Store для бизнеса предлагает широкий набор решений для предприятий, желающих развернуть WSL для своей компании. [Онлайн-документации](https://docs.microsoft.com/en-us/microsoft-store/) для Microsoft Store для бизнеса — это отличный ресурс, общие сведения о работе с Store.
 

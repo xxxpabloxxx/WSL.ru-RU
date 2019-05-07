@@ -7,14 +7,27 @@ ms.date: 07/31/2017
 ms.topic: article
 ms.assetid: 36ea641e-4d49-4881-84eb-a9ca85b1cdf4
 ms.custom: seodec18
-ms.openlocfilehash: 3eee7ff6d1f8302e98cde84fccabf5d9113c83f2
-ms.sourcegitcommit: ca08a78925880ed3eccf88edb30def16c83f2543
+ms.openlocfilehash: 2567e68ca0e9897a7b7bc7315760b81ff4923c1a
+ms.sourcegitcommit: 8c74868b8d8ff0106e15e4bce5e8337642883ec1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59063632"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "64988262"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Заметки о выпуске для подсистемы Windows для Linux
+
+## <a name="build-18890"></a>Сборки 18890
+Windows, общие сведения о сборке 18890 см. в статье [блог Windows](https://blogs.windows.com/windowsexperience/2019/05/01/announcing-windows-10-insider-preview-build-18890/).
+
+### <a name="wsl"></a>WSL
+* Утечка сокета без блокировок [GH 2913]
+* Входные данные EOF терминал можно заблокировать последующие операции чтения [GH 3421]
+* Заголовок resolv.conf обновления для ссылки на wsl.conf [подробно GH 3928]
+* Взаимоблокировка в коде epoll delete [GH 3922]
+* Обработка пробелов в аргументов в--— экспортировать и [GH 3932]
+* Расширение mmap файлов не работает должным образом [GH 3939]
+* Устранена проблема с ARM64 \\wsl$ доступ не работает должным образом
+* Добавление лучше значок по умолчанию для wsl.exe
 
 ## <a name="build-18342"></a>Сборки 18342
 Windows, общие сведения о сборке 18342 см. в статье [блог Windows](https://blogs.windows.com/windowsexperience/2019/02/20/announcing-windows-10-insider-preview-build-18342/).
@@ -276,7 +289,7 @@ Windows, общие сведения о сборке 17704 см. в статье
     * См. в разделе [блог](https://blogs.msdn.microsoft.com/commandline/2018/06/14/improved-per-directory-case-sensitivity-support-in-wsl/) Дополнительные сведения.
 * Добавьте wslconfig / завершения остановки выполнения распределения.
 
-## <a name="build-17692"></a>Сборки 17692
+## <a name="build-17692"></a>Сборка 17692
 Windows, общие сведения о сборке 17692 см. в статье [блог Windows](https://blogs.windows.com/windowsexperience/2018/06/14/announcing-windows-10-insider-preview-build-17692).
 
 ### <a name="wsl"></a>WSL
@@ -285,7 +298,7 @@ Windows, общие сведения о сборке 17692 см. в статье
 * ARM64: Эмулировать операций обслуживания кэша. Разрешить [проблема dotnet](https://github.com/dotnet/core/issues/1561).
 * DrvFs: только unescape символов в диапазоне частных, которые соответствуют в escape-символ.
 
-## <a name="build-17686"></a>Сборки 17686
+## <a name="build-17686"></a>Сборка 17686
 Windows, общие сведения о сборке 17686 см. в статье [блог Windows](https://blogs.windows.com/windowsexperience/2018/06/06/announcing-windows-10-insider-preview-build-17686).
 
 ### <a name="wsl"></a>WSL
@@ -349,8 +362,7 @@ Windows, общие сведения о сборке 17627 см. в статье
 * Добавлена поддержка futex pi с поддержкой операций. [GH 1006]
     * Обратите внимание на то, что приоритеты настоящее время не поддерживаемой функцией WSL существуют ограничения, но стандартного использования должны быть разблокированы.
 * Поддержка брандмауэра Windows для WSL процессов. [GH 1852]
-    * Например чтобы разрешить WSL python обработки прослушивание любого порта, используйте cmd Windows с повышенными правами:
-```netsh.exe advfirewall firewall add rule name=wsl_python dir=in action=allow program="C:\users\<username>\appdata\local\packages\canonicalgrouplimited.ubuntuonwindows_79rhkp1fndgsc\localstate\rootfs\usr\bin\python2.7" enable=yes```
+    * Например чтобы разрешить WSL python обработки прослушивание любого порта, используйте cmd Windows с повышенными правами: ```netsh.exe advfirewall firewall add rule name=wsl_python dir=in action=allow program="C:\users\<username>\appdata\local\packages\canonicalgrouplimited.ubuntuonwindows_79rhkp1fndgsc\localstate\rootfs\usr\bin\python2.7" enable=yes```
     * Дополнительные сведения о добавлении правил брандмауэра см. в разделе [ссылку](https://support.microsoft.com/en-us/help/947709/how-to-use-the-netsh-advfirewall-firewall-context-instead-of-the-netsh)
 * Использовать оболочку пользователя по умолчанию, при использовании wsl.exe. [GH 2372]
 * О всех сетевых интерфейсов, как ethernet. [GH 2996]
@@ -375,7 +387,7 @@ Windows, общие сведения о сборке 17618 см. в статье
 ### <a name="ltp-results"></a>LTP результаты:
 Проверка выполняется.
 
-## <a name="build-17110"></a>Сборки 17110
+## <a name="build-17110"></a>Сборка 17110
 Windows, общие сведения о сборке 17110 см. в статье [блог Windows](https://blogs.windows.com/windowsexperience/2018/02/27/announcing-windows-10-insider-preview-build-17110-fast/).
 
 ### <a name="wsl"></a>WSL
@@ -467,7 +479,7 @@ Windows, общие сведения о сборке 17093 см. в статье
 ### <a name="ltp-results"></a>LTP результаты:
 Проверка выполняется.
 
-## <a name="build-17083"></a>Сборки 17083
+## <a name="build-17083"></a>Сборка 17083
 Windows, общие сведения о сборке 17083 см. в статье [блог Windows](https://blogs.windows.com/windowsexperience/2018/01/24/announcing-windows-10-insider-preview-build-17083-for-pc/).
 
 ### <a name="wsl"></a>WSL
@@ -761,7 +773,7 @@ Windows, общие сведения о сборке 16273 см. в статье
 Общее количество ошибок: 229<br/>
 [LTP тестовый запуск журналы](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/16273)<br/>
 
-## <a name="build-16257"></a>Сборки 16257
+## <a name="build-16257"></a>Сборка 16257
 
 Windows, общие сведения о сборке 16257 см. в статье [блог Windows](https://blogs.windows.com/windowsexperience/2017/08/02/announcing-windows-10-insider-preview-build-16257-pc-build-15237-mobile/).<br/>
 
@@ -793,7 +805,7 @@ Windows, общие сведения о сборке 16257 см. в статье
 `prlimit64`<br/>
 
 ### <a name="known-issues"></a>Известные проблемы
-#### [<a name="github-issue-2392-windows-folders-not-recognized-by-wsl-"></a>GitHub Issue 2392: Папки Windows, не распознается средой WSL...](https://github.com/Microsoft/BashOnWindows/issues/2392)
+#### <a name="github-issue-2392-windows-folders-not-recognized-by-wsl-httpsgithubcommicrosoftbashonwindowsissues2392"></a>[Проблема GitHub 2392. Папки Windows, не распознается средой WSL...](https://github.com/Microsoft/BashOnWindows/issues/2392)
 В построении 16257 WSL имеет проблемы при перечислении файлов и папок Windows с помощью `/mnt/c/...`.
 Эта проблема была устранена и должен быть выпущен в течение недели, начинающейся 8/14/2017 сборка программы предварительной оценки.
 

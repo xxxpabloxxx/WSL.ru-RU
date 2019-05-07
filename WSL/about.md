@@ -8,12 +8,13 @@ ms.date: 07/11/2016
 ms.topic: article
 ms.assetid: 3cefe0db-7616-4848-a2b6-9296746a178b
 ms.custom: seodec18
-ms.openlocfilehash: a9c8d32f2b87319b45b1b757b4d71c0a4c41292c
-ms.sourcegitcommit: ca08a78925880ed3eccf88edb30def16c83f2543
+ms.localizationpriority: High
+ms.openlocfilehash: ad582d1b3a3d4277ee1b9b7adb0dc63a644abce9
+ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59063512"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59529068"
 ---
 # <a name="windows-subsystem-for-linux-documentation"></a>Подсистема Windows для документации Linux
 
@@ -43,7 +44,7 @@ ms.locfileid: "59063512"
 * [Подсистема Windows для Linux блог](https://blogs.msdn.microsoft.com/wsl/) (историческая)
 
 ## <a name="posts--articles"></a>Сообщения и статьи
-* [Запуск Bash для Ubuntu в Windows](https://blogs.windows.com/buildingapps/2016/03/30/run-bash-on-ubuntu-on-windows/)
+* [Выполнения Bash на Ubuntu в Windows](https://blogs.windows.com/buildingapps/2016/03/30/run-bash-on-ubuntu-on-windows/)
 * [Разработчикам использовать Bash и двоичные файлы Usermode Ubuntu Linux в Windows 10](https://www.hanselman.com/blog/DevelopersCanRunBashShellAndUsermodeUbuntuLinuxBinariesOnWindows10.aspx)
 * [Ubuntu в Windows — Ubuntu Userspace для разработчиков Windows](https://insights.ubuntu.com/2016/03/30/ubuntu-on-windows-the-ubuntu-userspace-for-windows-developers/) 
 

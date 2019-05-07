@@ -9,10 +9,10 @@ ms.topic: article
 ms.assetid: f70e685f-24c6-4908-9546-bf4f0291d8fd
 ms.custom: seodec18
 ms.openlocfilehash: 5820d701d5c0e22f14bf76e3dc6fe70bacb5213a
-ms.sourcegitcommit: ca08a78925880ed3eccf88edb30def16c83f2543
+ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59063602"
 ---
 # <a name="user-accounts-and-permissions-for-windows-subsystem-for-linux"></a>Учетные записи пользователей и разрешения для подсистемы Windows для Linux
@@ -132,12 +132,12 @@ Usage:
 
 Эти разрешения Windows не зависят от разрешений в экземпляре Linux: «Привилегированного Linux» затрагивается только права пользователя в среде Linux & файловой системы; они не оказывают влияния на привилегиях Windows. Таким образом, выполнение процесса Linux в качестве привилегированного пользователя (например, через `sudo`) предоставляет только разрешение, которые обрабатывают права администратора в среде Linux.
 
-**Пример.**    
+**Пример:**    
 Сеанс Bash с правами администратора Windows могут получить доступ к `cd /mnt/c/Users/Administrator` во время сеанса Bash без прав администратора увидит сообщение об ошибке «Отказано в доступе».
 
 В Linux введя `sudo cd /mnt/c/Users/Administrator` не предоставит доступ к каталогу администратора, так как Windows управляет разрешения в Windows.
 
 Модель разрешений Linux важно при работе в среде Linux, в которых пользователь имеет разрешения на основе текущего пользователя Linux.
 
-**Пример.**  
+**Пример:**  
 Пользователь в группу sudo может запустить `sudo apt update`.

@@ -9,10 +9,10 @@ ms.topic: article
 ms.assetid: 7ca59bd7-d9d3-4f6d-8b92-b8faa9bcf250
 ms.custom: seodec18
 ms.openlocfilehash: c806552750f413fcb75f989d868a57cc939af64a
-ms.sourcegitcommit: ca08a78925880ed3eccf88edb30def16c83f2543
+ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59063502"
 ---
 # <a name="manage-and-configure-windows-subsystem-for-linux"></a>Управление и настройку подсистемы Windows для Linux
@@ -24,8 +24,8 @@ ms.locfileid: "59063502"
 Существует много способов для запуска Linux с подсистемой Windows для Linux.
 
 1. `[distro]` IE `ubuntu`
-1. `wsl.exe` или диспетчер конфигурации служб `bash.exe`
-1. `wsl [command]` или диспетчер конфигурации служб `bash -c [command]`
+1. `wsl.exe` или `bash.exe`
+1. `wsl [command]` или `bash -c [command]`
 
 Какой метод следует использовать зависит от того, что он делает.
 
@@ -43,7 +43,7 @@ ms.locfileid: "59063502"
 
 Недостатком под управлением дистрибутива из командной строки таким образом является, что вы автоматически измените рабочий каталог из текущего каталога на домашний каталог дистрибутива.
 
-**Пример.**
+**Пример:**
 
 ```console
 PS C:\Users\sarah> pwd
@@ -66,7 +66,7 @@ PS C:\Users\sarah>
 
 Лучший способ запуска WSL из командной строки используется `wsl.exe`.
 
-**Пример.**
+**Пример:**
 
 ```console
 PS C:\Users\sarah> pwd
@@ -83,7 +83,7 @@ scooley@scooley-elmer:/mnt/c/Users/sarah$ pwd
 
 Не только `wsl` сохранить текущий рабочий каталог на месте, он позволяет выполнить одну команду вдоль стороны команд Windows.
 
-**Пример.**
+**Пример:**
 
 ```console
 PS C:\Users\sarah> Get-Date
@@ -100,7 +100,7 @@ PS C:\Users\sarah> wsl date
 Sun Mar 11 19:55:47 DST 2018
 ```
 
-**Пример.**
+**Пример:**
 
 ```console
 PS C:\Users\sarah> Get-VM
@@ -147,7 +147,7 @@ PS C:\Users\sarah>
 
 Задает распределение по умолчанию `<DistributionName>`.
 
-**Пример.**  
+**Пример:**  
 `wsl -s Ubuntu` нужно задать моей распространения по умолчанию Ubuntu.  Теперь при выполнении `wsl npm init` оно будет выполняться в Ubuntu.  Если я запущу `wsl` он будет открыт сеанс Ubuntu.
 
 #### <a name="unregister-and-reinstall-a-distribution"></a>Отменить регистрацию и повторно установить дистрибутив
@@ -213,7 +213,7 @@ Usage:
 
 Задает распределение по умолчанию `<DistributionName>`.
 
-**Пример.**  
+**Пример:**  
 `wslconfig /setdefault Ubuntu` нужно задать моей распространения по умолчанию Ubuntu.  Теперь при выполнении `wsl npm init` оно будет выполняться в Ubuntu.  Если я запущу `wsl` он будет открыт сеанс Ubuntu.
 
 #### <a name="unregister-and-reinstall-a-distribution"></a>Отменить регистрацию и повторно установить дистрибутив
