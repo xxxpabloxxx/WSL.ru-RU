@@ -86,7 +86,7 @@ ms.locfileid: "59063302"
 1. Нажмите кнопку "ОК".
 
 ### <a name="error-0x80040154-after-windows-update"></a>«Ошибка: 0x80040154» после обновления Windows
-Подсистема Windows для Linux функции могут быть отключены во время обновления Windows. В этом случае необходимо снова включить функцию Windows. Инструкции по включению в подсистеме Windows для Linux можно найти в [руководство по установке](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui).
+Подсистема Windows для Linux функции могут быть отключены во время обновления Windows. В этом случае необходимо снова включить функцию Windows. Инструкции по включению в подсистеме Windows для Linux можно найти в [руководство по установке](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-guihttps://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui).
 
 ### <a name="changing-the-display-language"></a>Изменение отображаемого языка
 Установка WSL попытается автоматически изменить языковой стандарт Ubuntu в соответствии с языковой стандарт для текущей установки Windows.  Если не хотите, чтобы это поведение, можно выполнить следующую команду, чтобы изменить языковой стандарт Ubuntu, после завершения установки.  Необходимо будет перезапустить bash.exe это изменение вступило в силу.

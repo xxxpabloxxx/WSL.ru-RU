@@ -146,7 +146,7 @@ WSL не поддерживает запуск в прежнюю версию к
 1. Нажмите кнопку "ОК".
 
 ## <a name="why-do-i-get-error-0x80040154-when-i-run-bashexe-after-upgrading-windows"></a>Почему я получаю «ошибка: 0x80040154» при выполнении bash.exe после обновления Windows?
-Функцию «Windows подсистемы для Linux» можно отключить во время обновления Windows. В этом случае необходимо снова включить функцию Windows. Инструкции для включения функции «Windows подсистемы для Linux» можно найти в [руководство по установке](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui).
+Функцию «Windows подсистемы для Linux» можно отключить во время обновления Windows. В этом случае необходимо снова включить функцию Windows. Инструкции для включения функции «Windows подсистемы для Linux» можно найти в [руководство по установке](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-guihttps://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui).
 
 ## <a name="how-do-i-change-the-display-language-of-wsl"></a>Как изменить язык интерфейса WSL?
 Установка WSL попытается автоматически изменить языковой стандарт Ubuntu в соответствии с языковой стандарт для текущей установки Windows. Если не хотите, чтобы это поведение, можно выполнить следующую команду, чтобы изменить языковой стандарт Ubuntu, после завершения установки. Необходимо будет перезапустить bash.exe это изменение вступило в силу.
