@@ -8,12 +8,12 @@ ms.date: 03/27/2018
 ms.topic: article
 ms.assetid: a5095219-0c82-4ce5-9a6d-5c2fc00835a3
 ms.custom: seodec18
-ms.openlocfilehash: b98101c19d7d450548531521c3f8ee15ce62f9f1
-ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
+ms.openlocfilehash: 4072df5fa81f65fd9a3ff875ab887c03b234bce1
+ms.sourcegitcommit: db69625e26bc141ea379a830790b329e51ed466b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59063262"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67040773"
 ---
 # <a name="creating-a-custom-linux-distro-for-wsl"></a>Создание дистрибутив Linux, настраиваемые для WSL
 
@@ -24,7 +24,7 @@ ms.locfileid: "59063262"
 * Разработчикам создавать пользовательские дистрибутивы Linux, которые могут быть заливается на своем компьютере разработки
 
 ## <a name="background"></a>Фон
-Мы распространять дистрибутивов Linux для WSL как приложений универсальной платформы Windows с помощью Microsoft Store. Вы можете установить эти приложения, которые будут выполняться на WSL - подсистема, которая размещается в ядре Windows. Этот механизм доставки имеет множество преимуществ, как описано в предыдущих записи блога.
+Мы распространять дистрибутивов Linux для WSL как приложений универсальной платформы Windows с помощью Microsoft Store. Вы можете установить эти приложения, которые будут выполняться на WSL - подсистема, которая размещается в ядре Windows. Этот механизм доставки имеет множество преимуществ, как описано в [более ранние записи блога](https://blogs.msdn.microsoft.com/commandline/2017/07/10/ubuntu-now-available-from-the-windows-store/).
 
 ## <a name="sideloading-a-custom-linux-distro-package"></a>Для загрузки неопубликованных приложений пакета дистрибутив Linux, пользовательские
 Можно создать пользовательский пакет дистрибутив Linux как приложение для загрузки неопубликованных приложений на персональных компьютеров. Обратите внимание на то, что пользовательский пакет бы не распространяется через Microsoft Store, если вы отправляете в виде распространения программы обслуживания.
@@ -42,6 +42,6 @@ ms.locfileid: "59063262"
 * [Блог командной строки](https://blogs.msdn.microsoft.com/commandline/)
 
 ## <a name="provide-feedback"></a>Предоставление отзыва
-* [Репозиторий дистрибутива запуска Gitub](https://github.com/Microsoft/WSL-DistroLauncher)
+* [Репозитории дистрибутива запуска GitHub](https://github.com/Microsoft/WSL-DistroLauncher)
 * [Средство отслеживания вопросов GitHub для WSL](https://github.com/Microsoft/BashOnWindows/issues)
 * [Командной строки портал UserVoice](https://wpdev.uservoice.com/forums/266908-command-prompt-console-bash-on-ubuntu-on-windo/category/161892-bash)

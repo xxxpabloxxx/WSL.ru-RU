@@ -9,18 +9,18 @@ ms.topic: article
 ms.assetid: 3cefe0db-7616-4848-a2b6-9296746a178b
 ms.custom: seodec18
 ms.localizationpriority: High
-ms.openlocfilehash: ad582d1b3a3d4277ee1b9b7adb0dc63a644abce9
-ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
+ms.openlocfilehash: f2df3c06d6c56aa8bc5a41ea9f075635b70c8685
+ms.sourcegitcommit: db69625e26bc141ea379a830790b329e51ed466b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59529068"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67040804"
 ---
 # <a name="windows-subsystem-for-linux-documentation"></a>Подсистема Windows для документации Linux
 
 Подсистема Windows для Linux позволяет разработчикам запускать среду GNU/Linux — в том числе наиболее командной строки средства, служебные программы и приложения — непосредственно на Windows, без издержек на виртуальную машину в неизмененном.  
 
-Можно выполнить следующие действия: 
+Можно выполнить следующие действия:
 
 1. Выберите нужные вам дистрибутивы GNU/Linux [из Windows Store](https://aka.ms/wslstore).
 1. Выполнять распространенные командной строки бесплатное программное обеспечение, например `grep`, `sed`, `awk`, или другие двоичные файлы ELF-64. 
@@ -32,9 +32,9 @@ ms.locfileid: "59529068"
 1. Вызовите с помощью это оболочка командной строки Unix подобных приложений Windows.
 1. Вызов приложения GNU/Linux на Windows.
 
-## <a name="getting-started"></a>Начало работы
+## <a name="getting-started"></a>начало работы
 
-* [Установка Linux на Windows](install_guide.md)
+* [Установка Linux в Windows 10](install-win10.md)
 * [Посетите Справочник по командам](reference.md)
 * [Часто задаваемые вопросы](faq.md)
 

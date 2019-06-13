@@ -8,12 +8,12 @@ ms.date: 07/24/2018
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: b31bb3a542b8481c723df42292e20e364680722d
-ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
+ms.openlocfilehash: fbb5bdc401a013b0853774cff6ad2dc84a36e412
+ms.sourcegitcommit: db69625e26bc141ea379a830790b329e51ed466b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59063592"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67040836"
 ---
 # <a name="guide-to-install-or-uninstall-windows-subsystem-for-linux-on-windows-10-anniversary-update-and-creators-update"></a>Руководство по установке или удалении подсистемы Windows для Linux в юбилейном обновлении Windows 10 и Creators Update 
 
@@ -38,7 +38,7 @@ ms.locfileid: "59063592"
 
 1. Откройте командную строку.  Тип `bash` и нажмите клавишу ВВОД
 
-    Первый раз выполнять Bash на Ubuntu в Windows, вам будет предложено принять условия лицензионного соглашения Canonical. После accpted, WSL загрузит и установит экземпляре Ubuntu на компьютер, а также будет добавлен ярлык «Bash на Ubuntu в Windows» в меню «Пуск».
+    Первый раз выполнять Bash на Ubuntu в Windows, вам будет предложено принять условия лицензионного соглашения Canonical. После принятия WSL загрузит и установит экземпляре Ubuntu на вашем компьютере, и в меню "Пуск" будет добавлен ярлык «Bash на Ubuntu в Windows».
 
     ![Запрос на установку Ubuntu](media/bashShellInstall.png)
 

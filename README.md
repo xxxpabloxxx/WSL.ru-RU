@@ -19,3 +19,6 @@
 Дополнительные сведения см. в разделе [код из поведения часто задаваемые вопросы о](https://opensource.microsoft.com/codeofconduct/faq/) или обратитесь в службу [ opencode@microsoft.com ](mailto:opencode@microsoft.com) с вопросы или комментарии.
 
 Вас приветствует исходного markdown для оболочки командной строки корпорации Майкрософт и консоли документации.
+
+## <a name="license"></a>Лицензия
+Распространяемое по публичной лицензии Creative Commons Attribution 4.0 International (CC 4.0).

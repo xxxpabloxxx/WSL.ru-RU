@@ -7,19 +7,19 @@ ms.date: 12/20/2017
 ms.topic: article
 ms.assetid: 3cefe0db-7616-4848-a2b6-9296746a178b
 ms.custom: seodec18
-ms.openlocfilehash: 5dcfe0987ecb6615fbe1ab67d178679ac6ad9317
-ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
+ms.openlocfilehash: e4608c25c6bcc63413d53b2c808c16fe2a62dd5c
+ms.sourcegitcommit: db69625e26bc141ea379a830790b329e51ed466b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59063252"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67040815"
 ---
 # <a name="windows-subsystem-for-linux-interoperability-with-windows"></a>Подсистема Windows для Linux взаимодействие с Windows
 
 > **Обновлено для Fall Creators Update.**  
 Если вы используете Creators Update или Юбилейное обновление, перейдите к [Creators/Юбилейное обновление раздела](interop.md#creators-update-and-anniversary-update).
 
-Подсистема Windows для Linux (WSL) мы постоянно улучшаем методы интеграции между Windows и Linux.  Можно выполнить следующие действия: 
+Подсистема Windows для Linux (WSL) мы постоянно улучшаем методы интеграции между Windows и Linux.  Можно выполнить следующие действия:
 
 1. Вызовите двоичные файлы Windows из консоли Linux.
 1. Вызовите двоичные файлы Linux с помощью консоли Windows.
@@ -198,7 +198,7 @@ $ echo 1 > /proc/sys/fs/binfmt_misc/WSLInterop
 
 ## <a name="creators-update-and-anniversary-update"></a>Creators Update и Центр обновления Годовщина
 
-Хотя осенью предварительного взаимодействия качества Creators Update похожа на более новый опыт взаимодействия, существуют handfull существенных различий.
+Во время предварительной осенью взаимодействия качества Creators Update похожа на более новый опыт взаимодействия, доступно несколько существенных различий.
 
 Подведем итоги.
 
