@@ -8,12 +8,12 @@ ms.date: 11/15/2017
 ms.topic: article
 ms.assetid: 6753f1b2-200e-49cc-93a5-4323e1117246
 ms.custom: seodec18
-ms.openlocfilehash: 055bdc02dcf8f078caa014abd6dd755a47c99cfe
-ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
+ms.openlocfilehash: feb9e25da73eeb0d7f0cef4014221a42e2ca179b
+ms.sourcegitcommit: db69625e26bc141ea379a830790b329e51ed466b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59063302"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67040844"
 ---
 # <a name="troubleshooting-windows-subsystem-for-linux"></a>Устранение неполадок подсистемы Windows для Linux
 
@@ -86,7 +86,7 @@ ms.locfileid: "59063302"
 1. Нажмите кнопку "ОК".
 
 ### <a name="error-0x80040154-after-windows-update"></a>«Ошибка: 0x80040154» после обновления Windows
-Подсистема Windows для Linux функции могут быть отключены во время обновления Windows. В этом случае необходимо снова включить функцию Windows. Инструкции по включению в подсистеме Windows для Linux можно найти в [руководство по установке](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-guihttps://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui).
+Подсистема Windows для Linux функции могут быть отключены во время обновления Windows. В этом случае необходимо снова включить функцию Windows. Инструкции по включению в подсистеме Windows для Linux можно найти в [руководство по установке](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui).
 
 ### <a name="changing-the-display-language"></a>Изменение отображаемого языка
 Установка WSL попытается автоматически изменить языковой стандарт Ubuntu в соответствии с языковой стандарт для текущей установки Windows.  Если не хотите, чтобы это поведение, можно выполнить следующую команду, чтобы изменить языковой стандарт Ubuntu, после завершения установки.  Необходимо будет перезапустить bash.exe это изменение вступило в силу.
@@ -149,7 +149,6 @@ systeminfo | Select-String "^OS Name","^OS Version"
 ### <a name="confirm-wsl-is-enabled"></a>Убедитесь, что включен WSL
 Можно проверить, включена, подсистема Windows для Linux, выполнив следующую в PowerShell:  
 ``` PowerShell
-PowerShell
 Get-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
 
@@ -165,7 +164,22 @@ Get-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linu
    sudo service ssh stop
    sudo /usr/sbin/sshd -d
    ```
-3. Проверьте журналы запуска и убедитесь, что доступны ключей хоста и вы не видите сообщения журнала, такие как: debug1: sshd версии OpenSSH_7.2 debug1 1 марта 2016 1.0.2g OpenSSL: key_load_private: указано неверное парольную фразу для расшифровки закрытого ключа debug1: key_load_public : Нет такого файла или каталога не удалось загрузить ключ узла: /etc/ssh/ssh_host_rsa_key debug1: key_load_private: Нет такого файла или каталога debug1: key_load_public: Нет такого файла или каталога не удалось загрузить ключ узла: /etc/ssh/ssh_host_dsa_key debug1: key_load_private: Нет такого файла или каталога debug1: key_load_public: Нет такого файла или каталога не удалось загрузить ключ узла: /etc/ssh/ssh_host_ecdsa_key debug1: key_load_private: Нет такого файла или каталога debug1: key_load_public: Нет такого файла или каталога не удалось загрузить ключ узла: /etc/ssh/ssh_host_ed25519_key
+3. В журналах запуска и убедитесь, что доступны ключей хоста и вы не видите сообщения журнала, такие как:
+   ```
+   debug1: sshd version OpenSSH_7.2, OpenSSL 1.0.2g  1 Mar 2016
+   debug1: key_load_private: incorrect passphrase supplied to decrypt private key
+   debug1: key_load_public: No such file or directory
+   Could not load host key: /etc/ssh/ssh_host_rsa_key
+   debug1: key_load_private: No such file or directory
+   debug1: key_load_public: No such file or directory
+   Could not load host key: /etc/ssh/ssh_host_dsa_key
+   debug1: key_load_private: No such file or directory
+   debug1: key_load_public: No such file or directory
+   Could not load host key: /etc/ssh/ssh_host_ecdsa_key
+   debug1: key_load_private: No such file or directory
+   debug1: key_load_public: No such file or directory
+   Could not load host key: /etc/ssh/ssh_host_ed25519_key
+   ```
 
 Если вы видите такие сообщения, а в списке отсутствуют ключи `/etc/ssh/`, необходимо будет повторно создавать ключи или только Очистка и установка openssh-server:
 ```BASH

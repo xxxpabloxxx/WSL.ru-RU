@@ -7,12 +7,12 @@ ms.author: taraj
 ms.date: 9/4/2018
 ms.topic: article
 ms.assetid: 129101ed-b88a-43c2-b6a2-cd2c4ff6fee1
-ms.openlocfilehash: 80675d8452b626ebe1d235774167c5ff27e4b44d
-ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
+ms.openlocfilehash: 07461f7db4a351f5b79ab0c5179d3d917ef1bdf7
+ms.sourcegitcommit: bb88269eb37405192625fa81ff91162393fb491f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59063272"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67035068"
 ---
 # <a name="frequently-asked-questions-about-windows-subsystem-for-linux"></a>Часто задаваемые вопросы о подсистеме Windows для Linux
 
@@ -82,7 +82,7 @@ WSL поддерживает x64 и процессоров ARM.
 
 WSL подключает на компьютере, и фиксированным дискам `/mnt/<drive>` папку в вашей дистрибутивов Linux. Например ваш `C:` диск подключается в разделе `/mnt/c/` 
 
-С помощью подключенных дисков, можно изменить код, например, `C:\dev\myproj\` с помощью [Visual Studio](https://visualstudio.microsoft.com/vs/) / или [VS Code](https://code.visualstudio.com/)и сборка и тестирование кода в Linux, доступ к тем же файлам через `\mnt\c\dev\myproj`.
+С помощью подключенных дисков, можно изменить код, например, `C:\dev\myproj\` с помощью [Visual Studio](https://visualstudio.microsoft.com/vs/) / или [VS Code](https://code.visualstudio.com/)и сборка и тестирование кода в Linux, доступ к тем же файлам через `/mnt/c/dev/myproj`.
 
 > **ВАЖНОЕ ПРИМЕЧАНИЕ**: Одним из ключевых ограничение на использование WSL является не поддерживается напрямую доступ и изменение файлов в файловой системе дистрибутивов Linux, с помощью приложения Windows или средств. Пример [Не изменяйте файлы Linux, с помощью инструментов и приложений Windows](https://blogs.msdn.microsoft.com/commandline/2016/11/17/do-not-change-linux-files-using-windows-apps-and-tools/)
 
@@ -146,7 +146,7 @@ WSL не поддерживает запуск в прежнюю версию к
 1. Нажмите кнопку "ОК".
 
 ## <a name="why-do-i-get-error-0x80040154-when-i-run-bashexe-after-upgrading-windows"></a>Почему я получаю «ошибка: 0x80040154» при выполнении bash.exe после обновления Windows?
-Функцию «Windows подсистемы для Linux» можно отключить во время обновления Windows. В этом случае необходимо снова включить функцию Windows. Инструкции для включения функции «Windows подсистемы для Linux» можно найти в [руководство по установке](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-guihttps://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui).
+Функцию «Windows подсистемы для Linux» можно отключить во время обновления Windows. В этом случае необходимо снова включить функцию Windows. Инструкции для включения функции «Windows подсистемы для Linux» можно найти в [руководство по установке](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui).
 
 ## <a name="how-do-i-change-the-display-language-of-wsl"></a>Как изменить язык интерфейса WSL?
 Установка WSL попытается автоматически изменить языковой стандарт Ubuntu в соответствии с языковой стандарт для текущей установки Windows. Если не хотите, чтобы это поведение, можно выполнить следующую команду, чтобы изменить языковой стандарт Ubuntu, после завершения установки. Необходимо будет перезапустить bash.exe это изменение вступило в силу.
