@@ -8,5 +8,11 @@
 # [Взаимодействие](./interop.md)
 # [Создание пользовательского дистрибутива](./build-custom-distro.md)
 # [Вопросы и ответы](./faq.md)
+# [Подсистема Windows для Linux (WSL) версии 2](./wsl2-index.md)
+## [Общие сведения о WSL 2](./wsl2-about.md)
+## [Установка WSL 2](./wsl2-install.md)
+## [Изменения процесса взаимодействия с пользователем в WSL 2 по сравнению с WSL 1](./wsl2-ux-changes.md)
+## [Вопросы и ответы](./wsl2-faq.md)
+
 # [Устранение неполадок](./troubleshooting.md)
 # [Заметки о выпуске](./release-notes.md)
