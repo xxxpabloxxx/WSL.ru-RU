@@ -1,3 +1,3 @@
-# <a name="af-unix-sample"></a>AF-Unix-Sample
+# <a name="af-unix-sample"></a>AF-UNIX-образец
 
-Демонстрация Демонстрация AF_UNIX взаимодействия между процесс WSL и Windows. Дополнительные сведения о функции см. блог WSL Commandline.
+Демонстрация, демонстрирующий AF_UNIX взаимодействие между WSL и процессом Windows. Дополнительные сведения о функции см. в блоге по WSL commandline.

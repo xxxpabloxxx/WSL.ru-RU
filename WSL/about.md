@@ -1,7 +1,7 @@
 ---
-title: Дополнительные сведения о подсистеме Windows для Linux
+title: Сведения о подсистеме Windows для Linux
 description: Дополнительные сведения о работе подсистемы Windows для Linux.
-keywords: BashOnWindows, bash, wsl, windows, windowssubsystem, gnu, linux
+keywords: Башонвиндовс, bash, WSL, Windows, виндовссубсистем, GNU, Linux
 author: scooley
 ms.author: scooley
 ms.date: 07/11/2016
@@ -9,45 +9,45 @@ ms.topic: article
 ms.assetid: 3cefe0db-7616-4848-a2b6-9296746a178b
 ms.custom: seodec18
 ms.localizationpriority: High
-ms.openlocfilehash: f2df3c06d6c56aa8bc5a41ea9f075635b70c8685
-ms.sourcegitcommit: db69625e26bc141ea379a830790b329e51ed466b
+ms.openlocfilehash: edff78b1447aa382253417d27df52fe497c58b08
+ms.sourcegitcommit: e17038c166b69f73e593ae3ac351c9d66e2ba64b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67040804"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67694628"
 ---
-# <a name="windows-subsystem-for-linux-documentation"></a>Подсистема Windows для документации Linux
+# <a name="windows-subsystem-for-linux-documentation"></a>Документация по подсистеме Windows для Linux
 
-Подсистема Windows для Linux позволяет разработчикам запускать среду GNU/Linux — в том числе наиболее командной строки средства, служебные программы и приложения — непосредственно на Windows, без издержек на виртуальную машину в неизмененном.  
+Подсистема Windows для Linux позволяет разработчикам запускать среду GNU/Linux, включая большинство программ командной строки, служебные программы и приложения, непосредственно в Windows, без изменений, не изменяя нагрузку на виртуальную машину.  
 
 Можно выполнить следующие действия:
 
-1. Выберите нужные вам дистрибутивы GNU/Linux [из Windows Store](https://aka.ms/wslstore).
-1. Выполнять распространенные командной строки бесплатное программное обеспечение, например `grep`, `sed`, `awk`, или другие двоичные файлы ELF-64. 
-1. Выполнение сценариев оболочки Bash и включая приложения командной строки GNU/Linux:  
-    * Средства: vim, emacs, tmux
-    * Языки: JavaScript/node.js, Ruby, Python, C/C++, C# & F#, доверять, Go и т. п.
-    * Службы: sshd, MySQL, Apache, lighttpd
-1. Установка дополнительного программного обеспечения, с помощью диспетчера пакетов распространения собственных GNU/Linux.
-1. Вызовите с помощью это оболочка командной строки Unix подобных приложений Windows.
-1. Вызов приложения GNU/Linux на Windows.
+1. Выберите предпочтительные дистрибутивы GNU/Linux [из Microsoft Store](https://aka.ms/wslstore).
+1. Запустите общедоступное программное обеспечение для `grep`командной строки `sed` `awk`, например,, или другие двоичные файлы ELF-64. 
+1. Запускайте скрипты Bash Shell и приложения командной строки GNU/Linux, включая:  
+    * Средства: vim, Emacs, тмукс
+    * Языки: JavaScript/Node. js, Ruby, Python, C/C++, C# & F#, Руст, Go и т. д.
+    * Службы: sshd, MySQL, Apache, лигхттпд
+1. Установка дополнительного программного обеспечения с помощью собственного диспетчера пакетов для GNU/Linux.
+1. Вызов приложений Windows с помощью оболочки командной строки, похожей на UNIX.
+1. Вызывайте приложения GNU/Linux в Windows.
 
-## <a name="getting-started"></a>начало работы
+## <a name="getting-started"></a>Начало работы
 
 * [Установка Linux в Windows 10](install-win10.md)
-* [Посетите Справочник по командам](reference.md)
-* [Часто задаваемые вопросы](faq.md)
+* [См. Справочник по командам](reference.md)
+* [Ознакомьтесь с часто задаваемыми вопросами](faq.md)
 
-## <a name="team-blogs"></a>Блоги группы разработчиков
-*  [Общие сведения о post с коллекцией видеоматериалы и блоги](https://blogs.msdn.microsoft.com/commandline/learn-about-windows-console-and-windows-subsystem-for-linux-wsl/)
-* [Блог командной строки](https://blogs.msdn.microsoft.com/commandline/) (активно)
-* [Подсистема Windows для Linux блог](https://blogs.msdn.microsoft.com/wsl/) (историческая)
+## <a name="team-blogs"></a>Блоги группы
+*  [Обзор записи с коллекцией видео и блогов](https://blogs.msdn.microsoft.com/commandline/learn-about-windows-console-and-windows-subsystem-for-linux-wsl/)
+* [Блог командной строки](https://blogs.msdn.microsoft.com/commandline/) Active
+* [Блог подсистемы Windows для Linux](https://blogs.msdn.microsoft.com/wsl/) Исторических
 
-## <a name="posts--articles"></a>Сообщения и статьи
-* [Выполнения Bash на Ubuntu в Windows](https://blogs.windows.com/buildingapps/2016/03/30/run-bash-on-ubuntu-on-windows/)
-* [Разработчикам использовать Bash и двоичные файлы Usermode Ubuntu Linux в Windows 10](https://www.hanselman.com/blog/DevelopersCanRunBashShellAndUsermodeUbuntuLinuxBinariesOnWindows10.aspx)
-* [Ubuntu в Windows — Ubuntu Userspace для разработчиков Windows](https://insights.ubuntu.com/2016/03/30/ubuntu-on-windows-the-ubuntu-userspace-for-windows-developers/) 
+## <a name="posts--articles"></a>Записи & статьи
+* [Запуск Bash в Ubuntu в Windows](https://blogs.windows.com/buildingapps/2016/03/30/run-bash-on-ubuntu-on-windows/)
+* [Разработчики могут запускать двоичные файлы Bash и Ubuntu Linux пользовательского режима в Windows 10](https://www.hanselman.com/blog/DevelopersCanRunBashShellAndUsermodeUbuntuLinuxBinariesOnWindows10.aspx)
+* [Ubuntu в Windows — Усерспаце Ubuntu для разработчиков Windows](https://insights.ubuntu.com/2016/03/30/ubuntu-on-windows-the-ubuntu-userspace-for-windows-developers/) 
 
 ## <a name="provide-feedback"></a>Предоставление отзыва
-* [Средство отслеживания вопросов GitHub](https://github.com/Microsoft/BashOnWindows/issues)
-* [Командной строки портал UserVoice](https://wpdev.uservoice.com/forums/266908-command-prompt-console-bash-on-ubuntu-on-windo/category/161892-bash)
+* [Средство записи проблем GitHub](https://github.com/Microsoft/BashOnWindows/issues)
+* [Портал UserVoice для командной строки](https://wpdev.uservoice.com/forums/266908-command-prompt-console-bash-on-ubuntu-on-windo/category/161892-bash)

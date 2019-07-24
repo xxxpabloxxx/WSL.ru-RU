@@ -1,7 +1,7 @@
 ---
 title: Подсистема Windows для Linux для предприятий
-description: Ресурсы и инструкции о том, как лучше использовать подсистему Windows для Linux в среде предприятия.
-keywords: BashOnWindows, bash, wsl, windows, подсистема windows для linux, windowssubsystem, ubuntu, debian, suse, windows 10, enterprise, развертывания, автономной, упаковки, хранилище, распространения, установка, установка
+description: Ресурсы и инструкции по оптимальному использованию подсистемы Windows для Linux в корпоративной среде.
+keywords: Башонвиндовс, bash, WSL, Windows, подсистема Windows для Linux, виндовссубсистем, Ubuntu, Debian, SUSE, Windows 10, предприятие, развертывание, автономный, упаковка, хранение, распространение, установка, установка
 author: mscraigloewen
 ms.author: mscraigloewen
 ms.date: 09/04/2018
@@ -9,62 +9,62 @@ ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
 ms.openlocfilehash: 9d867654d1b66fc14b58bc5e111986a7d38ef79c
-ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
+ms.sourcegitcommit: cd239efc5c7c25ffbe5de25b2438d44181a838a9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "59063282"
 ---
 # <a name="windows-subsystem-for-linux-for-enterprise"></a>Подсистема Windows для Linux для предприятий
 
-Microsoft Store для бизнеса предлагает широкий набор решений для предприятий, желающих развернуть WSL для своей компании. [Онлайн-документации](https://docs.microsoft.com/en-us/microsoft-store/) для Microsoft Store для бизнеса — это отличный ресурс, общие сведения о работе с Store.
+Microsoft Store для бизнеса предлагают разнообразные решения для предприятий, желающих развернуть WSL в своей компании. [Документы в Интернете](https://docs.microsoft.com/en-us/microsoft-store/) для Microsoft Store для бизнеса — это отличный ресурс для поиска общих сведений о магазине.
 
-Если вы — компании, которая просто хотите установить до начала развертывания WSL помогут следующие действия, которые описаны в документы Microsoft Store:
+Если вы только хотите настроить для начала развертывания WSL, выполните следующие действия, которые объясняются в Microsoft Store документах:
 
-* [Зарегистрируйтесь для Microsoft Store для бизнеса и приступить к работе](https://docs.microsoft.com/en-us/microsoft-store/sign-up-microsoft-store-for-business-overview)
-* [Управление продуктов и служб (включая, кто имеет доступ к каким приложениям в частного магазина)](https://docs.microsoft.com/en-us/microsoft-store/manage-apps-microsoft-store-for-business-overview). Здесь можно добавить дистрибутивов WSL хранилище и управлять тем, кто их можно установить
-* [Используйте метод распространения по своему усмотрению для развертывания программного обеспечения в вашей компании](https://docs.microsoft.com/en-us/microsoft-store/distribute-apps-to-your-employees-microsoft-store-for-business)
-* Для пользователей, имеющих доступ к WSL дистрибутивов, они могут взаимодействовать [выполните следующие действия,](https://docs.microsoft.com/en-us/windows/wsl/install-win10) для установки дистрибутива или дистрибутивов по своему выбору 
+* [Подпишитесь на Microsoft Store для бизнеса и приступайте к работе](https://docs.microsoft.com/en-us/microsoft-store/sign-up-microsoft-store-for-business-overview)
+* [Управляйте своими продуктами и службами (включая пользователей, которые могут получать доступ к каким приложениям в частном хранилище)](https://docs.microsoft.com/en-us/microsoft-store/manage-apps-microsoft-store-for-business-overview). Здесь можно добавить WSL дистрибутивов в магазин и контролировать, кто их может устанавливать.
+* [Использование выбранного метода распространения для развертывания программного обеспечения в компании](https://docs.microsoft.com/en-us/microsoft-store/distribute-apps-to-your-employees-microsoft-store-for-business)
+* Обмен данными с пользователями, имеющими доступ к WSL дистрибутивов, которые могут [использовать эти действия](https://docs.microsoft.com/en-us/windows/wsl/install-win10) для установки дистрибутив или дистрибутивов по своему выбору 
 
-## <a name="how-to-distribute-a-distro-offline"></a>Способ распределения дистрибутив автономный режим
+## <a name="how-to-distribute-a-distro-offline"></a>Как распределить дистрибутив в автономном режиме
 
-Если компьютеры в вашей организации не имеют доступ к Microsoft Store или Microsoft Store для бизнеса, то можете скачать установщик дистрибутив Linux с автономной лицензией, выполнив следующие действия. 
+Если компьютеры в Организации не имеют доступа к Microsoft Store или Microsoft Store для бизнеса, то можно скачать установщик Linux дистрибутив с автономной лицензией, выполнив следующие действия. 
 
-### <a name="set-up-an-azure-active-directory-ad-account"></a>Настроить учетную запись Azure Active Directory (AD) 
+### <a name="set-up-an-azure-active-directory-ad-account"></a>Настройка учетной записи Azure Active Directory (AD) 
 
-Необходимо иметь учетную запись Azure AD и быть глобальным администратором для вашей организации, чтобы получить установщик приложений Microsoft Store. Если вы уже есть учетная запись, этот шаг можно пропустить.
+Для получения установщика Microsoft Store приложений необходимо иметь учетную запись Azure AD и быть глобальным администратором организации. Если у вас уже есть учетная запись, этот шаг можно пропустить.
 
-Инструкции для регистрации учетной записи можно найти здесь: https://docs.microsoft.com/en-us/microsoft-store/sign-up-microsoft-store-for-business
+Инструкции по регистрации учетной записи можно найти здесь: https://docs.microsoft.com/en-us/microsoft-store/sign-up-microsoft-store-for-business
 
-### <a name="sign-into-the-store-for-business-and-go-to-the-homepage"></a>Войдите в Store для бизнеса и перейдите на домашнюю страницу
-Войдите здесь: www.microsoft.com/business-store
+### <a name="sign-into-the-store-for-business-and-go-to-the-homepage"></a>Войдите в магазин для бизнеса и перейдите на домашнюю страницу.
+Вход в систему: www.microsoft.com/business-store
 
-![MS Store для бизнеса домашней страницы](media/offlineinstallscreens/1-screen.png)
+![Домашняя страница магазина MS Store для бизнеса](media/offlineinstallscreens/1-screen.png)
 
-### <a name="go-to-manage-settings-and-enable-show-offline-apps"></a>Перейдите на управление -> Параметры и включить «Показывать автономные приложения»
+### <a name="go-to-manage-settings-and-enable-show-offline-apps"></a>Перейдите в раздел Управление настройками > и включите параметр "показывать автономные приложения".
 
-![MS Store для бизнеса странице "Параметры"](media/offlineinstallscreens/2-screen.png)
+![Страница параметров магазина MS Store для бизнеса](media/offlineinstallscreens/2-screen.png)
 
-### <a name="go-back-to-the-main-page-by-clicking-shop-for-my-group"></a>Вернитесь на главную страницу, нажав кнопку «Приобрести Моя группа»
+### <a name="go-back-to-the-main-page-by-clicking-shop-for-my-group"></a>Вернитесь на главную страницу, щелкнув "магазин для моей группы".
 
-![MS Store для бизнеса домашней страницы](media/offlineinstallscreens/1-screen.png)
+![Домашняя страница магазина MS Store для бизнеса](media/offlineinstallscreens/1-screen.png)
 
-### <a name="search-for-your-desired-distro-and-select-it"></a>Найдите свой дистрибутив нужный и выберите его
+### <a name="search-for-your-desired-distro-and-select-it"></a>Выполните поиск нужных дистрибутив и выберите его.
 
-![MS Store для бизнеса Домашняя страница с поиск в active](media/offlineinstallscreens/3-screen.png)
+![Домашняя страница магазина MS Store для бизнеса с активным поиском](media/offlineinstallscreens/3-screen.png)
 
-### <a name="select-an-offline-license-in-the-license-type-dropdown-menu-and-click-get-the-app"></a>Выберите лицензию «Вне сети» в раскрывающемся списке Тип лицензии и нажмите кнопку «Получить приложения»
+### <a name="select-an-offline-license-in-the-license-type-dropdown-menu-and-click-get-the-app"></a>Выберите лицензию "вне сети" в раскрывающемся меню тип лицензии и щелкните "получить приложение".
 
-![MS Store для бизнеса Ubuntu продукта страницы](media/offlineinstallscreens/4-screen.png)
+![Страница продукта Ubuntu для магазина MS Store для бизнеса](media/offlineinstallscreens/4-screen.png)
 
-Обратите внимание: Некоторые дистрибутивы может отказаться быть автономной лицензией
+Примечание. Некоторые дистрибутивов могут отказаться от автономной лицензии.
 
-### <a name="click-the-manage-button-to-get-to-the-apps-product-page"></a>Нажмите кнопку «Управление», чтобы получить доступ к странице продукта приложения
+### <a name="click-the-manage-button-to-get-to-the-apps-product-page"></a>Нажмите кнопку "Управление", чтобы перейти на страницу продукта приложения
 
-![MS Store для бизнеса Ubuntu продукта страницы](media/offlineinstallscreens/5-screen.png)
+![Страница продукта Ubuntu для магазина MS Store для бизнеса](media/offlineinstallscreens/5-screen.png)
 
-### <a name="select-your-architecture-and-download-the-package-for-offline-use"></a>Выберите архитектуру и загрузить пакет в автономном режиме
+### <a name="select-your-architecture-and-download-the-package-for-offline-use"></a>Выберите архитектуру и скачайте пакет для использования в автономном режиме
 
-![MS Store для странице сведений о продукте Ubuntu бизнеса](media/offlineinstallscreens/6-screen.png)
+![Страница сведений о продукте для Microsoft Store для бизнеса Ubuntu](media/offlineinstallscreens/6-screen.png)
 
-Затем этот установщик можно распространять на любом компьютере, где вы хотите установить WSL.
+Затем этот установщик можно распространить на любой компьютер, на который необходимо установить WSL.

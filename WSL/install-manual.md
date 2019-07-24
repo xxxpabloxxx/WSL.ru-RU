@@ -1,65 +1,72 @@
 ---
-title: Вручную Загрузите подсистемы Windows для дистрибутивов Linux (WSL)
-description: Инструкции по как вручную загрузить подсистемы Windows для дистрибутивов Linux.
-keywords: BashOnWindows, bash, wsl, windows, подсистема windows для linux, WSL, подсистеме windows дистрибутива, ubuntu, openSUSE, SLES, debian, kali
+title: Ручная загрузка подсистемы Windows для Linux (WSL) дистрибутивов
+description: Инструкции по загрузке подсистемы Windows для дистрибутивов Linux вручную.
+keywords: Башонвиндовс, bash, WSL, Windows, подсистема Windows для Linux, WSL, подсистема Windows, дистрибутив, Ubuntu, openSUSE, SLES, Debian, Kali
 author: taraj
 ms.author: taraj
 ms.date: 07/24/2018
 ms.topic: article
 ms.assetid: 9281ffa2-4fa9-4078-bf6f-b51c967617e3
 ms.custom: seodec18
-ms.openlocfilehash: 669c017c97aba70c107484b32acd99296265d84a
-ms.sourcegitcommit: bb88269eb37405192625fa81ff91162393fb491f
+ms.openlocfilehash: 55cea2c4b7087f3dd8a29986aaddc8c313763448
+ms.sourcegitcommit: b07769a3140db9ac63e42c7d7d1290c0bad8c40d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67035038"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67467551"
 ---
-# <a name="manually-download-windows-subsystem-for-linux-distro-packages"></a>Скачивание подсистемы Windows для пакетов дистрибутив Linux вручную
+# <a name="manually-download-windows-subsystem-for-linux-distro-packages"></a>Ручная загрузка подсистемы Windows для пакетов дистрибутив для Linux
 
-Существует несколько сценариев, в которых может не удастся (или хотите), устанавливаемого дистрибутивов WSL Linux через Microsoft Store. В частности вы может работать под управлением Windows Server или Long-Term Servicing (LTSB или LTSC) desktop SKU операционной системы, который не поддерживает Microsoft Store или вашей корпоративной сети политик и/или "Администраторы" не допускать использование Microsoft Store в вашей среде.
+Существует несколько сценариев, в которых может быть недоступно (или требуется) Установка WSL Linux дистрибутивов с помощью Microsoft Store. В частности, возможно, используется SKU ОС Windows Server или долгосрочного обслуживания (LTSB/LTSC), не поддерживающий Microsoft Store, или политики корпоративной сети и (или) администраторы, чтобы не допускать использование Microsoft Store в вашей среде.
 
-В этих случаях то время как WSL сам доступен, как загрузить и установить в WSL дистрибутивов Linux, если нет доступа к хранилищу?
+В таких случаях, когда доступ к магазину WSL, как скачать и установить Linux дистрибутивов в WSL?
 
-> Примечание. **Оболочка командной строки сред, включая дистрибутивов Linux, WSL, Cmd и PowerShell не допускаются под управлением Windows 10 S режим**. Это ограничение существует, чтобы обеспечить целостность и безопасность цели, которые предоставляет режим S: Чтение [блога](https://blogs.msdn.microsoft.com/commandline/2017/05/18/will-linux-distros-run-on-windows-10-s/) Дополнительные сведения.
+> Примечание. **Среды оболочки командной строки, в том числе cmd, PowerShell и Linux/WSL дистрибутивов, не могут выполняться в режиме Windows 10 S**. Это ограничение существует, чтобы обеспечить целостность и безопасность, которые предоставляет режим S: Дополнительные сведения см. в [этой записи](https://blogs.msdn.microsoft.com/commandline/2017/05/18/will-linux-distros-run-on-windows-10-s/) .
 
-## <a name="downloading-distros"></a>Загрузка дистрибутивы
+## <a name="downloading-distros"></a>Скачивание дистрибутивов
 
-Если приложение Microsoft Store недоступен, можно загрузить и установить дистрибутивов Linux вручную с помощью этих ссылок:
-* [Ubuntu 18.04](https://aka.ms/wsl-ubuntu-1804)
-* [Ubuntu 18.04 ARM](https://aka.ms/wsl-ubuntu-1804-arm)
-* [Ubuntu 16.04](https://aka.ms/wsl-ubuntu-1604)
+Если Microsoft Store приложение недоступно, вы можете скачать и вручную установить дистрибутивов Linux, щелкнув следующие ссылки:
+* [Ubuntu 18,04](https://aka.ms/wsl-ubuntu-1804)
+* [Ubuntu 18,04 ARM](https://aka.ms/wsl-ubuntu-1804-arm)
+* [Ubuntu 16,04](https://aka.ms/wsl-ubuntu-1604)
 * [Debian GNU/Linux](https://aka.ms/wsl-debian-gnulinux)
 * [Kali Linux](https://aka.ms/wsl-kali-linux)
-* [OpenSUSE Leap 42](https://aka.ms/wsl-opensuse-42)
+* [OpenSUSE LEAP 42](https://aka.ms/wsl-opensuse-42)
 * [SUSE Linux Enterprise Server 12](https://aka.ms/wsl-sles-12)
-* [Remix Fedora для WSL](https://github.com/WhitewaterFoundry/WSLFedoraRemix/releases/)
+* [Fedora Remix для WSL](https://github.com/WhitewaterFoundry/WSLFedoraRemix/releases/)
 
-Это приведет к `<distro>.appx` пакетов для скачивания в папку по своему выбору. Выполните [инструкции по установке](#installing-your-distro) для установки вашей Скачанный distro(s).
+Это приведет `<distro>.appx` к скачиванию пакетов в выбранную папку. Следуйте [инструкциям по установке](#Installing-your-distro) , чтобы установить Скачанные дистрибутив.
 
-## <a name="downloading-distros-via-the-command-line"></a>Загрузка дистрибутивов с помощью командной строки
-При желании вы также можете скачать Ваш предпочитаемый distro(s) через командную строку:
+## <a name="downloading-distros-via-the-command-line"></a>Скачивание дистрибутивов с помощью командной строки
+При желании вы также можете скачать предпочтительные дистрибутив с помощью командной строки:
 
  ### <a name="download-using-powershell"></a>Скачать с помощью PowerShell
- Чтобы скачать дистрибутивов, с помощью PowerShell, используйте [Invoke-WebRequest](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/invoke-webrequest) командлета. Ниже приведен пример инструкции для загрузки Ubuntu 16.04.
+ Чтобы скачать дистрибутивов с помощью PowerShell, используйте командлет [Invoke-WebRequest](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/invoke-webrequest) . Ниже приведен пример инструкции по скачиванию Ubuntu 16,04.
 
 ```powershell
 Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1604 -OutFile Ubuntu.appx -UseBasicParsing
 ```
 
 > [!TIP]
-> Если загрузка занимает много времени, отключите индикатор хода выполнения, задав `$ProgressPreference = 'SilentlyContinue'`
+> Если загрузка занимает много времени, отключите индикатор выполнения, задав`$ProgressPreference = 'SilentlyContinue'`
 
-### <a name="download-using-curl"></a>Скачайте с помощью curl
-Windows 10 весна 2018 с обновлением (или более поздней версии) включает в себя популярные [программы командной строки curl](https://curl.haxx.se/) с помощью которого можно вызвать веб-запросов (т. е. HTTP GET, POST, PUT, команды и т.д.) из командной строки. Можно использовать `curl.exe` для загрузки выше дистрибутивов:
+### <a name="download-using-curl"></a>Скачать с помощью функции "перелистывание"
+Обновление Windows 10 пружины 2018 (или более поздней версии) включает в себя популярную [программу командной строки](https://curl.haxx.se/) , с помощью которой можно вызывать веб-запросы (например, команды HTTP GET, POST, WHERE и т. д.) из командной строки. Можно использовать `curl.exe` для загрузки указанного выше дистрибутивов:
 
 ```console
 curl.exe -L -o ubuntu-1604.appx https://aka.ms/wsl-ubuntu-1604
 ```
 
-В приведенном выше примере `curl.exe` выполняется (а не только `curl`) для обеспечения, в PowerShell, исполняемый файл реальных curl вызове не curl PowerShell псевдоним для [Invoke-WebRequest](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-webrequest?view=powershell-6)
+В приведенном выше примере `curl.exe` выполняется (не только `curl`), чтобы убедиться в том, что в PowerShell вызывается фактический исполняемый файл, а не псевдоним оболочки PowerShell для [Invoke-WebRequest](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-webrequest?view=powershell-6) .
 
-> Примечание. С помощью `curl` , можно использовать в том случае, если необходимо вызвать скрипт действия загрузки, с помощью командной оболочки расширенных процедур и/или `.bat`  /  `.cmd` сценариев.
+> Примечание. Использование `curl` может быть предпочтительным, если необходимо вызвать или создать скрипт для загрузки с помощью оболочки `.bat`  /  `.cmd` cmd или сценариев.
 
-## <a name="installing-your-distro"></a>Установка вашего дистрибутива
-Инструкции по установке вашей Скачанный distro(s), обратитесь к [Windows Desktop](install-win10.md) или [Windows Server](install-on-server.md) инструкции по установке.
+## <a name="installing-your-distro"></a>Установка дистрибутив
+Если вы используете Windows 10, вы можете установить дистрибутив с помощью PowerShell. Просто перейдите в папку, содержащую дистрибутив, скачанный выше, и в этом каталоге выполните следующую команду, `app_name` где — это имя файла дистрибутив. appx.  
+```Powershell
+Add-AppxPackage .\app_name.appx
+```
+
+Если вы используете Windows Server, инструкции по установке можно найти на странице документации по [Windows Server](install-on-server.md) .
+
+После установки дистрибутив ознакомьтесь со страницей [действия интилизатион](initialize-distro.md) , чтобы инициализировать новый дистрибутив.
