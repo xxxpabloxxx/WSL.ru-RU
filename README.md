@@ -1,24 +1,24 @@
-# <a name="windows-subsystem-for-linux-wsl-documentation"></a>Подсистема Windows для документации Linux (WSL)
+# <a name="windows-subsystem-for-linux-wsl-documentation"></a>Документация по подсистеме Windows для Linux (WSL)
 
 ## <a name="issues"></a>Проблемы
-Если вы обнаружили проблемы doc / ошибок или иметь улучшение вы хотите предложить, пожалуйста сообщите о проблеме или отправить запрос на Вытягивание — мы признательны запроса на Вытягивание в частности :)
+Если вы обнаружите проблемы или ошибки в документации или хотите предложить вам улучшения, отправьте запрос на вытягивание и (или) отправляйте запросы на включение внесенных изменений. Мы очень ценим вопросы, связанные:)
 
-> **Примечание.** Средство отслеживания вопросов этот репозиторий предназначен только для того, для сообщить о проблеме с WSL документы. Другие проблема, связанная с репозитория:
-> * WSL: https://github.com/Microsoft/WSL/
+> **Примечание.** Этот репозиторий за выпуски этого репозитория предназначен только для создания отчетов о проблемах с документацией WSL. Другие связанные репозитории проблем:
+> * WSL https://github.com/Microsoft/WSL/
 > * Консоль Windows: https://github.com/Microsoft/Console/
 
 ## <a name="external-links"></a>Внешние ссылки
 
-[Готовый для просмотра документации по веб-сайта](https://docs.microsoft.com/windows/wsl/) 
+[Веб-сайт подготовленной документации](https://docs.microsoft.com/windows/wsl/) 
 
 [Заметки о выпуске для WSL](https://docs.microsoft.com/en-us/windows/wsl/release-notes)
 
-## <a name="microsoft-open-source-code-of-conduct"></a>Открытого кода Майкрософт поведения
+## <a name="microsoft-open-source-code-of-conduct"></a>Кодекс поведения корпорации Майкрософт с открытым исходным кодом
 
-Этот проект распространяются [Microsoft Open источника поведения](https://opensource.microsoft.com/codeofconduct/).
-Дополнительные сведения см. в разделе [код из поведения часто задаваемые вопросы о](https://opensource.microsoft.com/codeofconduct/faq/) или обратитесь в службу [ opencode@microsoft.com ](mailto:opencode@microsoft.com) с вопросы или комментарии.
+Этот проект применяет [кодекс поведения Майкрософт с открытым исходным кодом](https://opensource.microsoft.com/codeofconduct/).
+Дополнительные сведения см. в статьях вопросы и ответы о [opencode@microsoft.com](mailto:opencode@microsoft.com) правилах [поведения](https://opensource.microsoft.com/codeofconduct/faq/) или свяжитесь с любыми дополнительными вопросами или комментариями.
 
-Вас приветствует исходного markdown для оболочки командной строки корпорации Майкрософт и консоли документации.
+Добро пожаловать в источник Markdown для оболочек командной строки Майкрософт и документации по консоли.
 
 ## <a name="license"></a>Лицензия
-Распространяемое по публичной лицензии Creative Commons Attribution 4.0 International (CC 4.0).
+Распространяется в рамках общедоступной лицензии Creative 4,0 Commons Attribution (CC BY 4,0).
