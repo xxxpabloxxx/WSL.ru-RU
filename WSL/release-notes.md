@@ -7,15 +7,49 @@ ms.date: 07/31/2017
 ms.topic: article
 ms.assetid: 36ea641e-4d49-4881-84eb-a9ca85b1cdf4
 ms.custom: seodec18
-ms.openlocfilehash: e2d9d5fc70c173e9b516ab7af01599b623b40b39
-ms.sourcegitcommit: cd239efc5c7c25ffbe5de25b2438d44181a838a9
+ms.openlocfilehash: d2d91db24c12fc674d695ccffc79eb5781a0721d
+ms.sourcegitcommit: be00abbb170aa569e008b804f15949344b378999
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67042423"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68501586"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Заметки о выпуске для подсистемы Windows для Linux
 
+
+## <a name="build-18947"></a>Сборка 18947
+Общие сведения о Windows в сборке 18947 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2019/07/26/announcing-windows-10-insider-preview-build-18947/).
+
+### <a name="wsl"></a>WSL
+* [WSL2] Разрешить доступ к прослушиванию TCP-сокетов в WSL2 с узла с помощью localhost: Port
+* [WSL2] Исправления для сбоев установки и преобразования и дополнительные диагностические сведения для контроля будущих проблем [GH 4105] 
+* [WSL2] Улучшение диагностики проблем с сетью WSL2
+* [WSL2] Обновление версии ядра до 4.19.55
+* [WSL2] Обновление ядра с параметрами конфигурации, необходимыми для DOCKER [GH 4165]
+* [WSL2] Увеличьте число ЦП, назначенных для виртуальной машины упрощенной служебной программы, так, чтобы она совпадала с узлом (ранее был ограничен 8 с помощью CONFIG_NR_CPUS в конфигурации ядра) [GH 4137]
+* [WSL2] Создание файла подкачки для WSL2 облегченной виртуальной машины
+* [WSL2] Разрешить отображение подключений пользователей через \\ \\WSL $\\дистрибутив (например, сшфс) [GH 4172]
+* [WSL2] Повышение производительности файловой системы 9p
+* [WSL2] Обеспечение неограниченного роста ACL виртуального жесткого диска [GH 4126]
+* [WSL2] Обновление конфигурации ядра для поддержки скуашфс и xt_conntrack [GH 4107, 4123]
+* [WSL2] Исправление для Interop. Enabled/ЕТК/ВСЛ.конф параметр [GH 4140]
+* [WSL2] Возвращает ЕНОТСУП, если файловая система не поддерживает EAs
+* [WSL2] Исправление CopyFile завис с \\помощью \\WSL $
+* Переключить umask по умолчанию на 0022 и добавить параметр FileSystem. umask в/ЕТК/ВСЛ.конф
+* Исправьте вслпас, чтобы правильно разрешить символических ссылок, это произошло в 19h1 [GH 4078]
+* Ввести файл% UserProfile\.% вслконфиг для корректировки параметров WSL2
+```
+[wsl2]
+kernel=<path>              # An absolute Windows path to a custom Linux kernel.
+memory=<size>              # How much memory to assign to the WSL2 VM.
+processors=<number>        # How many processors to assign to the WSL2 VM.
+swap=<size>                # How much swap space to add to the WSL2 VM. 0 for no swap file.
+swapFile=<path>            # An absolute Windows path to the swap vhd.
+localhostForwarding=<bool> # Boolean specifying if ports bound to wildcard or localhost in the WSL2 VM should be connectable from the host via localhost:port (default true).
+
+# <path> entries must be absolute Windows paths with escaped backslashes, for example C:\\Users\\Ben\\kernel
+# <size> entries must be size followed by unit, for example 8GB or 512MB
+```
 
 ## <a name="build-18917"></a>Сборка 18917
 Общие сведения о Windows в сборке 18917 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2019/06/12/announcing-windows-10-insider-preview-build-18917/).
