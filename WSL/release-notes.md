@@ -7,18 +7,18 @@ ms.date: 07/31/2017
 ms.topic: article
 ms.assetid: 36ea641e-4d49-4881-84eb-a9ca85b1cdf4
 ms.custom: seodec18
-ms.openlocfilehash: d2d91db24c12fc674d695ccffc79eb5781a0721d
-ms.sourcegitcommit: be00abbb170aa569e008b804f15949344b378999
+ms.openlocfilehash: c262ddb359507c1654f0089050bfd15ec16402f9
+ms.sourcegitcommit: 44da0f435986598e6067e36ddca9369d27064793
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68501586"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523785"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Заметки о выпуске для подсистемы Windows для Linux
 
 
-## <a name="build-18947"></a>Сборка 18947
-Общие сведения о Windows в сборке 18947 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2019/07/26/announcing-windows-10-insider-preview-build-18947/).
+## <a name="build-18945"></a>Сборка 18945
+Общие сведения о Windows в сборке 18945 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2019/07/26/announcing-windows-10-insider-preview-build-18945/).
 
 ### <a name="wsl"></a>WSL
 * [WSL2] Разрешить доступ к прослушиванию TCP-сокетов в WSL2 с узла с помощью localhost: Port
