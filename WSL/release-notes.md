@@ -7,12 +7,12 @@ ms.date: 07/31/2017
 ms.topic: article
 ms.assetid: 36ea641e-4d49-4881-84eb-a9ca85b1cdf4
 ms.custom: seodec18
-ms.openlocfilehash: c262ddb359507c1654f0089050bfd15ec16402f9
-ms.sourcegitcommit: 44da0f435986598e6067e36ddca9369d27064793
+ms.openlocfilehash: b03d837e0ab3a371fd676e37b5c65a173824f84c
+ms.sourcegitcommit: 9175a28f04573f25338358faf61d73b1a5d1ade6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523785"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68832113"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Заметки о выпуске для подсистемы Windows для Linux
 
@@ -37,7 +37,7 @@ ms.locfileid: "68523785"
 * [WSL2] Исправление CopyFile завис с \\помощью \\WSL $
 * Переключить umask по умолчанию на 0022 и добавить параметр FileSystem. umask в/ЕТК/ВСЛ.конф
 * Исправьте вслпас, чтобы правильно разрешить символических ссылок, это произошло в 19h1 [GH 4078]
-* Ввести файл% UserProfile\.% вслконфиг для корректировки параметров WSL2
+* Ввести файл% UserProfile\\%. вслконфиг для корректировки параметров WSL2
 ```
 [wsl2]
 kernel=<path>              # An absolute Windows path to a custom Linux kernel.
@@ -506,7 +506,7 @@ wslconfig.exe /terminate <DistributionName>
 #### <a name="wsl-is-more-configurable-with-wslconf"></a>WSL можно настроить с помощью WSL. conf.
 Мы добавили метод для автоматической настройки определенных функций в WSL, которые будут применяться при каждом запуске подсистемы. Сюда входят параметры автоподключения и конфигурация сети. Дополнительные сведения см. в нашей записи в блоге по адресу: https://aka.ms/wslconf
 
-#### <a name="afunix-allows-socket-connections-between-linux-processes-on-wsl-and-windows-native-processes"></a>AF_UNIX разрешает подключения через сокет между процессами Linux в собственных процессах WSL и Windows
+#### <a name="af_unix-allows-socket-connections-between-linux-processes-on-wsl-and-windows-native-processes"></a>AF_UNIX разрешает подключения через сокет между процессами Linux в собственных процессах WSL и Windows
 Приложения WSL и Windows теперь могут взаимодействовать друг с другом через сокеты Unix. Представьте, что вы хотите запустить службу в Windows и сделать ее доступной для приложений Windows и WSL. Теперь это возможно благодаря сокетам UNIX. Дополнительные сведения см. в публикации в блоге по адресу https://aka.ms/afunixinterop
 
 ### <a name="wsl"></a>WSL
