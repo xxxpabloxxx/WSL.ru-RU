@@ -53,8 +53,8 @@ ms.locfileid: "67499283"
     * [Kali Linux](https://www.microsoft.com/store/apps/9PKR34TNCV07)
     * [Debian GNU/Linux](https://www.microsoft.com/store/apps/9MSVKQC78PK6)
     * [Fedora Remix для WSL](https://www.microsoft.com/store/apps/9n6gdm4k2hnc)
-    * [пенгвин](https://www.microsoft.com/store/apps/9NV1GV1PXZ6P)
-    * [Пенгвин Enterprise](https://www.microsoft.com/store/apps/9N8LP0X93VCP)
+    * [Pengwin](https://www.microsoft.com/store/apps/9NV1GV1PXZ6P)
+    * [Pengwin Enterprise](https://www.microsoft.com/store/apps/9N8LP0X93VCP)
     * [Alpine WSL](https://www.microsoft.com/store/apps/9p804crf0395)
 
 1. На странице дистрибутив выберите Get (получить).
