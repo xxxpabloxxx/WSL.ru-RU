@@ -8,18 +8,20 @@ ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: 0220d642854f9fc7fe2a85357ad2e70e0b888ed8
-ms.sourcegitcommit: f878e88921d36e01e32624a9c60ee9de3d706a2e
+ms.openlocfilehash: 6b7ed18480ea88200d00b67a3a6dc859947397db
+ms.sourcegitcommit: 6f10b40f6199538c8eedf6301f02b7d70ead3fe7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69620102"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70117833"
 ---
 # <a name="installation-instructions-for-wsl-2"></a>Инструкции по установке WSL 2
 
 Чтобы установить подсистему WSL 2 и начать с ней работу, выполните следующие действия:
 
 - Убедитесь, что установлен WSL (вы можете найти инструкции [здесь](./install-win10.md)) и вы используете Windows 10 Build 18917 или более поздней версии.
+   - Чтобы убедиться, что вы используете сборку 18917 или более позднюю версию, присоединитесь к [программе предварительной оценки Windows](https://insider.windows.com/en-us/) и выберите Быстрый звонок. 
+   - Вы можете проверить версию Windows, открыв командную строку и выполнив `ver` команду.
 - Включение необязательного компонента "Virtual Machine Platform" (Платформа виртуальной машины)
 - с помощью командной строки задайте поддержку дистрибутива в WSL 2;
 - проверьте, какие версии WSL используют ваши дистрибутивы.

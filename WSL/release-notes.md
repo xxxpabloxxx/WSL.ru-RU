@@ -7,12 +7,13 @@ ms.date: 07/31/2017
 ms.topic: article
 ms.assetid: 36ea641e-4d49-4881-84eb-a9ca85b1cdf4
 ms.custom: seodec18
-ms.openlocfilehash: b03d837e0ab3a371fd676e37b5c65a173824f84c
-ms.sourcegitcommit: 9175a28f04573f25338358faf61d73b1a5d1ade6
+ms.localizationpriority: high
+ms.openlocfilehash: 56a596c39b0d07e75d0beb381b80af5a14612e00
+ms.sourcegitcommit: 7af6b7a3f8cfa66cb25115bc26f44aa64ef22811
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832113"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122750"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Заметки о выпуске для подсистемы Windows для Linux
 
@@ -631,7 +632,7 @@ wslconfig.exe /terminate <DistributionName>
 
 Общие сведения о Windows в сборке 17046 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2017/11/22/announcing-windows-10-insider-preview-build-17046-pc).
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 #### <a name="wsl"></a>WSL
 - Разрешить выполнение процессов без активного терминала. [GH 709, 1007, 1511, 2252, 2391, et al.]
 - Улучшенная поддержка CLONE_VFORK и CLONE_VM. [GH 1878, 2615]
@@ -664,7 +665,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 17040 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2017/11/16/announcing-windows-10-insider-preview-build-17040-pc).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 #### <a name="wsl"></a>WSL
 - Нет исправлений с 17035.
 
@@ -679,7 +680,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 17035 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2017/11/08/announcing-windows-10-insider-preview-build-17035-pc).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 #### <a name="wsl"></a>WSL
 - Иногда не удается получить доступ к файлам в Дрвфс с помощью ЕИНВАЛ. [GH 2448]
 
@@ -694,7 +695,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 17025 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2017/10/25/announcing-windows-10-insider-preview-build-17025-pc).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 #### <a name="wsl"></a>WSL
 - Запуск начальных процессов в новой группе процессов переднего плана [GH 1653, 2510].
 - Исправления СИГХУП доставки [GH 2496].
@@ -714,7 +715,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 17017 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2017/10/13/announcing-windows-10-insider-preview-build-17017-pc).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 #### <a name="wsl"></a>WSL
 - Пропуск пустых заголовков программы ELF [GH 330].
 - Разрешить Лксссманажер создавать экземпляры WSL для неинтерактивных пользователей (поддержка SSH и запланированных задач) [GH 777, 1602].
@@ -742,7 +743,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 16288 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2017/09/12/announcing-windows-10-insider-preview-build-16288-pc-build-15250-mobile/#7pLWQbj23JisfzV5.97/).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 #### <a name="wsl"></a>WSL
 - Правильная инициализация и создание отчетов о UID, GID и режиме для дескрипторов файлов сокетов [GH 2490]
 - Дополнительные улучшения и исправления ошибок
@@ -758,7 +759,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 162738 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2017/08/29/announcing-windows-10-insider-preview-build-16278-pc/#HMz6Xq7Su68WKi0t.97/).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 #### <a name="wsl"></a>WSL
 - Явное отмена сопоставления сопоставленных представлений разделов с файлами при разрыве состояния LX MM [GH 2415]
 - Дополнительные улучшения и исправления ошибок
@@ -774,7 +775,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 162735 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2017/08/25/announcing-windows-10-insider-preview-build-16275-pc-build-15245-mobile/#8QkxWqQbY37yZslV.97/).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 #### <a name="wsl"></a>WSL
 - Нет изменений, связанных с WSL в этом выпуске.
 
@@ -789,7 +790,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 16273 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2017/08/23/announcing-windows-10-insider-preview-build-16273-pc/).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 #### <a name="wsl"></a>WSL
 - Исправлена проблема, при которой Дрвфс иногда сообщает о неправильном типе файлов для каталогов [GH 2392]
 - Разрешить создание сокетов NETLINK_KOBJECT_UEVENT для разблокирования программ, использующих уевент [GH 1121, 2293, 2242, 2295, 2235, 648, 637]
@@ -823,7 +824,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 16257 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2017/08/02/announcing-windows-10-insider-preview-build-16257-pc-build-15237-mobile/).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 #### <a name="wsl"></a>WSL
 - Реализация системного вызова prlimit64
 - Добавлена поддержка него команду ulimit-n (сетрлимит RLIMIT_NOFILE) [GH 1688]
@@ -861,7 +862,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 16251 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2017/07/26/announcing-windows-10-insider-preview-build-16251-pc-build-15235-mobile/).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 #### <a name="wsl"></a>WSL
 - Удаление тега бета-версии из дополнительного компонента WSL. Дополнительные сведения см. в [записи блога](https://blogs.msdn.microsoft.com/commandline/2017/07/28/windows-subsystem-for-linux-out-of-beta/) .
 - Правильно инициализировать сохраненные-Set UID и GID для двоичных файлов Set-User-ID и Set-Group-ID в Exec [GH 962, 1415, 2072]
@@ -886,7 +887,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 16241 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2017/07/13/announcing-windows-10-insider-preview-build-16241-pc-build-15230-mobile/).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 #### <a name="wsl"></a>WSL
 - Нет изменений, связанных с WSL в этом выпуске.
 
@@ -911,7 +912,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 16237 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2017/07/07/announcing-windows-10-insider-preview-build-16237-pc/).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 - Использовать атрибуты по умолчанию для файлов без EAs в лксфс (корневая папка, корневая папка, 0000)
 - Добавлена поддержка распределений, использующих расширенные атрибуты.
 - Исправлять заполнение для записей, возвращаемых уровнями и getdents64
@@ -931,7 +932,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 16232 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2017/06/28/announcing-windows-10-insider-preview-build-16232-pc-build-15228-mobile/).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 - Нет изменений, связанных с WSL в этом выпуске.
 
 </br>
@@ -941,7 +942,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 16226 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2017/06/21/announcing-windows-10-insider-preview-build-16226-pc/).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 - Поддержка ксаттр, связанная с syscall (жетксаттр, сетксаттр, листксаттр, ремовексаттр).
 - Security. капаблити ксаттр support.
 - Улучшенная совместимость с некоторыми файловыми системами и фильтрами, включая серверы SMB, отличные от MS. [GH #1952]
@@ -955,7 +956,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 16215 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2017/06/08/announcing-windows-10-insider-preview-build-16215-pc-build-15222-mobile/).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 - Для WSL больше не требуется режим разработчика.
 - Поддержка соединений каталогов в дрвфс.
 - Обрабатывает удаление пакетов appx WSL Distribution.
@@ -972,7 +973,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 16199 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2017/05/17/announcing-windows-10-insider-preview-build-16199-pc-build-15215-mobile/).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 - Нет WSL, связанных с изменениями в этих выпусках.
 
 </br>
@@ -982,7 +983,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 16193 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2017/05/11/announcing-windows-10-insider-preview-build-16193-pc-build-15213-mobile/).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 - Состояние гонки между отправкой СИГКОНТ и среадграуп (GH 1973])
 - Замените устройства tty и PTY на Report FILE_DEVICE_NAMED_PIPE вместо FILE_DEVICE_CONSOLE [GH 1840]
 - Исправление SSH для IP_OPTIONS
@@ -996,7 +997,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 16184 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2017/04/28/announcing-windows-10-insider-preview-build-16184-pc-build-15208-mobile/).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 - Удалена задача обслуживания пакета apt (лксрун. exe/Update)
 - Фиксированные выходные данные не отображаются в процессах Windows в Node. js [GH 1840]
 - Смягчить требования к выравниванию в лкскоре [GH 1794]
@@ -1011,7 +1012,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 16179 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2017/04/19/announcing-windows-10-insider-preview-build-16179-pc-build-15205-mobile/).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 - В этой неделе нет изменений WSL.
 
 </br>
@@ -1021,7 +1022,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 16176 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2017/04/14/announcing-windows-10-insider-preview-build-16176-pc-build-15204-mobile/).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 
 - [Включенная поддержка последовательного порта](https://blogs.msdn.microsoft.com/wsl/2017/04/14/serial-support-on-the-windows-subsystem-for-linux/)
 - Добавлен параметр IP-сокета IP_OPTIONS [GH 1116]
@@ -1049,7 +1050,7 @@ wslconfig.exe /terminate <DistributionName>
 
 Мы выпустили новую [запись блога](https://blogs.msdn.microsoft.com/wsl/2017/04/11/testing-the-windows-subsystem-for-linux/) , в которой обсуждаются наши усилия по тестированию WSL.
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 
 - Поддержка параметра сокета IP_ADD_MEMBERSHIP & IPV6_ADD_MEMBERSHIP [GH 1678]
 - Добавлена поддержка PTRACE_OLDSETOPTIONS. [GH 1692]
@@ -1069,7 +1070,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 15042 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2017/02/24/announcing-windows-10-insider-preview-build-15042-pc-build-15043-mobile/).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 
 - Устранение взаимоблокировки при удалении пути, завершающего ".."
 - Исправлена проблема, при которой ФИОНБИО не вернул 0 при успешном выполнении [GH 1683]
@@ -1089,7 +1090,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 15031 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2017/02/08/announcing-windows-10-insider-preview-build-15031-pc/).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 
 - Исправлена ошибка, в которой время (2) будет ошибочно отличаться.
 - Исправлена и проблема, когда * СИГПРОКМАСК syscall может повредить сигнальную маску.
@@ -1112,7 +1113,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 15025 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2017/02/01/announcing-windows-10-insider-preview-build-15025-pc/).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 
 - Исправление ошибки, которая нарушила grep 2,27 [GH 1578]
 - Реализован флаг EFD_SEMAPHORE для eventfd2 syscall [GH 452]
@@ -1142,7 +1143,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 15019 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2017/01/27/announcing-windows-10-insider-preview-build-15019-pc/).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 
 - Исправлена ошибка, сообщающая о неправильном использовании ЦП в прокфс для таких средств, как Htop (GH 823, 945, 971).
 - При вызове Open () с O_TRUNC для существующего файла инотифи теперь создает IN_MODIFY перед IN_OPEN
@@ -1164,7 +1165,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 15014 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2017/01/19/announcing-windows-10-insider-preview-build-15014-for-pc-and-mobile-hello-windows-insiders-today-we-are-excited-to-be-releasing-windows-10-insider-preview-build-15014-for-pc-and-mobile).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 
 - Ctrl + C теперь работает как задуманное
 - Htop и PS ауксв теперь показывают правильное использование ресурсов (GH #516)
@@ -1201,7 +1202,7 @@ wslconfig.exe /terminate <DistributionName>
 
   - Возможное решение. Сопоставьте альтернативный ключ с CTRL + C. Например, чтобы преобразовать сочетание клавиш CTRL + K в Ctrl + C, `stty intr \^k`сделайте следующее:.  Это сопоставление устанавливается на терминал и должно выполняться при *каждом* запуске bash. Пользователи могут просмотреть этот параметр, чтобы включить его в`.bashrc`
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 
 - Исправлена ошибка, при которой работа WSL будет потреблять 100% ядра ЦП.
 - Параметр сокета IP_PKTINFO, IPV6_RECVPKTINFO теперь поддерживается. (GH #851, 987)
@@ -1229,7 +1230,7 @@ wslconfig.exe /terminate <DistributionName>
 
 - Во время выполнения WSL системный поток будет потреблять 100% ядер ЦП.  Основная причина устранена и исправлена внутренним образом.
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 
 - Все сеансы Bash теперь должны создаваться на одном уровне разрешений.  Попытка запустить сеанс на другом уровне будет заблокирована.  Это означает, что администраторы и консоли, не являющиеся администраторами, не могут работать одновременно. (GH #626)
 <br/>
@@ -1287,7 +1288,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 14986 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2016/12/07/announcing-windows-10-insider-preview-build-14986-pc/).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 
 - Исправлены бугчеккс с Нетлинк и PTY IOCTL
 - Версия ядра теперь сообщает 4.4.0-43 о согласованности с Xenial
@@ -1322,7 +1323,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 14971 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2016/11/17/announcing-windows-10-insider-preview-build-14971-for-pc/).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 
  - Из-за обстоятельств, которые выходят за рамки нашего управления, в этой сборке не будет обновлений для подсистемы Windows для Linux.  Регулярно запланированные обновления будут возобновлены в следующем выпуске.
 
@@ -1339,7 +1340,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 14965 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2016/11/09/announcing-windows-10-insider-preview-build-14965-for-mobile-and-pc/).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 
 - Поддержка протоколов RTM_GETLINK и RTM_GETADDR Нетлинк Sockets NETLINK_ROUTE (GH #468)
   - Включает команды ifconfig и IP для перечисления сетей.
@@ -1377,7 +1378,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 14959 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2016/11/03/announcing-windows-10-insider-preview-build-14959-for-mobile-and-pc/#iI82GufJxMF3POU1.97).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 
 - Улучшенное уведомление о процессе Pico для Windows.  Дополнительные сведения содержатся в [блоге WSL](https://blogs.msdn.microsoft.com/wsl/2016/11/01/wsl-antivirus-and-firewall-compatibility/).
 - Улучшенная стабильность благодаря взаимодействию Windows
@@ -1396,7 +1397,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 14955 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2016/10/25/announcing-windows-10-insider-preview-build-14955-for-mobile-and-pc/#guGXQzKVFrZIDUYR.97).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 
  - Из-за обстоятельств, которые выходят за рамки нашего управления, в этой сборке не будет обновлений для подсистемы Windows для Linux.  Регулярно запланированные обновления будут возобновлены в следующем выпуске.
 
@@ -1428,7 +1429,7 @@ wslconfig.exe /terminate <DistributionName>
 - [Блог команды WSL для взаимодействия](https://blogs.msdn.microsoft.com/wsl/2016/10/19/windows-and-ubuntu-interoperability/)<br/>
 - [Документация по взаимодействию MSDN](https://msdn.microsoft.com/en-us/commandline/wsl/interop)<br/>
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 
 - Ubuntu 16,04 (Xenial) теперь устанавливается для всех новых экземпляров WSL.  Пользователи с существующими экземплярами 14,04 (Trusted) не будут обновляться автоматически.
 - Языковой стандарт, установленный во время установки, теперь отображается
@@ -1449,7 +1450,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 14946 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2016/10/13/announcing-windows-10-insider-preview-build-14946-for-pc-and-mobile/#xj8GdVooEqo4H7H7.97).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 
 - Исправлена проблема, которая не позволила создать учетные записи пользователей WSL для пользователей с именами пользователей NT, содержащими пробелы или кавычки. 
 - Измените Волфс и Дрвфс, чтобы возвращалось значение 0 для счетчика ссылок каталога в stat
@@ -1474,7 +1475,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 14942 см. в [блоге Windows](https://aka.ms/onefourninefourtwoooooo).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 
 - Ряд бугчеккс, в том числе "попытки выполнения нехватки памяти", которые блокируют SSH
 - Поддержка инотифий для уведомлений, созданных из приложений Windows на Дрвфс, теперь находится в
@@ -1505,7 +1506,7 @@ wslconfig.exe /terminate <DistributionName>
 ### <a name="known-issue"></a>Известная ошибка
 В WSL возникла проблема с некоторыми реализациями сокетов.  При возникновении ошибки "попыток выполнения невыполненной памяти" происходит ошибка в манифесте.  Наиболее распространенной обработкой этой проблемы является сбой при использовании SSH.  Основная причина исправлена во внутренних сборках и будет отправлена участникам программы предварительной оценки по самой ранней возможности.
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 
 - Реализуется системный вызов чрут
 - Улучшения в инотифи, ~~включая поддержку уведомлений, созданных из приложений Windows на дрвфс~~
@@ -1536,7 +1537,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 14931 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2016/09/21/announcing-windows-10-insider-preview-build-14931-for-pc/).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 
  - Из-за обстоятельств, которые выходят за рамки нашего управления, в этой сборке не будет обновлений для подсистемы Windows для Linux.  Регулярно запланированные обновления будут возобновлены в следующем выпуске.
 
@@ -1547,7 +1548,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 14926 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2016/09/14/announcing-windows-10-insider-preview-build-14926-for-pc-and-mobile/).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 
 - Команда ping теперь работает в консолях, которые не имеют прав администратора
 - Теперь поддерживается ping6, но без прав администратора
@@ -1572,7 +1573,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 14915 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2016/08/31/announcing-windows-10-insider-preview-build-14915-for-pc-and-mobile).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 -  Соккетпаир для сокетов датаграмм UNIX (GH #262)
 - Поддержка сокетов UNIX для SO_REUSEADDR
 - Поддержка сокетов UNIX для SO_BROADCAST (GH #568)
@@ -1596,7 +1597,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 14905 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2016/08/17/announcing-windows-10-insider-preview-build-14905-for-pc-mobile/).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 - Теперь поддерживаются Перезапускаемые системные вызовы (GH #349, GH #520)
 - Символических ссылок к каталогам, которые заканчиваются на текущий момент (GH #650)
 - Реализован РНДЖЕТЕНТКНТ IOCTL для/dev/random
@@ -1611,7 +1612,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 14901 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2016/08/11/announcing-windows-10-insider-preview-build-14901-for-pc/).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 - Исправлена проблема завершающей косой черты
     - Команды, такие `$ mv a/c/ a/b/` как Now
 - Теперь при установке запрашиваются параметры языкового стандарта Ubuntu в Windows.
@@ -1644,7 +1645,7 @@ wslconfig.exe /terminate <DistributionName>
 ## <a name="build-14388-to-windows-10-anniversary-update"></a>Создание годовщины с 14388 по Windows 10
 Общие сведения о Windows в сборке 14388 см. в [блоге Windows](https://aka.ms/14388wip). <br/>
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 - Исправления для подготовки к обновлению годовщины Windows 10 на 8/2
   - Дополнительные сведения о WSL в обновлении годовщины можно найти в нашем [блоге](https://blogs.msdn.microsoft.com/wsl/) .
 
@@ -1653,7 +1654,7 @@ wslconfig.exe /terminate <DistributionName>
 ## <a name="build-14376"></a>Сборка 14376
 Общие сведения о Windows в сборке 14376 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2016/06/28/announcing-windows-10-insider-preview-build-14376-for-pc-and-mobile/). <br/>
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 - Удалены некоторые экземпляры, где APT — получение зависает (GH #493)
 - Исправлена проблема, из – за которой не были правильно обработаны пустые подключения
 - Исправлена проблема, при которой не удалось правильно подключить Ramdisk
@@ -1668,7 +1669,7 @@ wslconfig.exe /terminate <DistributionName>
 ## <a name="build-14371"></a>Сборка 14371
 Общие сведения о Windows в сборке 14371 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2016/06/22/announcing-windows-10-insider-preview-build-14371-for-pc/). <br/>
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 - Исправлено состязание за синхронизацию с СИГЧЛД и Wait () при использовании птраце
 - Исправлено поведение, когда пути завершаются (GH #432)
 - Исправлена ошибка при сбое переименования или разрыва связи из-за открытых дескрипторов дочерних элементов
@@ -1679,7 +1680,7 @@ wslconfig.exe /terminate <DistributionName>
 ## <a name="build-14366"></a>Сборка 14366
 Общие сведения о Windows в сборке 14366 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2016/06/14/announcing-windows-10-insider-preview-build-14366-mobile-build-14364/). <br/>
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 - Исправление в процессе создания файла с помощью символических ссылок
 -   Добавлен листксаттр для Python (GH 385).
 -   Дополнительные исправлений и усовершенствования
@@ -1693,7 +1694,7 @@ wslconfig.exe /terminate <DistributionName>
 ## <a name="build-14361"></a>Сборка 14361
 Общие сведения о Windows в сборке 14361 см. в [блоге Windows](https://aka.ms/wip14361). <br/>
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 - Теперь Дрвфс учитывает регистр при выполнении в Bash в системе Ubuntu в Windows.
   - Пользователи могут иметь в своем регистре. txt и CASE. TXT на дисках/МНТ/к
   - Чувствительность к регистру поддерживается только в Bash на Ubuntu в Windows. Если за пределами Bash NTFS будет сообщать о файлах правильно, но может возникнуть непредвиденное поведение при взаимодействии с файлами из Windows.
@@ -1739,7 +1740,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 14352 см. в [блоге Windows](https://aka.ms/wip14352).<br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 - Исправлена проблема, из-за которой большие файлы не были правильно загружены или созданы.  Это должно разблокировать NPM и другие сценарии (GH #3, GH #313)
 - Удалены некоторые экземпляры, в которых сокеты зависы
 - Исправлены некоторые ошибки птраце
@@ -1767,7 +1768,7 @@ wslconfig.exe /terminate <DistributionName>
 
 Сведения о Волфс и Дривефс можно найти в [блоге WSL](https://blogs.msdn.microsoft.com/wsl). <br/>
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 - Исправлена проблема с установкой, когда пользователь Windows в имени пользователя содержит символы Юникода
 - Решение apt-get update udev в разделе часто задаваемых вопросов теперь предоставляется по умолчанию при первом запуске
 - Включенные символических ссылок в каталогах<drive>дривефс (/МНТ/)
@@ -1813,7 +1814,7 @@ wslconfig.exe /terminate <DistributionName>
 Общие сведения о Windows в сборке 14332 см. в [блоге Windows](https://aka.ms/wip14332). <br/>
 
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 - Улучшенное создание resolv. conf, включая определение приоритета записей DNS
 - Проблемы с перемещением файлов и каталогов между/mnt и/mnt дисками
 - Теперь можно создавать tar файлы с помощью символических ссылок
@@ -1839,7 +1840,7 @@ wslconfig.exe /terminate <DistributionName>
 * Для имени узла теперь задано имя компьютера Windows, больше нет@localhost
 * Дополнительные сведения о сборке 14328 см. по адресу: https://aka.ms/wip14328
 
-### <a name="fixed"></a>Фиксированный
+### <a name="fixed"></a>исправление
 * Усовершенствования символьную ссылку для файлов,<drive> отличных от/МНТ/
     * Установка NPM теперь работает
     * JDK/JRE теперь можно установить с помощью инструкций, приведенных [здесь](https://xubuntugeek.blogspot.com/2012/09/how-to-install-oracle-jdk-7-manually-in.html).

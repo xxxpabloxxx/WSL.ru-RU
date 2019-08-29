@@ -8,12 +8,13 @@ ms.date: 11/15/2017
 ms.topic: article
 ms.assetid: 6753f1b2-200e-49cc-93a5-4323e1117246
 ms.custom: seodec18
-ms.openlocfilehash: 0c84fb710eca1b0ffabe437f98d5c17edbd6ea39
-ms.sourcegitcommit: ead64b13501d6cb7170adafbb5624f4984a0af16
+ms.localizationpriority: high
+ms.openlocfilehash: 6a5fec8b8e054b4d3399ee9bcd903acebca7aace
+ms.sourcegitcommit: 7af6b7a3f8cfa66cb25115bc26f44aa64ef22811
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67307650"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122691"
 ---
 # <a name="troubleshooting-windows-subsystem-for-linux"></a>Устранение неполадок подсистемы Windows для Linux
 

@@ -8,12 +8,13 @@ ms.date: 07/23/2018
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: 82b5c0ccba7a444f13f186a2e33f210ac2cf48da
-ms.sourcegitcommit: 5844c6dbf692780b86b30bd65e11820fff43b3bd
+ms.localizationpriority: high
+ms.openlocfilehash: 218e3e652d0849f944e8aaceef3fb954294222be
+ms.sourcegitcommit: 7af6b7a3f8cfa66cb25115bc26f44aa64ef22811
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67499283"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122768"
 ---
 # <a name="windows-subsystem-for-linux-installation-guide-for-windows-10"></a>Руководства по установке подсистемы Windows для Linux для Windows 10
 
@@ -53,8 +54,8 @@ ms.locfileid: "67499283"
     * [Kali Linux](https://www.microsoft.com/store/apps/9PKR34TNCV07)
     * [Debian GNU/Linux](https://www.microsoft.com/store/apps/9MSVKQC78PK6)
     * [Fedora Remix для WSL](https://www.microsoft.com/store/apps/9n6gdm4k2hnc)
-    * [Pengwin](https://www.microsoft.com/store/apps/9NV1GV1PXZ6P)
-    * [Pengwin Enterprise](https://www.microsoft.com/store/apps/9N8LP0X93VCP)
+    * [пенгвин](https://www.microsoft.com/store/apps/9NV1GV1PXZ6P)
+    * [Пенгвин Enterprise](https://www.microsoft.com/store/apps/9N8LP0X93VCP)
     * [Alpine WSL](https://www.microsoft.com/store/apps/9p804crf0395)
 
 1. На странице дистрибутив выберите Get (получить).
@@ -76,4 +77,4 @@ ms.locfileid: "67499283"
     
  * **Сбой Вслрегистердистрибутион с ошибкой 0x8007019e**   
   * Необязательный компонент подсистемы Windows для Linux не включен: 
-   * Откройте **панель** -> управления**программы и компоненты** — > * * Включение или отключение компонента Windows * *-> проверить подсистему **Windows для Linux** или использовать командлет PowerShell, упомянутый в начале этой статьи.
+   * Откройте **панель** -> управления**программы и компоненты** -> **Включение или отключение компонента Windows** . > проверить подсистему **Windows для Linux** или использовать командлет PowerShell, упомянутый в начале этой статьи.

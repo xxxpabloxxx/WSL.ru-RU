@@ -8,12 +8,13 @@ ms.date: 02/7/2018
 ms.topic: article
 ms.assetid: 7ca59bd7-d9d3-4f6d-8b92-b8faa9bcf250
 ms.custom: seodec18
-ms.openlocfilehash: 0c9f9315b17d5156aa111e7619ee25534653b27e
-ms.sourcegitcommit: 5844c6dbf692780b86b30bd65e11820fff43b3bd
+ms.localizationpriority: high
+ms.openlocfilehash: ca65cf6fde3e0ba4750ffc44f5aec542be6cfabf
+ms.sourcegitcommit: 7af6b7a3f8cfa66cb25115bc26f44aa64ef22811
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67499275"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122706"
 ---
 # <a name="manage-and-configure-windows-subsystem-for-linux"></a>Управление подсистемой Windows для Linux и ее настройка
 

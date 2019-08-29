@@ -7,12 +7,13 @@ ms.date: 12/20/2017
 ms.topic: article
 ms.assetid: 3cefe0db-7616-4848-a2b6-9296746a178b
 ms.custom: seodec18
-ms.openlocfilehash: e4608c25c6bcc63413d53b2c808c16fe2a62dd5c
-ms.sourcegitcommit: cd239efc5c7c25ffbe5de25b2438d44181a838a9
+ms.localizationpriority: high
+ms.openlocfilehash: 3f3df3337ece75d7af77313f5fc55eb4e18e31cb
+ms.sourcegitcommit: 7af6b7a3f8cfa66cb25115bc26f44aa64ef22811
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67040815"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122735"
 ---
 # <a name="windows-subsystem-for-linux-interoperability-with-windows"></a>Подсистема Windows для взаимодействия Linux с Windows
 
@@ -117,7 +118,7 @@ $ cmd.exe /c dir
 
 Двоичные файлы Windows должны включать расширение файла, сопоставлять регистр файлов и быть исполняемыми.  Не исполняемые файлы, включая скрипты пакетной службы.  Машинные команды cmd `dir` , например, можно `cmd.exe /C` выполнять с помощью команды.
 
-Примеры
+Примеры:
 
 ``` BASH
 $ cmd.exe /C dir
@@ -224,7 +225,7 @@ C:\temp> bash -c "ls -la"
 
 Команды Linux, вызываемые таким образом, обрабатываются как любые другие приложения Windows.  Такие вещи, как входные данные, конвейеры и перенаправление файлов, работают должным образом.
 
-Примеры
+Примеры:
 
 ```console
 C:\temp>bash -c "sudo apt-get update"
@@ -264,7 +265,7 @@ C:\temp> bash -c "ls -la \"/mnt/c/Program Files\""
 $ /mnt/c/Windows/System32/notepad.exe
 ```
 
-В WSL эти исполняемые файлы обрабатываются аналогично собственным исполняемым файлам Linux.  Это означает, что добавление каталогов в путь Linux и передача между командами выполняется должным образом.  Примеры
+В WSL эти исполняемые файлы обрабатываются аналогично собственным исполняемым файлам Linux.  Это означает, что добавление каталогов в путь Linux и передача между командами выполняется должным образом.  Примеры:
 
 ``` BASH
 $ export PATH=$PATH:/mnt/c/Windows/System32
@@ -276,7 +277,7 @@ $ cmd.exe /c dir
 
 Двоичный файл Windows должен включать расширение файла, соответствовать регистру файла и быть исполняемым.  Кроме исполняемых файлов, включая скрипты пакетной `dir` службы и команду, `/mnt/c/Windows/System32/cmd.exe /C` можно выполнить команду с помощью команды.
 
-Примеры
+Примеры:
 
 ``` BASH
 $ /mnt/c/Windows/System32/cmd.exe /C dir
