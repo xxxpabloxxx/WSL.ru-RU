@@ -2,18 +2,18 @@
 title: Подсистема Windows для Linux для предприятий
 description: Ресурсы и инструкции по оптимальному использованию подсистемы Windows для Linux в корпоративной среде.
 keywords: Башонвиндовс, bash, WSL, Windows, подсистема Windows для Linux, виндовссубсистем, Ubuntu, Debian, SUSE, Windows 10, предприятие, развертывание, автономный, упаковка, хранение, распространение, установка, установка
-author: mscraigloewen
-ms.author: mscraigloewen
+author: craigloewen-msft
+ms.author: crloewen
 ms.date: 09/04/2018
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: 9d867654d1b66fc14b58bc5e111986a7d38ef79c
-ms.sourcegitcommit: cd239efc5c7c25ffbe5de25b2438d44181a838a9
+ms.openlocfilehash: ea03f2c67d8389eb41d686a99140e11b3181401c
+ms.sourcegitcommit: ed5cf72d5ceb92edd50cf9260ac31fd4d95a02c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "59063282"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71020973"
 ---
 # <a name="windows-subsystem-for-linux-for-enterprise"></a>Подсистема Windows для Linux для предприятий
 
