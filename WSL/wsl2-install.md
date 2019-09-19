@@ -8,12 +8,12 @@ ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: 4ae5b8452ae2aec679c2f0450dc48644b77fc1c9
-ms.sourcegitcommit: ed5cf72d5ceb92edd50cf9260ac31fd4d95a02c8
+ms.openlocfilehash: bced0fd0bf948842b8c465f645aa5c368c2f4335
+ms.sourcegitcommit: ebc6ae7e7546a6d33644e68788fa0215028859b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71020940"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71070301"
 ---
 # <a name="installation-instructions-for-wsl-2"></a>Инструкции по установке WSL 2
 
@@ -26,13 +26,16 @@ ms.locfileid: "71020940"
 - с помощью командной строки задайте поддержку дистрибутива в WSL 2;
 - проверьте, какие версии WSL используют ваши дистрибутивы.
 
-## <a name="enable-the-virtual-machine-platform-optional-component"></a>Включение необязательного компонента "Virtual Machine Platform" (Платформа виртуальной машины)
+## <a name="enable-the-virtual-machine-platform-optional-component-and-make-sure-wsl-is-enabled"></a>Включите дополнительный компонент "платформа виртуальной машины" и убедитесь, что WSL включен.
 
 Запустите PowerShell с правами администратора и выполните такую команду:
 
-`Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform`
+```powershell
+Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+```
 
-Когда вы внесете эти изменения, нужно будет перезагрузить компьютер.
+Это обеспечит установку дополнительных компонентов платформы виртуальной машины и подсистемы Windows для Linux. После выполнения этих команд потребуется перезагрузить компьютер. 
 
 ## <a name="set-a-distro-to-be-backed-by-wsl-2-using-the-command-line"></a>Настройка поддержки дистрибутива в WSL 2 с помощью командной строки
 
