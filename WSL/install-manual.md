@@ -2,18 +2,16 @@
 title: Ручная загрузка подсистемы Windows для Linux (WSL) дистрибутивов
 description: Инструкции по загрузке подсистемы Windows для дистрибутивов Linux вручную.
 keywords: Башонвиндовс, bash, WSL, Windows, подсистема Windows для Linux, WSL, подсистема Windows, дистрибутив, Ubuntu, openSUSE, SLES, Debian, Kali
-author: taraj
-ms.author: taraj
 ms.date: 07/24/2018
 ms.topic: article
 ms.assetid: 9281ffa2-4fa9-4078-bf6f-b51c967617e3
 ms.custom: seodec18
-ms.openlocfilehash: ded81ec9672d75203e0d289c551c86cd90bde606
-ms.sourcegitcommit: 9175a28f04573f25338358faf61d73b1a5d1ade6
+ms.openlocfilehash: df47e656cf83e0b13aa8eb3f210e010d6a85bfd8
+ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832094"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71269792"
 ---
 # <a name="manually-download-windows-subsystem-for-linux-distro-packages"></a>Ручная загрузка подсистемы Windows для пакетов дистрибутив для Linux
 
@@ -35,7 +33,7 @@ ms.locfileid: "68832094"
 * [SUSE Linux Enterprise Server 12](https://aka.ms/wsl-sles-12)
 * [Fedora Remix для WSL](https://github.com/WhitewaterFoundry/WSLFedoraRemix/releases/)
 
-Это приведет `<distro>.appx` к скачиванию пакетов в выбранную папку. Следуйте [инструкциям по установке](#Installing-your-distro) , чтобы установить Скачанные дистрибутив.
+Это приведет `<distro>.appx` к скачиванию пакетов в выбранную папку. Следуйте [инструкциям по установке](#installing-your-distro) , чтобы установить Скачанные дистрибутив.
 
 ## <a name="downloading-distros-via-the-command-line"></a>Скачивание дистрибутивов с помощью командной строки
 При желании вы также можете скачать предпочтительные дистрибутив с помощью командной строки:

@@ -2,18 +2,16 @@
 title: Установка подсистемы Linux в Windows Server
 description: Инструкции по установке для подсистемы Linux на Windows Server.
 keywords: Башонвиндовс, bash, WSL, Windows, подсистема Windows для Linux, виндовссубсистем, Ubuntu, Windows Server
-author: scooley
-ms.author: scooley
 ms.date: 05/22/2018
 ms.topic: article
 ms.assetid: 9281ffa2-4fa9-4078-bf6f-b51c967617e3
 ms.custom: seodec18
-ms.openlocfilehash: d295cf3db99fb45b943369f532f7e807a603061c
-ms.sourcegitcommit: 8b5a8d49b63441478dd540887f534dcc6dd0ba41
+ms.openlocfilehash: 51a2e3f3443ed9b1ba3d8ab79977f22839ee0283
+ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67308793"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71269784"
 ---
 # <a name="windows-server-installation-guide"></a>Руководства по установке Windows Server
 

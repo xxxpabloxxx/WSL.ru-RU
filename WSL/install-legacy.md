@@ -2,18 +2,16 @@
 title: Установите или удалите на годовщине Windows 10 обновление или создатели
 description: Инструкции по установке и отмене установки для устаревших, бета-версий дистрибутив в Windows 10 с годовщиной обновления или авторов
 keywords: Башонвиндовс, bash, WSL, Windows, подсистема Windows для Linux, виндовссубсистем, Ubuntu, Debian, SUSE, Windows 10, устаревшая, бета-версия, установка, удаление, удаление, отмена установки, удаление, устарело
-author: taraj
-ms.author: taraj
 ms.date: 07/24/2018
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: 0d8fdabd61fadbfc58549a220ead23585a3d3656
-ms.sourcegitcommit: 5844c6dbf692780b86b30bd65e11820fff43b3bd
+ms.openlocfilehash: 416bed3ed3a0470da2eb5e6beb75e73eb6836200
+ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67499262"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71269774"
 ---
 # <a name="guide-to-install-or-uninstall-windows-subsystem-for-linux-on-windows-10-anniversary-update-and-creators-update"></a>Инструкции по установке или удалению подсистемы Windows для Linux в Windows 10 годовщина обновления и создателей 
 
@@ -34,7 +32,7 @@ ms.locfileid: "67499262"
     Выберите переключатель режим разработчика  
     ![Включение режима разработчика](media/updateAndSecurity.png)
 
-    > Требование включения режима разработчика было удалено [в обновлении Windows 10 для дизайнеров](https://blogs.msdn.microsoft.com/commandline/2017/06/08/developer-mode-no-longer-required-for-windows-subsystem-for-linux/)
+    > Требование включения режима разработчика было [удалено в обновлении Windows 10 для дизайнеров](https://blogs.msdn.microsoft.com/commandline/2017/06/08/developer-mode-no-longer-required-for-windows-subsystem-for-linux/)
 
 1. Откройте командную строку.  Введите `bash` и нажмите клавишу ВВОД
 

@@ -2,18 +2,16 @@
 title: Установка WSL 2
 description: Инструкции по установке WSL 2
 keywords: BashOnWindows, bash, wsl, wsl2, windows, подсистема Windows для Linux, windowssubsystem, ubuntu, debian, suse, windows 10, установка
-author: craigloewen-msft
-ms.author: crloewen
 ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: bced0fd0bf948842b8c465f645aa5c368c2f4335
-ms.sourcegitcommit: ebc6ae7e7546a6d33644e68788fa0215028859b2
+ms.openlocfilehash: af70bf567cd548d0ca84bbe535003052ec49256b
+ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71070301"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71269576"
 ---
 # <a name="installation-instructions-for-wsl-2"></a>Инструкции по установке WSL 2
 

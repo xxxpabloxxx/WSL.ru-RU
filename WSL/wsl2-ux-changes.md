@@ -2,18 +2,16 @@
 title: Изменения UX между WSL 1 и WSL 2
 description: Изменения взаимодействия с пользователем между WSL 1 и WSL 2
 keywords: Башонвиндовс, bash, WSL, wsl2, Windows, подсистема Windows для Linux, виндовссубсистем, Ubuntu, Debian, SUSE, Windows 10
-author: craigloewen-msft
-ms.author: crloewen
 ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: 347c965dbbc2a328590d3a8149a8316979d6793d
-ms.sourcegitcommit: ebc6ae7e7546a6d33644e68788fa0215028859b2
+ms.openlocfilehash: 1af9646b9b5bb845dd60e5bf2312f8d806fca5dc
+ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71070318"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71269883"
 ---
 # <a name="user-experience-changes-between-wsl-1-and-wsl-2"></a>Изменения взаимодействия с пользователем между WSL 1 и WSL 2
 

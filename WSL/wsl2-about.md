@@ -2,18 +2,16 @@
 title: О WSL 2
 description: О WSL 2 Новая архитектура для подсистемы Windows для Linux
 keywords: BashOnWindows, bash, wsl, wsl2, windows, подсистема Windows для Linux, windowssubsystem, ubuntu, debian, suse, windows 10, установка
-author: craigloewen-msft
-ms.author: crloewen
 ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: 983699c26a21af7b81ba31067316ba3bbf1601af
-ms.sourcegitcommit: ed5cf72d5ceb92edd50cf9260ac31fd4d95a02c8
+ms.openlocfilehash: 9ed24b185ad6aef3589b23a114853b6f78b5899f
+ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71020936"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71269830"
 ---
 # <a name="about-wsl-2"></a>О WSL 2
 

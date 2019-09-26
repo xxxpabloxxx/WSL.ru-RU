@@ -2,18 +2,16 @@
 title: Создание пользовательской дистрибутив Linux для WSL
 description: Узнайте, как создать настраиваемый дистрибутив Linux для подсистемы Windows для Linux.
 keywords: Башонвиндовс, bash, WSL, Windows, подсистема Windows, дистрибутив, настраиваемый
-author: taraj
-ms.author: taraj
 ms.date: 03/27/2018
 ms.topic: article
 ms.assetid: a5095219-0c82-4ce5-9a6d-5c2fc00835a3
 ms.custom: seodec18
-ms.openlocfilehash: 4072df5fa81f65fd9a3ff875ab887c03b234bce1
-ms.sourcegitcommit: cd239efc5c7c25ffbe5de25b2438d44181a838a9
+ms.openlocfilehash: 181badd4ee2f69e904099c12b54dfbdf3a37e294
+ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67040773"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71269705"
 ---
 # <a name="creating-a-custom-linux-distro-for-wsl"></a>Создание пользовательской дистрибутив Linux для WSL
 
@@ -33,8 +31,8 @@ ms.locfileid: "67040773"
 ## <a name="for-linux-distro-maintainers"></a>Для дистрибутив обслуживания Linux
 Для отправки в магазин необходимо работать с нами, чтобы получить утверждение публикации. Если вы являетесь владельцем дистрибутива Linux, который заинтересован в добавлении дистрибутива в Microsoft Store, обратитесь wslpartners@microsoft.comпо адресу.
 
-## <a name="getting-started"></a>Начало работы
-Следуйте инструкциям в репозитории [GitHub дистрибутив Launcher](https://github.com/Microsoft/WSL-DistroLauncher) , чтобы создать пользовательский пакет дистрибутив для Linux.
+## <a name="getting-started"></a>начало работы
+Следуйте инструкциям в [репозитории GitHub дистрибутив Launcher](https://github.com/Microsoft/WSL-DistroLauncher) , чтобы создать пользовательский пакет дистрибутив для Linux.
 
  
 ## <a name="team-blogs"></a>Блоги группы
