@@ -1,19 +1,17 @@
 ---
 title: Взаимодействие Windows с Linux
 description: Описывается взаимодействие Windows с дистрибутивами Linux, работающими в подсистеме Windows для Linux.
-author: scooley
-ms.author: scooley
 ms.date: 12/20/2017
 ms.topic: article
 ms.assetid: 3cefe0db-7616-4848-a2b6-9296746a178b
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: 3f3df3337ece75d7af77313f5fc55eb4e18e31cb
-ms.sourcegitcommit: 7af6b7a3f8cfa66cb25115bc26f44aa64ef22811
+ms.openlocfilehash: f8b0150c044f5011b84e80cac4befd752c4dc552
+ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70122735"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71269796"
 ---
 # <a name="windows-subsystem-for-linux-interoperability-with-windows"></a>Подсистема Windows для взаимодействия Linux с Windows
 

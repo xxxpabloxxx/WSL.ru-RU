@@ -2,19 +2,17 @@
 title: Подробнее о подсистеме Windows для Linux
 description: Узнайте больше о том, как работает подсистема Windows для Linux.
 keywords: BashOnWindows, bash, wsl, windows, windowssubsystem, gnu, linux
-author: scooley
-ms.author: scooley
 ms.date: 07/11/2016
 ms.topic: article
 ms.assetid: 3cefe0db-7616-4848-a2b6-9296746a178b
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: 7c8e3b3f7ec13109485d7efa29739dadc8bfacf7
-ms.sourcegitcommit: 7af6b7a3f8cfa66cb25115bc26f44aa64ef22811
+ms.openlocfilehash: 4e63fd186f11545937a4ce0a0fbd6071a4bf268d
+ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70122671"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71269720"
 ---
 # <a name="windows-subsystem-for-linux-documentation"></a>Документация по подсистеме Windows для Linux
 

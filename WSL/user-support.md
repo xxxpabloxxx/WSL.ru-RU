@@ -2,19 +2,17 @@
 title: Учетная запись пользователя Linux и разрешения
 description: Справочные материалы по управлению учетными записями пользователей и разрешениями для подсистемы Windows для Linux.
 keywords: BashOnWindows, bash, wsl, windows, подсистема windows для linux, windowssubsystem, ubuntu, учетные записи пользователей
-author: scooley
-ms.author: scooley
 ms.date: 09/11/2017
 ms.topic: article
 ms.assetid: f70e685f-24c6-4908-9546-bf4f0291d8fd
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: de18c128854ef9a39a26551db2ea0aee97b8ab4f
-ms.sourcegitcommit: 7af6b7a3f8cfa66cb25115bc26f44aa64ef22811
+ms.openlocfilehash: d8434283e459ae25637fac0c0b1877ca07d9a255
+ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70122687"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71269714"
 ---
 # <a name="user-accounts-and-permissions-for-windows-subsystem-for-linux"></a>Учетные записи пользователей и разрешения для подсистемы Windows для Linux
 
