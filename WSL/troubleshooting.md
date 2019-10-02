@@ -2,19 +2,17 @@
 title: Устранение неполадок подсистемы Windows для Linux
 description: Содержит подробные сведения о распространенных ошибках и проблемах, с которыми сталкиваются пользователи при выполнении Linux в подсистеме Windows для Linux.
 keywords: BashOnWindows, bash, wsl, windows, windowssubsystem, ubuntu
-author: scooley
-ms.author: scooley
 ms.date: 11/15/2017
 ms.topic: article
 ms.assetid: 6753f1b2-200e-49cc-93a5-4323e1117246
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: a73de13853c124de38cae1b9c6c51d0ee9978d44
-ms.sourcegitcommit: f1780bf174c67c531864497ae78cf3f26ef68503
+ms.openlocfilehash: 7b7938e7a6a636b012f4b84a8c93d5dfc0a4a4cf
+ms.sourcegitcommit: aef7bb1e851089b3311d497a3be0da79558feb4e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71205976"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71279252"
 ---
 # <a name="troubleshooting-windows-subsystem-for-linux"></a>Устранение неполадок подсистемы Windows для Linux
 
@@ -182,9 +180,16 @@ Get-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linu
    Could not load host key: /etc/ssh/ssh_host_ed25519_key
    ```
 
-Если вы видите такие сообщения и в разделе `/etc/ssh/` отсутствуют ключи, потребуется повторно создать ключи или просто очистить и установить сервер OpenSSH.
+Если вы видите такие сообщения и в разделе `/etc/ssh/` отсутствуют ключи, потребуется повторно создать ключи или просто очистить и установить сервер OpenSSH:
 ```BASH
 sudo apt-get purge openssh-server
 sudo apt-get install openssh-server
 ```
 
+### <a name="the-referenced-assembly-could-not-be-found-when-enabling-the-wsl-optional-feature"></a>"Указанная сборка не найдена". Это сообщение может появиться при включении дополнительного компонента WSL.
+
+Данная ошибка связана с неправильным состоянием установки. Чтобы устранить эту проблему, выполните следующие действия.
+
+* Если вы используете команду включения компонента WSL в PowerShell, попробуйте использовать графический пользовательский интерфейс. Для этого откройте меню "Пуск", выполните поиск фразы "Включение или отключение компонентов Windows", а затем из списка выберите "Подсистема Windows для Linux". Этот дополнительный компонент будет установлен.
+* Обновите версию Windows, выбрав "Параметры" > "Обновления" и щелкнув "Проверить наличие обновлений".
+* Если оба способа не помогли и вам нужно использовать WSL, рассмотрите возможность обновления на месте, переустановив Windows 10 с установочного носителя и выбрав параметр "Сохранить все", чтобы сохранить свои приложения и файлы. Инструкции по такой установке можно найти на странице [Переустановка Windows 10](https://support.microsoft.com/en-us/help/4000735/windows-10-reinstall).
