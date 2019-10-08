@@ -8,19 +8,36 @@ ms.topic: article
 ms.assetid: 36ea641e-4d49-4881-84eb-a9ca85b1cdf4
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: 0dcf4519877fac5b838d4542dfd088cb6d233353
-ms.sourcegitcommit: 0fa3b02b36dc49779e165e689dfded4f3b727124
+ms.openlocfilehash: b92c20bad50d0c58da05bb0c8f26a69d4c0b2970
+ms.sourcegitcommit: 050f6095e92469b903db8ddf9356df5b22b21804
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71249187"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71910299"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Заметки о выпуске подсистемы Windows для Linux
+
+## <a name="build-18995"></a>Сборка 18995
+Общие сведения о сборке Windows 18995 доступны в [блоге о Windows](https://blogs.windows.com/windowsexperience/2019/10/03/announcing-windows-10-insider-preview-build-18995/).
+
+* [WSL2] Устранена проблема, из-за которой подключения DrvFs прекращали работать после прерывания операции (например, нажатия клавиш CTRL+C) [GH 4377].
+* [WSL2] Исправлена обработка очень больших сообщений hvsocket [GH 4105].
+* [WSL2] Устранена проблема с взаимодействием, возникавшая, если в качестве stdin использовался файл [GH 4475].
+* [WSL2] Устранено аварийное завершение службы при обнаружении непредвиденного состояния сети [GH 4474].
+* [WSL2] Запрос имени дистрибутива с сервера взаимодействия, если текущий процесс не имеет переменной среды.
+* [WSL2] Устранена проблема с взаимодействием, возникавшая, если в качестве stdin использовался файл.
+* [WSL2] Ядро Linux обновлено до версии 4.19.72.
+* [WSL2] Добавлена возможность указать дополнительные параметры командной строки ядра с помощью wslconfig.
+```
+[wsl2]
+kernelCommandLine = <string> # Additional kernel command line arguments
+
+```
 
 ## <a name="build-18990"></a>Сборка 18990
 Общие сведения о сборке Windows 18990 доступны в [блоге о Windows](https://blogs.windows.com/windowsexperience/2019/09/24/announcing-windows-10-insider-preview-build-18990/).
 
-* Ускорен вывод списка каталогов в \\wsl$.
+* Ускорен вывод списка каталогов в \\\\wsl$.
 * [WSL2] Внедрена дополнительная энтропия загрузки [GH 4416].
 * [WSL2] Исправлено взаимодействие с Windows при использовании su или sudo [GH 4465].
 
@@ -38,7 +55,7 @@ ms.locfileid: "71249187"
 * Добавлена возможность задать имя пользователя по умолчанию в /etc/wsl.conf:
 ```
 [user]
-default=root
+default=<string>
 ```
 
 ## <a name="build-18975"></a>Сборка 18975
@@ -120,7 +137,7 @@ localhostForwarding=<bool> # Boolean specifying if ports bound to wildcard or lo
 * Взаимоблокировка в коде epoll delete [GH 3922].
 * Обработка пробелов в аргументах параметров --import и --export [GH 3932].
 * Расширение файлов, обработанных mmap, не работает должным образом [GH 3939].
-* Устранена проблема с доступом ARM64 к \\wsl$.
+* Устранена проблема с доступом ARM64 к \\\\wsl$.
 * Улучшен значок по умолчанию для wsl.exe.
 
 ## <a name="build-18342"></a>Сборка 18342
@@ -1770,7 +1787,7 @@ wslconfig.exe /terminate <DistributionName>
 - Обновлен начальный размер стека потока в соответствии с параметром Ubuntu по умолчанию. Теперь при системном вызове get_rlimit размер отображается правильно (GH 172, 258).
 - Улучшено отображение имен образов процессов Pico (например, для аудита).
 - Реализован файл /proc/mountinfo для команды df.
-- Исправлен код ошибки символической ссылки для дочернего имени.  
+- Исправлен код ошибки символической ссылки для дочернего имени. И еще:
 - Дополнительные улучшения исправлений ошибок и усовершенствования.
 
 ### <a name="syscall-support"></a>Поддержка системных вызовов
