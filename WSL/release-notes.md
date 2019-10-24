@@ -8,14 +8,21 @@ ms.topic: article
 ms.assetid: 36ea641e-4d49-4881-84eb-a9ca85b1cdf4
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: b92c20bad50d0c58da05bb0c8f26a69d4c0b2970
-ms.sourcegitcommit: 050f6095e92469b903db8ddf9356df5b22b21804
+ms.openlocfilehash: dbc041c98081563d4f77b9fc186698fad8299c0d
+ms.sourcegitcommit: 4beb93f80749ab4c8c6f0e6920ab7f809567e243
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71910299"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549579"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Заметки о выпуске подсистемы Windows для Linux
+
+## <a name="build-19002"></a>Сборка 19002
+Общие сведения о сборке Windows 19002 доступны в [блоге о Windows](https://blogs.windows.com/windowsexperience/2019/10/17/announcing-windows-10-insider-preview-build-19002/).
+
+* [WSL] Устранена проблема с обработкой некоторых знаков Юникода: https://github.com/microsoft/terminal/issues/2770
+* [WSL] Исправлена редко возникавшая проблема, приводившая к отмене регистрации дистрибутива, если он запускался сразу после обновления сборки новой сборкой.
+* [WSL] Устранена незначительная проблема с wsl.exe --shutdown, из-за которой таймеры бездействия экземпляра не отменялись.
 
 ## <a name="build-18995"></a>Сборка 18995
 Общие сведения о сборке Windows 18995 доступны в [блоге о Windows](https://blogs.windows.com/windowsexperience/2019/10/03/announcing-windows-10-insider-preview-build-18995/).
@@ -40,7 +47,6 @@ kernelCommandLine = <string> # Additional kernel command line arguments
 * Ускорен вывод списка каталогов в \\\\wsl$.
 * [WSL2] Внедрена дополнительная энтропия загрузки [GH 4416].
 * [WSL2] Исправлено взаимодействие с Windows при использовании su или sudo [GH 4465].
-
 
 ## <a name="build-18980"></a>Сборка 18980
 Общие сведения о сборке Windows 18980 доступны в [блоге о Windows](https://blogs.windows.com/windowsexperience/2019/09/11/announcing-windows-10-insider-preview-build-18980/).
