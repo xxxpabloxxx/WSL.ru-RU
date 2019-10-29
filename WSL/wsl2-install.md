@@ -6,12 +6,12 @@ ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: 386b6793f00300bc9dabd1613cfd69b19d222f0b
-ms.sourcegitcommit: eb7b572388c6bddbf6e8ad8d01927660fe66aecf
+ms.openlocfilehash: d4ce22fda7baea77c0a8d3d7101d0ab09b78e8f8
+ms.sourcegitcommit: d110e2bbcd92438781453137ba0ab747cddb28e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71692465"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72998250"
 ---
 # <a name="installation-instructions-for-wsl-2"></a>Инструкции по установке WSL 2
 
@@ -21,9 +21,9 @@ ms.locfileid: "71692465"
 
 - Убедитесь, что установлен WSL (вы можете найти инструкции [здесь](./install-win10.md)) и вы используете Windows 10 **Build 18917** или более поздней версии.
    - Чтобы убедиться, что вы используете сборку 18917 или более позднюю версию, присоединитесь к [программе предварительной оценки Windows](https://insider.windows.com/en-us/) и выберите Быстрый звонок. 
-   - Вы можете проверить версию Windows, открыв командную строку и выполнив `ver` команду.
+   - Вы можете проверить версию Windows, открыв командную строку и выполнив команду `ver`.
 - Включение необязательного компонента "Virtual Machine Platform" (Платформа виртуальной машины)
-- с помощью командной строки задайте поддержку дистрибутива в WSL 2;
+- Настройка поддержки дистрибутива в WSL 2 с помощью командной строки
 - проверьте, какие версии WSL используют ваши дистрибутивы.
 
 ## <a name="enable-the-virtual-machine-platform-optional-component-and-make-sure-wsl-is-enabled"></a>Включите дополнительный компонент "платформа виртуальной машины" и убедитесь, что WSL включен.
@@ -68,3 +68,6 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
    
 * **При попытке обновления возникает ошибка `Invalid command line option: wsl --set-version Ubuntu 2`.**
     * Убедитесь, что у вас включена подсистема Windows для Linux и используется сборка Windows 10 18917 или более поздней версии. Чтобы включить WSL, выполните эту команду в командной строке PowerShell с правами администратора: `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`. Полную инструкцию по установке WSL см. [здесь](./install-win10.md).
+
+* **Не удалось завершить запрошенную операцию из-за ограничения системы виртуальных дисков. Файлы виртуального жесткого диска должны быть несжатыми и незашифрованными и не должны быть разреженными.**
+    * Проверьте [#4103 потока GitHub WSL](https://github.com/microsoft/WSL/issues/4103) , где эта проблема отслеживается для получения обновленной информации.
