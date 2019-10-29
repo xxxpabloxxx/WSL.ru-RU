@@ -7,12 +7,12 @@ ms.topic: article
 ms.assetid: 6753f1b2-200e-49cc-93a5-4323e1117246
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: 7b7938e7a6a636b012f4b84a8c93d5dfc0a4a4cf
-ms.sourcegitcommit: aef7bb1e851089b3311d497a3be0da79558feb4e
+ms.openlocfilehash: 24a899df78e705630c6cb95f8719594aec340c5c
+ms.sourcegitcommit: 600853005bd2b42d6e47bf36ebed4b868ff2af26
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71279252"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72987517"
 ---
 # <a name="troubleshooting-windows-subsystem-for-linux"></a>Устранение неполадок подсистемы Windows для Linux
 
@@ -124,7 +124,7 @@ sudo update-locale LANG=en_US.UTF8
 Если при работе с Bash вы обнаружите, что Bash перестал отвечать на запросы (или взаимозаблокирован), помогите нам диагностировать проблему путем сбора и передачи дампа памяти. Обратите внимание на то, что выполнение этих действий приведет к сбою системы. Не делайте этого, если вас это не устраивает, либо предварительно сохраните результаты своей работы.  <br/>
 Вот как можно собрать дамп памяти.
 1. Измените тип дампа памяти на "Полный дамп памяти". При изменении типа дампа запишите текущий тип.
-2. Выполните [эти действия](https://blogs.technet.microsoft.com/askpfeplat/2015/04/05/how-to-force-a-diagnostic-memory-dump-when-a-computer-hangs/), чтобы настроить аварийное завершение с помощью клавиатуры.
+2. Выполните [эти действия](https://techcommunity.microsoft.com/t5/Core-Infrastructure-and-Security/How-to-Force-a-Diagnostic-Memory-Dump-When-a-Computer-Hangs/ba-p/257809), чтобы настроить аварийное завершение с помощью клавиатуры.
 3. Воспроизведите взаимоблокировку или прекращение ответа на запросы.
 4. Выполните аварийное завершение системы с помощью последовательности клавиш из пункта 2.
 5. Произойдет аварийное завершение системы и будет собран дамп памяти.
@@ -180,7 +180,7 @@ Get-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linu
    Could not load host key: /etc/ssh/ssh_host_ed25519_key
    ```
 
-Если вы видите такие сообщения и в разделе `/etc/ssh/` отсутствуют ключи, потребуется повторно создать ключи или просто очистить и установить сервер OpenSSH:
+Если вы видите такие сообщения и в разделе `/etc/ssh/` отсутствуют ключи, потребуется повторно создать ключи или просто очистить и установить сервер OpenSSH.
 ```BASH
 sudo apt-get purge openssh-server
 sudo apt-get install openssh-server
