@@ -6,12 +6,12 @@ ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: e3593aaf0e1c176cbeec2d3ba7d8eca1ede6b1ec
-ms.sourcegitcommit: d74fab7469f4e589ab0bf4418be575381a3f72a0
+ms.openlocfilehash: 91994f3a075436c022acb9dadeea072142687b72
+ms.sourcegitcommit: cf6d8e277ed3102f8f879b9f39ba0966d4ea6135
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240371"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164345"
 ---
 # <a name="installation-instructions-for-wsl-2"></a>Инструкции по установке WSL 2
 
@@ -28,16 +28,24 @@ ms.locfileid: "73240371"
 
 ## <a name="enable-the-virtual-machine-platform-optional-component-and-make-sure-wsl-is-enabled"></a>Включите дополнительный компонент "платформа виртуальной машины" и убедитесь, что WSL включен.
 
-Запустите PowerShell с правами администратора и выполните такую команду:
+Чтобы включить компонент "платформа виртуальных машин", откройте PowerShell с правами администратора и выполните следующую команду. Если вы устанавливаете WSL в первый раз, выберите "нет" при появлении запроса на перезапуск, так как после установки дополнительного компонента "подсистема Windows для Linux" потребуется перезагрузка компьютера.
 
 ```powershell
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
 ```
 
-Это обеспечит установку дополнительных компонентов платформы виртуальной машины и подсистемы Windows для Linux. После выполнения этих команд потребуется перезагрузить компьютер. 
+Кроме того, необходимо убедиться, что дополнительный компонент подсистемы Windows для Linux включен. Это можно сделать, выполнив следующую команду в окне PowerShell с правами администратора: 
+
+```powershell
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+```
+
+Перезагрузите компьютер, чтобы завершить установку обоих компонентов.
+
 
 ## <a name="set-a-distro-to-be-backed-by-wsl-2-using-the-command-line"></a>Настройка поддержки дистрибутива в WSL 2 с помощью командной строки
+
+Если у вас нет дистрибутив Linux, ознакомьтесь с инструкциями по установке на странице документации по [установке на Windows 10](./install-win10.md#install-your-linux-distribution-of-choice) . 
 
 В PowerShell выполните такую команду:
 
