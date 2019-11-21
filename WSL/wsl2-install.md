@@ -6,12 +6,12 @@ ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: 91994f3a075436c022acb9dadeea072142687b72
-ms.sourcegitcommit: cf6d8e277ed3102f8f879b9f39ba0966d4ea6135
+ms.openlocfilehash: 8af5ffeffdeedc5298af8125cea5c7428c8f29f8
+ms.sourcegitcommit: 3c9ebe5f9ef5fb64070e21b479c2f2d31243f310
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164345"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74248764"
 ---
 # <a name="installation-instructions-for-wsl-2"></a>Инструкции по установке WSL 2
 
@@ -22,40 +22,39 @@ ms.locfileid: "74164345"
 - Убедитесь, что установлен WSL (вы можете найти инструкции [здесь](./install-win10.md)) и вы используете Windows 10 **Build 18917** или более поздней версии.
    - Чтобы убедиться, что вы используете сборку 18917 или более позднюю версию, присоединитесь к [программе предварительной оценки Windows](https://insider.windows.com/en-us/) и выберите Быстрый звонок. 
    - Вы можете проверить версию Windows, открыв командную строку и выполнив команду `ver`.
-- Включение необязательного компонента "Virtual Machine Platform" (Платформа виртуальной машины)
-- Настройка поддержки дистрибутива в WSL 2 с помощью командной строки
+- включите необязательный компонент "Virtual Machine Platform" (Платформа виртуальной машины);
+- с помощью командной строки задайте поддержку дистрибутива в WSL 2;
 - проверьте, какие версии WSL используют ваши дистрибутивы.
 
 ## <a name="enable-the-virtual-machine-platform-optional-component-and-make-sure-wsl-is-enabled"></a>Включите дополнительный компонент "платформа виртуальной машины" и убедитесь, что WSL включен.
 
-Чтобы включить компонент "платформа виртуальных машин", откройте PowerShell с правами администратора и выполните следующую команду. Если вы устанавливаете WSL в первый раз, выберите "нет" при появлении запроса на перезапуск, так как после установки дополнительного компонента "подсистема Windows для Linux" потребуется перезагрузка компьютера.
+Необходимо убедиться в том, что установлены как подсистемы Windows для Linux, так и дополнительные компоненты платформы виртуальных машин. Это можно сделать, выполнив следующую команду в PowerShell: 
 
 ```powershell
-Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
-```
-
-Кроме того, необходимо убедиться, что дополнительный компонент подсистемы Windows для Linux включен. Это можно сделать, выполнив следующую команду в окне PowerShell с правами администратора: 
-
-```powershell
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
 Перезагрузите компьютер, чтобы завершить установку обоих компонентов.
 
 
-## <a name="set-a-distro-to-be-backed-by-wsl-2-using-the-command-line"></a>Настройка поддержки дистрибутива в WSL 2 с помощью командной строки
+## <a name="set-a-distro-to-be-backed-by-wsl-2-using-the-command-line"></a>с помощью командной строки задайте поддержку дистрибутива в WSL 2;
 
 Если у вас нет дистрибутив Linux, ознакомьтесь с инструкциями по установке на странице документации по [установке на Windows 10](./install-win10.md#install-your-linux-distribution-of-choice) . 
 
-В PowerShell выполните такую команду:
+Чтобы задать дистрибутив, выполните команду: 
 
-`wsl --set-version <Distro> 2`
+```
+wsl --set-version <Distro> 2
+```
 
 Замените `<Distro>` фактическим именем дистрибутива (узнать имя можно с помощью команды `wsl -l`). Вы можете всегда вернуться к WSL версии 1, выполнив эту команду и заменив "2" на "1".
 
 Кроме того, если вы хотите сделать WSL 2 архитектурой по умолчанию, выполните следующую команду:
 
-`wsl --set-default-version 2`
+```
+wsl --set-default-version 2`
+```
 
 Впоследствии все новые дистрибутивы после установки будут инициализированы как дистрибутивы WSL 2.
 
@@ -79,3 +78,6 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 
 * **Не удалось завершить запрошенную операцию из-за ограничения системы виртуальных дисков. Файлы виртуального жесткого диска должны быть несжатыми и незашифрованными и не должны быть разреженными.**
     * Проверьте [#4103 потока GitHub WSL](https://github.com/microsoft/WSL/issues/4103) , где эта проблема отслеживается для получения обновленной информации.
+
+* **Термин "WSL" не распознан как имя командлета, функции, файла скрипта или исполняемой программы.** 
+    * Убедитесь, что [установлен дополнительный компонент подсистемы Windows для Linux](./wsl2-install.md#enable-the-virtual-machine-platform-optional-component-and-make-sure-wsl-is-enabled).<br> Кроме того, если вы используете устройство Arm64 и выполняете эту команду из PowerShell, вы получите эту ошибку. Вместо этого запустите `wsl.exe` из [PowerShell Core](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-6)или командной строки. 
