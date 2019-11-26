@@ -17,32 +17,32 @@ ms.locfileid: "74309049"
 
 Чтобы установить подсистему WSL 2 и начать с ней работу, выполните следующие действия:
 
-> WSL 2 is only available in Windows 10 builds 18917 or higher
+> WSL 2 доступен только в сборках Windows 10 18917 или более поздней версии.
 
-- Ensure that you have WSL installed (you can find instructions to do so [here](./install-win10.md)) and that you are running Windows 10 **build 18917** or higher
-   - To make sure you are using build 18917 or higher please join [the Windows Insider Program](https://insider.windows.com/en-us/) and select the 'Fast' ring. 
-   - You can check your Windows version by opening Command Prompt and running the `ver` command.
-- Включение необязательного компонента "Virtual Machine Platform" (Платформа виртуальной машины)
-- Настройка поддержки дистрибутива в WSL 2 с помощью командной строки
+- Убедитесь, что установлен WSL (вы можете найти инструкции [здесь](./install-win10.md)) и вы используете Windows 10 **Build 18917** или более поздней версии.
+   - Чтобы убедиться, что вы используете сборку 18917 или более позднюю версию, присоединитесь к [программе предварительной оценки Windows](https://insider.windows.com/en-us/) и выберите Быстрый звонок. 
+   - Вы можете проверить версию Windows, открыв командную строку и выполнив команду `ver`.
+- включите необязательный компонент "Virtual Machine Platform" (Платформа виртуальной машины);
+- с помощью командной строки задайте поддержку дистрибутива в WSL 2;
 - проверьте, какие версии WSL используют ваши дистрибутивы.
 
-## <a name="enable-the-virtual-machine-platform-optional-component-and-make-sure-wsl-is-enabled"></a>Enable the 'Virtual Machine Platform' optional component and make sure WSL is enabled
+## <a name="enable-the-virtual-machine-platform-optional-component-and-make-sure-wsl-is-enabled"></a>Включите дополнительный компонент "платформа виртуальной машины" и убедитесь, что WSL включен.
 
-You will need to make sure that you have both the Windows Subsystem for Linux and the Virtual Machine Platform optional components installed. You can do that by running the following command in PowerShell: 
+Необходимо убедиться в том, что установлены как подсистемы Windows для Linux, так и дополнительные компоненты платформы виртуальных машин. Это можно сделать, выполнив следующую команду в PowerShell: 
 
 ```powershell
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-Please restart your machine to finish installing both components.
+Перезагрузите компьютер, чтобы завершить установку обоих компонентов.
 
 
-## <a name="set-a-distro-to-be-backed-by-wsl-2-using-the-command-line"></a>Настройка поддержки дистрибутива в WSL 2 с помощью командной строки
+## <a name="set-a-distro-to-be-backed-by-wsl-2-using-the-command-line"></a>с помощью командной строки задайте поддержку дистрибутива в WSL 2;
 
-If you do not have a Linux distro installed, please refer to the [Install on Windows 10](./install-win10.md#install-your-linux-distribution-of-choice) docs page for instructions on installing one. 
+Если у вас нет дистрибутив Linux, ознакомьтесь с инструкциями по установке на странице документации по [установке на Windows 10](./install-win10.md#install-your-linux-distribution-of-choice) . 
 
-To set a distro please run: 
+Чтобы задать дистрибутив, выполните команду: 
 
 ```
 wsl --set-version <Distro> 2
@@ -60,7 +60,7 @@ wsl --set-default-version 2
 
 ## <a name="finish-with-verifying-what-versions-of-wsl-your-distro-are-using"></a>Проверка используемой дистрибутивом версии WSL
 
-To verify what versions of WSL each distro is using use the following command (only available in Windows Build 18917 or higher):
+Чтобы проверить, какая версия WSL используется для каждого дистрибутив, используйте следующую команду (доступно только в Windows Build 18917 или более поздней версии):
 
 `wsl --list --verbose` или `wsl -l -v`
 
@@ -76,8 +76,8 @@ To verify what versions of WSL each distro is using use the following command (o
 * **При попытке обновления возникает ошибка `Invalid command line option: wsl --set-version Ubuntu 2`.**
     * Убедитесь, что у вас включена подсистема Windows для Linux и используется сборка Windows 10 18917 или более поздней версии. Чтобы включить WSL, выполните эту команду в командной строке PowerShell с правами администратора: `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`. Полную инструкцию по установке WSL см. [здесь](./install-win10.md).
 
-* **The requested operation could not be completed due to a virtual disk system limitation. Virtual hard disk files must be uncompressed and unencrypted and must not be sparse.**
-    * Please check [WSL Github thread #4103](https://github.com/microsoft/WSL/issues/4103) where this issue is being tracked for updated information.
+* **Не удалось завершить запрошенную операцию из-за ограничения системы виртуальных дисков. Файлы виртуального жесткого диска должны быть несжатыми и незашифрованными и не должны быть разреженными.**
+    * Проверьте [#4103 потока GitHub WSL](https://github.com/microsoft/WSL/issues/4103) , где эта проблема отслеживается для получения обновленной информации.
 
-* **The term 'wsl' is not recognized as the name of a cmdlet, function, script file, or operable program.** 
-    * Ensure that the [Windows Subsystem for Linux Optional Component is installed](./wsl2-install.md#enable-the-virtual-machine-platform-optional-component-and-make-sure-wsl-is-enabled).<br> Additionally, if you are using an Arm64 device and running this command from PowerShell, you will receive this error. Instead run `wsl.exe` from [PowerShell Core](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-6), or Command Prompt. 
+* **Термин "WSL" не распознан как имя командлета, функции, файла скрипта или исполняемой программы.** 
+    * Убедитесь, что [установлен дополнительный компонент подсистемы Windows для Linux](./wsl2-install.md#enable-the-virtual-machine-platform-optional-component-and-make-sure-wsl-is-enabled).<br> Кроме того, если вы используете устройство Arm64 и выполняете эту команду из PowerShell, вы получите эту ошибку. Вместо этого запустите `wsl.exe` из [PowerShell Core](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-6)или командной строки. 
