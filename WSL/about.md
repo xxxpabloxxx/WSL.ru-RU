@@ -7,45 +7,45 @@ ms.topic: article
 ms.assetid: 3cefe0db-7616-4848-a2b6-9296746a178b
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: 4e63fd186f11545937a4ce0a0fbd6071a4bf268d
-ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
+ms.openlocfilehash: fbb1ce5cf5d5c83e25d0a6a0cece7b70537a44a1
+ms.sourcegitcommit: 3be576f946611cf36e27745bdb7c4c52af1b9928
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71269720"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74200193"
 ---
-# <a name="windows-subsystem-for-linux-documentation"></a><span data-ttu-id="96fe5-104">Документация по подсистеме Windows для Linux</span><span class="sxs-lookup"><span data-stu-id="96fe5-104">Windows Subsystem for Linux Documentation</span></span>
+# <a name="windows-subsystem-for-linux-documentation"></a><span data-ttu-id="c75f3-104">Документация по подсистеме Windows для Linux</span><span class="sxs-lookup"><span data-stu-id="c75f3-104">Windows Subsystem for Linux Documentation</span></span>
 
-<span data-ttu-id="96fe5-105">Подсистема Windows для Linux позволяет разработчикам запускать среду GNU/Linux, включая большинство программ командной строки, служебных программ и приложений, непосредственно в Windows без каких-либо изменений, избавляя от необходимости использовать отдельную виртуальную машину.</span><span class="sxs-lookup"><span data-stu-id="96fe5-105">The Windows Subsystem for Linux lets developers run a GNU/Linux environment -- including most command-line tools, utilities, and applications -- directly on Windows, unmodified, without the overhead of a virtual machine.</span></span>  
+<span data-ttu-id="c75f3-105">Подсистема Windows для Linux позволяет разработчикам запускать среду GNU/Linux, включая большинство программ командной строки, служебных программ и приложений, непосредственно в Windows без каких-либо изменений, избавляя от необходимости использовать отдельную виртуальную машину.</span><span class="sxs-lookup"><span data-stu-id="c75f3-105">The Windows Subsystem for Linux lets developers run a GNU/Linux environment -- including most command-line tools, utilities, and applications -- directly on Windows, unmodified, without the overhead of a virtual machine.</span></span>  
 
-<span data-ttu-id="96fe5-106">Можно сделать следующее.</span><span class="sxs-lookup"><span data-stu-id="96fe5-106">You can:</span></span>
+<span data-ttu-id="c75f3-106">Можно сделать следующее.</span><span class="sxs-lookup"><span data-stu-id="c75f3-106">You can:</span></span>
 
-1. <span data-ttu-id="96fe5-107">Выберите предпочтительные дистрибутивы GNU/Linux [из Microsoft Store](https://aka.ms/wslstore).</span><span class="sxs-lookup"><span data-stu-id="96fe5-107">Choose your favorite GNU/Linux distributions [from the Microsoft Store](https://aka.ms/wslstore).</span></span>
-1. <span data-ttu-id="96fe5-108">Запускайте бесплатные программы командной строки, например `grep`, `sed`, `awk`, или другие двоичные файлы ELF-64.</span><span class="sxs-lookup"><span data-stu-id="96fe5-108">Run common command-line free software such as `grep`, `sed`, `awk`, or other ELF-64 binaries.</span></span> 
-1. <span data-ttu-id="96fe5-109">Запускайте сценарии Bash Shell и приложения командной строки GNU/Linux, включая:</span><span class="sxs-lookup"><span data-stu-id="96fe5-109">Run Bash shell scripts and GNU/Linux command-line applications including:</span></span>  
-    * <span data-ttu-id="96fe5-110">инструменты: vim, emacs, tmux;</span><span class="sxs-lookup"><span data-stu-id="96fe5-110">Tools: vim, emacs, tmux</span></span>
-    * <span data-ttu-id="96fe5-111">языки: JavaScript/Node.js, Ruby, Python, C/C++, C# и F#, Rust, Go и т. д.;</span><span class="sxs-lookup"><span data-stu-id="96fe5-111">Languages: Javascript/node.js, Ruby, Python, C/C++, C# & F#, Rust, Go, etc.</span></span>
-    * <span data-ttu-id="96fe5-112">службы: sshd, MySQL, Apache, lighttpd.</span><span class="sxs-lookup"><span data-stu-id="96fe5-112">Services: sshd, MySQL, Apache, lighttpd</span></span>
-1. <span data-ttu-id="96fe5-113">Установите дополнительное программное обеспечение с помощью собственного диспетчера пакетов дистрибутивов GNU/Linux.</span><span class="sxs-lookup"><span data-stu-id="96fe5-113">Install additional software using own GNU/Linux distribution package manager.</span></span>
-1. <span data-ttu-id="96fe5-114">Вызывайте приложения Windows с помощью оболочки командной строки, похожей на UNIX.</span><span class="sxs-lookup"><span data-stu-id="96fe5-114">Invoke Windows applications using a Unix-like command-line shell.</span></span>
-1. <span data-ttu-id="96fe5-115">Вызывайте приложения GNU/Linux в Windows.</span><span class="sxs-lookup"><span data-stu-id="96fe5-115">Invoke GNU/Linux applications on Windows.</span></span>
+1. <span data-ttu-id="c75f3-107">Выберите предпочтительные дистрибутивы GNU/Linux [из Microsoft Store](https://aka.ms/wslstore).</span><span class="sxs-lookup"><span data-stu-id="c75f3-107">Choose your favorite GNU/Linux distributions [from the Microsoft Store](https://aka.ms/wslstore).</span></span>
+1. <span data-ttu-id="c75f3-108">Запускайте бесплатные программы командной строки, например `grep`, `sed`, `awk`, или другие двоичные файлы ELF-64.</span><span class="sxs-lookup"><span data-stu-id="c75f3-108">Run common command-line free software such as `grep`, `sed`, `awk`, or other ELF-64 binaries.</span></span> 
+1. <span data-ttu-id="c75f3-109">Запускайте сценарии Bash Shell и приложения командной строки GNU/Linux, включая:</span><span class="sxs-lookup"><span data-stu-id="c75f3-109">Run Bash shell scripts and GNU/Linux command-line applications including:</span></span>  
+    * <span data-ttu-id="c75f3-110">инструменты: vim, emacs, tmux;</span><span class="sxs-lookup"><span data-stu-id="c75f3-110">Tools: vim, emacs, tmux</span></span>
+    * <span data-ttu-id="c75f3-111">языки: JavaScript/Node.js, Ruby, Python, C/C++, C# и F#, Rust, Go и т. д.;</span><span class="sxs-lookup"><span data-stu-id="c75f3-111">Languages: Javascript/node.js, Ruby, Python, C/C++, C# & F#, Rust, Go, etc.</span></span>
+    * <span data-ttu-id="c75f3-112">службы: sshd, MySQL, Apache, lighttpd.</span><span class="sxs-lookup"><span data-stu-id="c75f3-112">Services: sshd, MySQL, Apache, lighttpd</span></span>
+1. <span data-ttu-id="c75f3-113">Установите дополнительное программное обеспечение с помощью собственного диспетчера пакетов дистрибутивов GNU/Linux.</span><span class="sxs-lookup"><span data-stu-id="c75f3-113">Install additional software using own GNU/Linux distribution package manager.</span></span>
+1. <span data-ttu-id="c75f3-114">Вызывайте приложения Windows с помощью оболочки командной строки, похожей на UNIX.</span><span class="sxs-lookup"><span data-stu-id="c75f3-114">Invoke Windows applications using a Unix-like command-line shell.</span></span>
+1. <span data-ttu-id="c75f3-115">Вызывайте приложения GNU/Linux в Windows.</span><span class="sxs-lookup"><span data-stu-id="c75f3-115">Invoke GNU/Linux applications on Windows.</span></span>
 
-## <a name="getting-started"></a><span data-ttu-id="96fe5-116">начало работы</span><span class="sxs-lookup"><span data-stu-id="96fe5-116">Getting Started</span></span>
+## <a name="getting-started"></a><span data-ttu-id="c75f3-116">начало работы</span><span class="sxs-lookup"><span data-stu-id="c75f3-116">Getting Started</span></span>
 
-* [<span data-ttu-id="96fe5-117">Установка Linux в Windows 10</span><span class="sxs-lookup"><span data-stu-id="96fe5-117">Install Linux on Windows 10</span></span>](install-win10.md)
-* [<span data-ttu-id="96fe5-118">Справочные материалы по командам</span><span class="sxs-lookup"><span data-stu-id="96fe5-118">Visit the command reference</span></span>](reference.md)
-* [<span data-ttu-id="96fe5-119">Часто задаваемые вопросы</span><span class="sxs-lookup"><span data-stu-id="96fe5-119">Read frequently asked questions</span></span>](faq.md)
+* [<span data-ttu-id="c75f3-117">Установка Linux в Windows 10</span><span class="sxs-lookup"><span data-stu-id="c75f3-117">Install Linux on Windows 10</span></span>](install-win10.md)
+* [<span data-ttu-id="c75f3-118">Справочные материалы по командам</span><span class="sxs-lookup"><span data-stu-id="c75f3-118">Visit the command reference</span></span>](reference.md)
+* [<span data-ttu-id="c75f3-119">Часто задаваемые вопросы</span><span class="sxs-lookup"><span data-stu-id="c75f3-119">Read frequently asked questions</span></span>](faq.md)
 
-## <a name="team-blogs"></a><span data-ttu-id="96fe5-120">Блоги группы</span><span class="sxs-lookup"><span data-stu-id="96fe5-120">Team Blogs</span></span>
-*  [<span data-ttu-id="96fe5-121">Обзор записи с коллекцией видео и блогов</span><span class="sxs-lookup"><span data-stu-id="96fe5-121">Overview post with a collection of videos and blogs</span></span>](https://blogs.msdn.microsoft.com/commandline/learn-about-windows-console-and-windows-subsystem-for-linux-wsl/)
-* <span data-ttu-id="96fe5-122">[Блог по командной строке](https://blogs.msdn.microsoft.com/commandline/) (активный)</span><span class="sxs-lookup"><span data-stu-id="96fe5-122">[Command-Line blog](https://blogs.msdn.microsoft.com/commandline/) (Active)</span></span>
-* <span data-ttu-id="96fe5-123">[Блог о подсистеме Windows для Linux](https://blogs.msdn.microsoft.com/wsl/) (хронологический)</span><span class="sxs-lookup"><span data-stu-id="96fe5-123">[Windows Subsystem for Linux Blog](https://blogs.msdn.microsoft.com/wsl/) (Historical)</span></span>
+## <a name="team-blogs"></a><span data-ttu-id="c75f3-120">Блоги группы</span><span class="sxs-lookup"><span data-stu-id="c75f3-120">Team Blogs</span></span>
+*  [<span data-ttu-id="c75f3-121">Обзор записи с коллекцией видео и блогов</span><span class="sxs-lookup"><span data-stu-id="c75f3-121">Overview post with a collection of videos and blogs</span></span>](https://blogs.msdn.microsoft.com/commandline/learn-about-windows-console-and-windows-subsystem-for-linux-wsl/)
+* <span data-ttu-id="c75f3-122">[Блог по командной строке](https://blogs.msdn.microsoft.com/commandline/) (активный)</span><span class="sxs-lookup"><span data-stu-id="c75f3-122">[Command-Line blog](https://blogs.msdn.microsoft.com/commandline/) (Active)</span></span>
+* <span data-ttu-id="c75f3-123">[Блог о подсистеме Windows для Linux](https://blogs.msdn.microsoft.com/wsl/) (хронологический)</span><span class="sxs-lookup"><span data-stu-id="c75f3-123">[Windows Subsystem for Linux Blog](https://blogs.msdn.microsoft.com/wsl/) (Historical)</span></span>
 
-## <a name="posts--articles"></a><span data-ttu-id="96fe5-124">Записи и статьи</span><span class="sxs-lookup"><span data-stu-id="96fe5-124">Posts & Articles</span></span>
-* [<span data-ttu-id="96fe5-125">Запуск Bash для Ubuntu в Windows</span><span class="sxs-lookup"><span data-stu-id="96fe5-125">Run Bash on Ubuntu on Windows</span></span>](https://blogs.windows.com/buildingapps/2016/03/30/run-bash-on-ubuntu-on-windows/)
-* [<span data-ttu-id="96fe5-126">Разработчики могут запускать Bash и двоичные файлы Ubuntu Linux пользовательского режима в Windows 10</span><span class="sxs-lookup"><span data-stu-id="96fe5-126">Developers Can Run Bash And Usermode Ubuntu Linux Binaries On Windows 10</span></span>](https://www.hanselman.com/blog/DevelopersCanRunBashShellAndUsermodeUbuntuLinuxBinariesOnWindows10.aspx)
-* [<span data-ttu-id="96fe5-127">Ubuntu в Windows: пространство пользователей Ubuntu для разработчиков Windows</span><span class="sxs-lookup"><span data-stu-id="96fe5-127">Ubuntu on Windows – The Ubuntu Userspace for Windows Developers</span></span>](https://insights.ubuntu.com/2016/03/30/ubuntu-on-windows-the-ubuntu-userspace-for-windows-developers/) 
+## <a name="posts--articles"></a><span data-ttu-id="c75f3-124">Записи и статьи</span><span class="sxs-lookup"><span data-stu-id="c75f3-124">Posts & Articles</span></span>
+* [<span data-ttu-id="c75f3-125">Запуск Bash для Ubuntu в Windows</span><span class="sxs-lookup"><span data-stu-id="c75f3-125">Run Bash on Ubuntu on Windows</span></span>](https://blogs.windows.com/buildingapps/2016/03/30/run-bash-on-ubuntu-on-windows/)
+* [<span data-ttu-id="c75f3-126">Разработчики могут запускать Bash и двоичные файлы Ubuntu Linux пользовательского режима в Windows 10</span><span class="sxs-lookup"><span data-stu-id="c75f3-126">Developers Can Run Bash And Usermode Ubuntu Linux Binaries On Windows 10</span></span>](https://www.hanselman.com/blog/DevelopersCanRunBashShellAndUsermodeUbuntuLinuxBinariesOnWindows10.aspx)
+* [<span data-ttu-id="c75f3-127">Ubuntu в Windows: пространство пользователей Ubuntu для разработчиков Windows</span><span class="sxs-lookup"><span data-stu-id="c75f3-127">Ubuntu on Windows – The Ubuntu Userspace for Windows Developers</span></span>](https://insights.ubuntu.com/2016/03/30/ubuntu-on-windows-the-ubuntu-userspace-for-windows-developers/) 
 
-## <a name="provide-feedback"></a><span data-ttu-id="96fe5-128">Предоставление отзыва</span><span class="sxs-lookup"><span data-stu-id="96fe5-128">Provide Feedback</span></span>
-* [<span data-ttu-id="96fe5-129">Средство отслеживания проблем GitHub</span><span class="sxs-lookup"><span data-stu-id="96fe5-129">GitHub issue tracker</span></span>](https://github.com/Microsoft/BashOnWindows/issues)
-* [<span data-ttu-id="96fe5-130">Портал UserVoice для командной строки</span><span class="sxs-lookup"><span data-stu-id="96fe5-130">Command-line UserVoice portal</span></span>](https://wpdev.uservoice.com/forums/266908-command-prompt-console-bash-on-ubuntu-on-windo/category/161892-bash)
+## <a name="provide-feedback"></a><span data-ttu-id="c75f3-128">Предоставление отзыва</span><span class="sxs-lookup"><span data-stu-id="c75f3-128">Provide Feedback</span></span>
+* [<span data-ttu-id="c75f3-129">Средство отслеживания проблем GitHub</span><span class="sxs-lookup"><span data-stu-id="c75f3-129">GitHub issue tracker</span></span>](https://github.com/Microsoft/BashOnWindows/issues)
+
