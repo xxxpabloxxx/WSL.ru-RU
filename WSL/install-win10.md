@@ -7,12 +7,12 @@ ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: c53c4507fb56f8e4a3456963b1d6f50ceac8ef37
-ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
+ms.openlocfilehash: 17ca32db23b426ef1367ff9444b5924d9d7e1716
+ms.sourcegitcommit: 3be576f946611cf36e27745bdb7c4c52af1b9928
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71269812"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74200235"
 ---
 # <a name="windows-subsystem-for-linux-installation-guide-for-windows-10"></a>Руководство по установке подсистемы Windows для Linux в Windows 10
 
@@ -29,9 +29,9 @@ ms.locfileid: "71269812"
 
 ## <a name="install-your-linux-distribution-of-choice"></a>Установка дистрибутива Linux по выбору
 Чтобы скачать и установить предпочтительные дистрибутивы, у вас есть три варианта:
-1. Скачайте и установите их из Microsoft Store (см. ниже).
-1. Скачайте и установите их с помощью командной строки или сценария ([ознакомьтесь с инструкциями по установке вручную](install-manual.md)).
-1. Скачайте их, а затем вручную распакуйте и установите (инструкции для Windows Server доступны [здесь](install-on-server.md)).
+* Скачайте и установите их из Microsoft Store (см. ниже).
+* Скачайте и установите их с помощью командной строки или сценария ([ознакомьтесь с инструкциями по установке вручную](install-manual.md)).
+* Скачайте их, а затем вручную распакуйте и установите (инструкции для Windows Server доступны [здесь](install-on-server.md)).
 
 ### <a name="windows-10-fall-creators-update-and-later-install-from-the-microsoft-store"></a>Windows 10 Fall Creators Update и более поздние версии: установка из Microsoft Store
 
