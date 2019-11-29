@@ -8,14 +8,22 @@ ms.topic: article
 ms.assetid: 36ea641e-4d49-4881-84eb-a9ca85b1cdf4
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: 299b939383a98752cb54cafa23bb8b7662d53e0a
-ms.sourcegitcommit: ac6029d7d7440b8ed0e866fcea5b693edfdc163e
+ms.openlocfilehash: 2e1b8a2ae37568af273ac311572881daa8b55d4b
+ms.sourcegitcommit: 3be576f946611cf36e27745bdb7c4c52af1b9928
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73633857"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74200230"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Заметки о выпуске подсистемы Windows для Linux
+
+## <a name="build-19028"></a>Сборка 19028
+Общие сведения о сборке Windows 19028 доступны в [блоге о Windows](https://blogs.windows.com/windowsexperience/2019/11/19/announcing-windows-10-insider-preview-build-19028/).
+
+* [WSL2] Ядро Linux обновлено до версии 4.19.81
+* [WSL2] Разрешение по умолчанию /dev/net/tun изменено на 0666 [GH 4629]
+* [WSL2] Объем памяти, назначенный виртуальной машине Linux по умолчанию, оптимизирован до 80 % памяти узла
+* [WSL2] Внесены исправления в работу сервера взаимодействия для обработки запросов со временем ожидания, чтобы сервер не перестал отвечать на запросы из-за неправильных вызовов
 
 ## <a name="build-19018"></a>Сборка 19018
 Общие сведения о сборке Windows 19018 доступны в [блоге о Windows](https://blogs.windows.com/windowsexperience/2019/11/05/announcing-windows-10-insider-preview-build-19018/).
