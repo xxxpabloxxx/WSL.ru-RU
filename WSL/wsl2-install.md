@@ -6,12 +6,12 @@ ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: a53e6a986813809d0c355b80b3fe3028adb21375
-ms.sourcegitcommit: 73f4cc6ac9482ea9727f3cda0ec5c3572e164256
+ms.openlocfilehash: 65c0440a95637708881c00558cba6c7985f89ec0
+ms.sourcegitcommit: 522af20edfba4d4a9e429327389967a83e6d1156
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74309049"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74881377"
 ---
 # <a name="installation-instructions-for-wsl-2"></a>Инструкции по установке WSL 2
 
@@ -20,10 +20,10 @@ ms.locfileid: "74309049"
 > WSL 2 доступен только в сборках Windows 10 18917 или более поздней версии.
 
 - Убедитесь, что установлен WSL (вы можете найти инструкции [здесь](./install-win10.md)) и вы используете Windows 10 **Build 18917** или более поздней версии.
-   - Чтобы убедиться, что вы используете сборку 18917 или более позднюю версию, присоединитесь к [программе предварительной оценки Windows](https://insider.windows.com/en-us/) и выберите Быстрый звонок. 
+   - Чтобы убедиться, что вы используете сборку 18917 или более позднюю версию, присоединитесь к [программе предварительной оценки Windows](https://insider.windows.com/en-us/) и выберите "быстрый Звонок" или "медленный" звонок. 
    - Вы можете проверить версию Windows, открыв командную строку и выполнив команду `ver`.
-- включите необязательный компонент "Virtual Machine Platform" (Платформа виртуальной машины);
-- с помощью командной строки задайте поддержку дистрибутива в WSL 2;
+- Включение необязательного компонента "Virtual Machine Platform" (Платформа виртуальной машины)
+- Настройка поддержки дистрибутива в WSL 2 с помощью командной строки
 - проверьте, какие версии WSL используют ваши дистрибутивы.
 
 ## <a name="enable-the-virtual-machine-platform-optional-component-and-make-sure-wsl-is-enabled"></a>Включите дополнительный компонент "платформа виртуальной машины" и убедитесь, что WSL включен.
@@ -38,7 +38,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 Перезагрузите компьютер, чтобы завершить установку обоих компонентов.
 
 
-## <a name="set-a-distro-to-be-backed-by-wsl-2-using-the-command-line"></a>с помощью командной строки задайте поддержку дистрибутива в WSL 2;
+## <a name="set-a-distro-to-be-backed-by-wsl-2-using-the-command-line"></a>Настройка поддержки дистрибутива в WSL 2 с помощью командной строки
 
 Если у вас нет дистрибутив Linux, ознакомьтесь с инструкциями по установке на странице документации по [установке на Windows 10](./install-win10.md#install-your-linux-distribution-of-choice) . 
 
