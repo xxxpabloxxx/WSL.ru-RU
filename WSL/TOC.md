@@ -2,7 +2,7 @@
 # [Установка в Windows 10](./install-win10.md)
 # [Установка в Windows Server](./install-on-server.md)
 # [Инициализация дистрибутива](./initialize-distro.md)
-# [Учетные записи пользователей и права доступа](./user-support.md)
+# [Учетные записи пользователей](./user-support.md)
 # [Управление дистрибутивом](./wsl-config.md)
 # [Разрешения файловой системы](./file-permissions.md)
 # [Подсистема Windows для Linux для предприятий](./enterprise.md)
