@@ -7,12 +7,12 @@ ms.topic: article
 ms.assetid: f70e685f-24c6-4908-9546-bf4f0291d8fd
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: 85bd8f05d041181c2cfb16f6fb55aaeea15b332c
-ms.sourcegitcommit: 07eb5f2e1f4517928165dda4510012599b0d0e1e
+ms.openlocfilehash: 30dea11adb68639f645ca800a695b0404661845a
+ms.sourcegitcommit: e5fb773dd44abab7bcf289340da00f59528b88f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76520583"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76973684"
 ---
 # <a name="create-and-update-user-accounts-for-wsl-distributions"></a>Создание и обновление учетных записей пользователей для дистрибутивов WSL
 
@@ -38,7 +38,7 @@ ms.locfileid: "76520583"
 
 1. Откройте PowerShell и перейдите в корень дистрибутива WSL по умолчанию с помощью команды `wsl -u root`.
 
-Если вам нужно обновить забытый пароль в дистрибутиве, который не используется по умолчанию, используйте команду `wsl -d Debian -u root`, заменив `Debian` именем целевого дистрибутива.
+> Если вам нужно обновить забытый пароль в дистрибутиве, который не используется по умолчанию, используйте команду `wsl -d Debian -u root`, заменив `Debian` именем целевого дистрибутива.
 
 2. Открыв дистрибутив WSL на корневом уровне в PowerShell, вы можете использовать для обновления пароля команду `passwd`.
 
