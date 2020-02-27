@@ -6,12 +6,12 @@ ms.date: 07/24/2018
 ms.topic: article
 ms.assetid: 9281ffa2-4fa9-4078-bf6f-b51c967617e3
 ms.custom: seodec18
-ms.openlocfilehash: 99215a3bccc3d0b07e8ed4b7629913af3765aec0
-ms.sourcegitcommit: d35870009477813aa4c8fe4e401af4bddef4a47c
+ms.openlocfilehash: aa0b42748115045105bb4e6eae91493bfee11d09
+ms.sourcegitcommit: 467b6c8e9716d1a60dbf9f7658fd9579da365b58
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72778816"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77624928"
 ---
 # <a name="manually-download-windows-subsystem-for-linux-distro-packages"></a>Ручная загрузка подсистемы Windows для пакетов дистрибутив для Linux
 
@@ -24,8 +24,10 @@ ms.locfileid: "72778816"
 ## <a name="downloading-distros"></a>Скачивание дистрибутивов
 
 Если Microsoft Store приложение недоступно, вы можете скачать и вручную установить дистрибутивов Linux, щелкнув следующие ссылки:
-* [Ubuntu 18,04](https://aka.ms/wsl-ubuntu-1804)
-* [Ubuntu 18,04 ARM](https://aka.ms/wsl-ubuntu-1804-arm)
+<!-- * [Ubuntu 18.04](https://aka.ms/wsl-ubuntu-1804)
+* [Ubuntu 18.04 ARM](https://aka.ms/wsl-ubuntu-1804-arm) -->
+* Ubuntu 18,04
+* Ubuntu 18,04 ARM
 * [Ubuntu 16,04](https://aka.ms/wsl-ubuntu-1604)
 * [Debian GNU/Linux](https://aka.ms/wsl-debian-gnulinux)
 * [Kali Linux](https://aka.ms/wsl-kali-linux-new)
@@ -57,7 +59,7 @@ curl.exe -L -o ubuntu-1604.appx https://aka.ms/wsl-ubuntu-1604
 
 В приведенном выше примере выполняется `curl.exe` (не только `curl`), чтобы убедиться, что в PowerShell вызывается фактический исполняемый файл, а не псевдоним PowerShell для [Invoke-WebRequest](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-webrequest?view=powershell-6) .
 
-> Примечание. Использование `curl` может быть предпочтительнее, если необходимо вызвать или создать скрипт для загрузки с помощью оболочки cmd и (или) `.bat`  /  `.cmd` сценариев.
+> Примечание. Использование `curl` может быть предпочтительнее, если необходимо вызвать или создать скрипт для загрузки с помощью оболочки cmd и (или) `.bat` / `.cmd` сценариев.
 
 ## <a name="installing-your-distro"></a>Установка дистрибутив
 Если вы используете Windows 10, вы можете установить дистрибутив с помощью PowerShell. Просто перейдите в папку, содержащую дистрибутив, скачанный выше, и в этом каталоге выполните следующую команду, где `app_name` — имя файла дистрибутив. appx.  
