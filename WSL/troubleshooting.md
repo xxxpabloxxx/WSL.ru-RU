@@ -6,7 +6,7 @@ ms.date: 01/20/2020
 ms.topic: article
 ms.localizationpriority: high
 ms.openlocfilehash: b66392f6ad37af9d61e8b4fb6bb477d0d774ccb6
-ms.sourcegitcommit: f1e471bca7a65073135365e49c0d4e59227bdf25
+ms.sourcegitcommit: f11e471bca7a65073135365e49c0d4e59227bdf25
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/25/2020
@@ -16,7 +16,7 @@ ms.locfileid: "77575286"
 
 Для получения поддержки по вопросам, связанным с WSL, см. наш репозиторий GitHub:
 
-## <a name="search-for-any-existing-issues-related-to-your-problem"></a>Поиск существующих проблем, связанных с проблемой
+## <a name="search-for-any-existing-issues-related-to-your-problem"></a>Поиск описанных проблем,связанных с вашей проблемой
 
 При возникновении технических проблем используйте репозиторий продуктов: https://github.com/Microsoft/wsl/issues
 
@@ -43,7 +43,7 @@ ms.locfileid: "77575286"
 ### <a name="bash-loses-network-connectivity-once-connected-to-a-vpn"></a>Bash утрачивает подключение к сети после подключения к сети VPN
 
 Если после подключения к VPN в Windows оболочка Bash утрачивает подключение к сети, попробуйте воспользоваться этим обходным решением в Bash. Это решение позволит вручную переопределить разрешение DNS с помощью `/etc/resolv.conf`.
-
+1
 1. Запишите DNS-сервер виртуальной частной сети. Для этого выполните `ipconfig.exe /all`
 2. Создайте копию существующего resolv.conf, выполнив `sudo cp /etc/resolv.conf /etc/resolv.conf.new`
 3. Разорвите связь с текущим файлом resolv.conf, выполнив команду `sudo unlink /etc/resolv.conf`.
@@ -86,7 +86,7 @@ ms.locfileid: "77575286"
 
 1. Введите приведенный ниже код в `/usr/sbin/policy-rc.d` и сохраните изменения.
   
-   ``` BASH
+   ``` BASH1
    #!/bin/sh
    exit 101
    ```
@@ -132,7 +132,7 @@ sudo update-locale LANG=en_US.UTF8
 1. Удалите папку `%windir%\System32\Tasks\Microsoft\Windows\Windows Subsystem for Linux`. <br/>
   **Примечание. Не делайте этого, если дополнительный компонент полностью установлен и работает.**
 2. Включите дополнительный компонент WSL (если он еще не включен).
-3. Reboot
+3. Перегрузитесь
 4. Выполните команду lxrun /uninstall /full
 5. Установите Bash.
 
