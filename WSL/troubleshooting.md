@@ -16,7 +16,7 @@ ms.locfileid: "77575286"
 
 Для получения поддержки по вопросам, связанным с WSL, см. наш репозиторий GitHub:
 
-## <a name="search-for-any-existing-issues-related-to-your-problem"></a>Поиск существующих проблем, связанных с проблемой
+## <a name="search-for-any-existing-issues-related-to-your-problem"></a>Поиск описанных проблем, связанных с вашей проблемой
 
 При возникновении технических проблем используйте репозиторий продуктов: https://github.com/Microsoft/wsl/issues
 
@@ -132,7 +132,7 @@ sudo update-locale LANG=en_US.UTF8
 1. Удалите папку `%windir%\System32\Tasks\Microsoft\Windows\Windows Subsystem for Linux`. <br/>
   **Примечание. Не делайте этого, если дополнительный компонент полностью установлен и работает.**
 2. Включите дополнительный компонент WSL (если он еще не включен).
-3. Reboot
+3. Выполните перезагрузку.
 4. Выполните команду lxrun /uninstall /full
 5. Установите Bash.
 
