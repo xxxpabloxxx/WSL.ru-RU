@@ -1,5 +1,5 @@
 ---
-title: Разрешения файла
+title: Разрешения для файла
 description: Общие сведения о том, как WSL определяет разрешения для файлов в Windows
 keywords: Башонвиндовс, bash, WSL, wsl2, Windows, подсистема Windows для Linux, виндовссубсистем, Ubuntu, Debian, SUSE, Windows 10, файл, разрешения
 ms.date: 01/14/2020

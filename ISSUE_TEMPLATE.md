@@ -2,5 +2,5 @@
 
 Другие связанные репозитории проблем:
 
-* WSL https://github.com/Microsoft/BashOnWindows/
+* WSL: https://github.com/Microsoft/BashOnWindows/
 * Консоль Windows: https://github.com/Microsoft/Console/
