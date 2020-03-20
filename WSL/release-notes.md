@@ -968,7 +968,7 @@ wslconfig.exe /terminate <DistributionName>
 `prlimit64`<br/>
 
 ### <a name="known-issues"></a>Известные проблемы
-#### <a name="github-issue-2392-windows-folders-not-recognized-by-wsl-httpsgithubcommicrosoftbashonwindowsissues2392"></a>[Проблема GitHub 2392: WSL не распознает папки Windows…](https://github.com/Microsoft/BashOnWindows/issues/2392)
+#### <a name="github-issue-2392-windows-folders-not-recognized-by-wsl-"></a>[Проблема GitHub 2392: WSL не распознает папки Windows…](https://github.com/Microsoft/BashOnWindows/issues/2392)
 В сборке 16257 в WSL возникли проблемы при перечислении файлов и папок Windows с помощью `/mnt/c/...`.
 Эта проблема устранена, и исправление будет выпущено в сборке для программы предварительной оценки в течение недели после 14 августа 2017 года.
 

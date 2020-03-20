@@ -56,7 +56,7 @@ sudo apt update && sudo apt upgrade
 
 ![Приятного вам использования Linux в WSL](media/linux-on-wsl.png)
 
-## <a name="troubleshooting"></a>Поиск и устранение неисправностей
+## <a name="troubleshooting"></a>Диагностика
 
 Ниже перечислены возможные ошибки и способы их устранения. Другие распространенные ошибки и способы их устранения приведены в разделе [Устранение неполадок подсистемы Windows для Linux](troubleshooting.md).
 

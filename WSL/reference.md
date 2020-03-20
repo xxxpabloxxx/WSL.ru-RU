@@ -96,7 +96,7 @@ ms.locfileid: "71269844"
 
 Использование: `wslconfig [Argument] [Options...]`
 
-#### <a name="arguments"></a>Arguments
+#### <a name="arguments"></a>Аргументы
 * **/l, /list [параметры]**
   
   Вывод списка зарегистрированных дистрибутивов.

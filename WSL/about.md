@@ -30,7 +30,7 @@ ms.locfileid: "74200193"
 1. Вызывайте приложения Windows с помощью оболочки командной строки, похожей на UNIX.
 1. Вызывайте приложения GNU/Linux в Windows.
 
-## <a name="getting-started"></a>начало работы
+## <a name="getting-started"></a>Начало работы
 
 * [Установка Linux в Windows 10](install-win10.md)
 * [Справочные материалы по командам](reference.md)
