@@ -6,12 +6,13 @@ ms.date: 05/22/2018
 ms.topic: article
 ms.assetid: 9281ffa2-4fa9-4078-bf6f-b51c967617e3
 ms.custom: seodec18
-ms.openlocfilehash: 51a2e3f3443ed9b1ba3d8ab79977f22839ee0283
-ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
+ms.localizationpriority: high
+ms.openlocfilehash: 8859929fe45c9989d367af5f82191162963e6b4f
+ms.sourcegitcommit: 0a001ada2131f80dd77b114fc14f2fde43c947ad
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71269784"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80256397"
 ---
 # <a name="windows-server-installation-guide"></a>Руководство по установке Windows Server
 
@@ -40,8 +41,8 @@ ms.locfileid: "71269784"
 1. Извлеките содержимое пакета `<distro>.appx`, например, с помощью PowerShell:
 
     ```powershell
-    Rename-Item ./Ubuntu.appx ./Ubuntu.zip
-    Expand-Archive ./Ubuntu.zip ./Ubuntu
+    Rename-Item .\Ubuntu.appx .\Ubuntu.zip
+    Expand-Archive .\Ubuntu.zip .\Ubuntu
     ```
 
 2. Запустите средство запуска дистрибутива. Чтобы завершить установку, запустите приложение средства запуска дистрибутива в целевой папке `<distro>.exe`. Например: `ubuntu.exe` и т. д.
