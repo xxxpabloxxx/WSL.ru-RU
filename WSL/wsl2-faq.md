@@ -6,12 +6,13 @@ ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: c694b3476976241422d079eb65e72beca415ff62
-ms.sourcegitcommit: 07eb5f2e1f4517928165dda4510012599b0d0e1e
+ms.localizationpriority: high
+ms.openlocfilehash: 6a70cf1c3a139610785ff506d78b8c3621620b4c
+ms.sourcegitcommit: 7d9ad78979e7a111c5022138af8201a57c24a3f4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76520573"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80307461"
 ---
 # <a name="wsl-2-faq"></a>Вопросы и ответы по WSL 2
 
@@ -29,7 +30,7 @@ ms.locfileid: "76520573"
 
 ## <a name="will-i-be-able-to-run-wsl-2-and-other-3rd-party-virtualization-tools-such-as-vmware-or-virtualbox"></a>Смогу ли я запускать WSL 2 с другими сторонними инструментами виртуализации, такими как VMware или VirtualBox?
 
-Если Hyper-V уже используется, то некоторые сторонние приложения не могут работать, соответственно, они не смогут выполняться при включенном WSL 2. К сожалению, это относится к VMware и VirtualBox до версии 6 (выпущенный в декабре 2018 г. VirtualBox 6.0.0 [теперь поддерживает Hyper-V в качестве резервного ядра выполнения на узле Windows][1]).
+Если Hyper-V уже используется, то некоторые сторонние приложения не могут работать. Соответственно, они не смогут выполняться при включенном WSL 2, например VMware и VirtualBox. Но недавно вышли новые выпуски VirtualBox и VMware, поддерживающие Hyper-V и WSL2! Дополнительные сведения об изменениях VirtualBox см. [здесь][1], а об изменениях VMware см. [здесь][4].
 
 Мы изучаем способы решения этой проблемы. Например, мы предоставляем набор интерфейсов API [Платформа низкоуровневой оболочки][2], который сторонние поставщики виртуализации могут использовать для совместимости своего программного обеспечения с Hyper-V. Это позволяет приложениям использовать архитектуру Hyper-V для своих эмуляций, например [Google Android Emulator][3], а также VirtualBox 6 и более поздней версии, которые теперь совместимы с Hyper-V.
 
@@ -56,3 +57,4 @@ WSL 2 поддерживает тот же файл wsl.conf, который и
  [1]: https://www.virtualbox.org/wiki/Changelog-6.0
  [2]: https://docs.microsoft.com/en-us/virtualization/api/
  [3]: https://devblogs.microsoft.com/visualstudio/hyper-v-android-emulator-support/
+ [4]: https://blogs.vmware.com/workstation/2020/01/vmware-workstation-tech-preview-20h1.html
