@@ -8,10 +8,10 @@ ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
 ms.localizationpriority: high
 ms.openlocfilehash: 1965a22a2e290777b207d9ded099ce4a79e1ed38
-ms.sourcegitcommit: 0a001ada2131f80dd77b114fc14f2fde43c947ad
+ms.sourcegitcommit: 39d3a2f0f4184eaec8d8fec740aff800e8ea9ac7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "80256337"
 ---
 # <a name="user-experience-changes-between-wsl-1-and-wsl-2"></a>Изменения взаимодействия с пользователем в WSL 1 и WSL 2

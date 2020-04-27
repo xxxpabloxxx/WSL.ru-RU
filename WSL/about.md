@@ -8,10 +8,10 @@ ms.assetid: 3cefe0db-7616-4848-a2b6-9296746a178b
 ms.custom: seodec18
 ms.localizationpriority: high
 ms.openlocfilehash: fbb1ce5cf5d5c83e25d0a6a0cece7b70537a44a1
-ms.sourcegitcommit: 3be576f946611cf36e27745bdb7c4c52af1b9928
+ms.sourcegitcommit: 39d3a2f0f4184eaec8d8fec740aff800e8ea9ac7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "74200193"
 ---
 # <a name="windows-subsystem-for-linux-documentation"></a>Документация по подсистеме Windows для Linux

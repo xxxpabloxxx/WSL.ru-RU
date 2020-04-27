@@ -8,10 +8,10 @@ ms.assetid: 9281ffa2-4fa9-4078-bf6f-b51c967617e3
 ms.custom: seodec18
 ms.localizationpriority: high
 ms.openlocfilehash: 37d8ad589d0108534c27137614a005c0c0ac55bc
-ms.sourcegitcommit: 0a001ada2131f80dd77b114fc14f2fde43c947ad
+ms.sourcegitcommit: 39d3a2f0f4184eaec8d8fec740aff800e8ea9ac7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "80256377"
 ---
 # <a name="manually-download-windows-subsystem-for-linux-distro-packages"></a>Скачивание пакетов дистрибутива подсистемы Windows для Linux вручную
