@@ -7,10 +7,10 @@ ms.assetid: 3cefe0db-7616-4848-a2b6-9296746a178b
 ms.custom: seodec18
 ms.localizationpriority: high
 ms.openlocfilehash: f8b0150c044f5011b84e80cac4befd752c4dc552
-ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
+ms.sourcegitcommit: 39d3a2f0f4184eaec8d8fec740aff800e8ea9ac7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "71269796"
 ---
 # <a name="windows-subsystem-for-linux-interoperability-with-windows"></a>Подсистема Windows для взаимодействия Linux с Windows
@@ -89,7 +89,7 @@ WSL может вызывать двоичные файлы Windows непоср
 1. Они выполняются от имени активного пользователя Windows.
 1. Они отображаются в диспетчере задач Windows так, как если бы они выполнялись непосредственно из командной строки.
 
-Пример:
+Пример.
 
 ``` BASH
 $ notepad.exe
@@ -215,7 +215,7 @@ $ echo 1 > /proc/sys/fs/binfmt_misc/WSLInterop
 1. Файл выполняется от имени пользователя WSL по умолчанию.
 1. Требуются те же права администратора Windows, что и у вызывающего процесса и терминала.
 
-Пример:
+Пример.
 
 ```console
 C:\temp> bash -c "ls -la"
@@ -238,7 +238,7 @@ C:\temp> dir | bash -c "grep foo"
 C:\temp> bash -c "ls -la" > out.txt
 ```
 
-Команды WSL, передаваемые в `bash -c`, перенаправляются в процесс WSL без изменения.  Пути к файлам должны быть указаны в формате WSL, кроме того, необходимо внимательно экранировать соответствующие знаки. Пример:
+Команды WSL, передаваемые в `bash -c`, перенаправляются в процесс WSL без изменения.  Пути к файлам должны быть указаны в формате WSL, кроме того, необходимо внимательно экранировать соответствующие знаки. Пример.
 
 ```console
 C:\temp> bash -c "ls -la /proc/cpuinfo"
@@ -257,7 +257,7 @@ C:\temp> bash -c "ls -la \"/mnt/c/Program Files\""
 1. Они выполняются от имени активного пользователя Windows.
 1. Они отображаются в диспетчере задач Windows так, как если бы они выполнялись непосредственно из командной строки.
 
-Пример:
+Пример.
 
 ``` BASH
 $ /mnt/c/Windows/System32/notepad.exe

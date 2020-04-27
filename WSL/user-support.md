@@ -8,10 +8,10 @@ ms.assetid: f70e685f-24c6-4908-9546-bf4f0291d8fd
 ms.custom: seodec18
 ms.localizationpriority: high
 ms.openlocfilehash: 30dea11adb68639f645ca800a695b0404661845a
-ms.sourcegitcommit: e5fb773dd44abab7bcf289340da00f59528b88f7
+ms.sourcegitcommit: 39d3a2f0f4184eaec8d8fec740aff800e8ea9ac7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "76973684"
 ---
 # <a name="create-and-update-user-accounts-for-wsl-distributions"></a>Создание и обновление учетных записей пользователей для дистрибутивов WSL
