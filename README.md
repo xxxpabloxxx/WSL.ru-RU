@@ -5,7 +5,7 @@
 
 > **Примечание.** Этот репозиторий за выпуски этого репозитория предназначен только для создания отчетов о проблемах с документацией WSL. Другие связанные репозитории проблем:
 > * WSLhttps://github.com/Microsoft/WSL/
-> * Консоль Windows:https://github.com/Microsoft/Console/
+> * Консоль Windows:https://github.com/Microsoft/Terminal/
 
 ## <a name="external-links"></a>Внешние ссылки
 
