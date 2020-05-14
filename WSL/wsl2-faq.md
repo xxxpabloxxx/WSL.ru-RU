@@ -7,14 +7,14 @@ ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: 6a70cf1c3a139610785ff506d78b8c3621620b4c
-ms.sourcegitcommit: 39d3a2f0f4184eaec8d8fec740aff800e8ea9ac7
+ms.openlocfilehash: 35edad06775e75eef6d81d018355d8f28d772deb
+ms.sourcegitcommit: 3fb40fd65b34a5eb26b213a0df6a3b2746b7a9b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "80307461"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83235896"
 ---
-# <a name="wsl-2-faq"></a>Вопросы и ответы по WSL 2
+# <a name="wsl-2-faqs"></a>Вопросы и ответы по WSL 2
 
 Ниже приведен список часто задаваемых вопросов о подсистеме Windows для Linux 2.
 
@@ -52,9 +52,9 @@ ms.locfileid: "80307461"
 
 ## <a name="can-i-use-wslconf-in-wsl-2"></a>Можно ли использовать wsl.conf в WSL 2?
 
-WSL 2 поддерживает тот же файл wsl.conf, который использует WSL 1. Это означает, что все параметры конфигурации, заданные в дистрибутиве WSL 1, такие как автоподключение дисков Windows, включение или отключение взаимодействия, изменение каталога, в котором будут подключаться диски Windows, и т. д. будут работать в WSL 2. Дополнительные сведения о параметрах конфигурации в WSL можно получить на странице [Управление подсистемой Windows для Linux и ее настройка](./wsl-config.md). 
+WSL 2 поддерживает тот же файл wsl.conf, который использует WSL 1. Это означает, что все параметры конфигурации, заданные в дистрибутиве WSL 1, такие как автоподключение дисков Windows, включение или отключение взаимодействия, изменение каталога, в котором будут подключаться диски Windows, и т. д. будут работать в WSL 2. Дополнительные сведения о параметрах конфигурации в WSL можно получить на странице [Управление подсистемой Windows для Linux и ее настройка](./wsl-config.md).
 
  [1]: https://www.virtualbox.org/wiki/Changelog-6.0
- [2]: https://docs.microsoft.com/en-us/virtualization/api/
+ [2]: https://docs.microsoft.com/virtualization/api/
  [3]: https://devblogs.microsoft.com/visualstudio/hyper-v-android-emulator-support/
  [4]: https://blogs.vmware.com/workstation/2020/01/vmware-workstation-tech-preview-20h1.html
