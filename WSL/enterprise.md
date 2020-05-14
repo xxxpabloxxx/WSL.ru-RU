@@ -1,68 +1,66 @@
 ---
 title: Подсистема Windows для Linux для предприятий
-description: Ресурсы и инструкции по оптимальному использованию подсистемы Windows для Linux в корпоративной среде.
-keywords: Башонвиндовс, bash, WSL, Windows, подсистема Windows для Linux, виндовссубсистем, Ubuntu, Debian, SUSE, Windows 10, предприятие, развертывание, автономный, упаковка, хранение, распространение, установка, установка
-ms.date: 09/04/2018
+description: Ресурсы и инструкции для оптимального использования подсистемы Windows для Linux в корпоративной среде.
+keywords: BashOnWindows, bash, wsl, windows, подсистема windows для linux, windowssubsystem, ubuntu, debian, suse, windows 10, корпоративный, развертывание, автономный, упаковка, магазин, распространение, установка, установить
+ms.date: 05/15/2020
 ms.topic: article
-ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
-ms.custom: seodec18
-ms.openlocfilehash: c32d62267c77d87fb200cfe43b8e6f43b4e3a56d
-ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: 02f4ff41614f78c0e588f329c777a87f8b416233
+ms.sourcegitcommit: 3fb40fd65b34a5eb26b213a0df6a3b2746b7a9b4
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71269862"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83235833"
 ---
-# <a name="windows-subsystem-for-linux-for-enterprise"></a><span data-ttu-id="871df-104">Подсистема Windows для Linux для предприятий</span><span class="sxs-lookup"><span data-stu-id="871df-104">Windows Subsystem for Linux for Enterprise</span></span>
+# <a name="set-up-windows-subsystem-for-linux-for-your-enterprise-company"></a><span data-ttu-id="c56ce-104">Настройка подсистемы Windows для Linux для вашего предприятия</span><span class="sxs-lookup"><span data-stu-id="c56ce-104">Set up Windows Subsystem for Linux for your enterprise company</span></span>
 
-<span data-ttu-id="871df-105">Microsoft Store для бизнеса предлагают разнообразные решения для предприятий, желающих развернуть WSL в своей компании.</span><span class="sxs-lookup"><span data-stu-id="871df-105">The Microsoft Store for Business offers a variety of solutions to Enterprises who want to deploy WSL to their company.</span></span> <span data-ttu-id="871df-106">[Документы в Интернете](https://docs.microsoft.com/en-us/microsoft-store/) для Microsoft Store для бизнеса — это отличный ресурс для поиска общих сведений о магазине.</span><span class="sxs-lookup"><span data-stu-id="871df-106">The [online docs](https://docs.microsoft.com/en-us/microsoft-store/) for the Microsoft Store for Business are a great resource to find out general information about the Store experience.</span></span>
+<span data-ttu-id="c56ce-105">Microsoft Store для бизнеса предлагает различные решения для предприятий, которые хотят развернуть WSL в своей компании.</span><span class="sxs-lookup"><span data-stu-id="c56ce-105">The Microsoft Store for Business offers a variety of solutions to Enterprises who want to deploy WSL to their company.</span></span> <span data-ttu-id="c56ce-106">Документация [Microsoft Store для бизнеса и образования](https://docs.microsoft.com/microsoft-store/) является отличным ресурсом для поиска общих сведений о магазине.</span><span class="sxs-lookup"><span data-stu-id="c56ce-106">The [Microsoft Store for Business and Education docs](https://docs.microsoft.com/microsoft-store/) are a great resource to find out general information about the Store experience.</span></span>
 
-<span data-ttu-id="871df-107">Если вы только хотите настроить для начала развертывания WSL, выполните следующие действия, которые объясняются в Microsoft Store документах:</span><span class="sxs-lookup"><span data-stu-id="871df-107">If you’re a company that’s just looking to get set up to start deploying WSL you can follow these steps, which are explained inside of the Microsoft Store docs:</span></span>
+<span data-ttu-id="c56ce-107">Если вы представляете компанию, которая только собирается начать установку WSL, выполните следующие шаги:</span><span class="sxs-lookup"><span data-stu-id="c56ce-107">If you're a company that's just looking to get set up to start deploying WSL, follow these steps:</span></span>
 
-* [<span data-ttu-id="871df-108">Подпишитесь на Microsoft Store для бизнеса и приступайте к работе</span><span class="sxs-lookup"><span data-stu-id="871df-108">Sign up for the Microsoft Store for Business and get started</span></span>](https://docs.microsoft.com/en-us/microsoft-store/sign-up-microsoft-store-for-business-overview)
-* <span data-ttu-id="871df-109">[Управляйте своими продуктами и службами (включая пользователей, которые могут получать доступ к каким приложениям в частном хранилище)](https://docs.microsoft.com/en-us/microsoft-store/manage-apps-microsoft-store-for-business-overview).</span><span class="sxs-lookup"><span data-stu-id="871df-109">[Manage your products and services (including who can access which apps in your private store)](https://docs.microsoft.com/en-us/microsoft-store/manage-apps-microsoft-store-for-business-overview).</span></span> <span data-ttu-id="871df-110">Здесь можно добавить WSL дистрибутивов в магазин и контролировать, кто их может устанавливать.</span><span class="sxs-lookup"><span data-stu-id="871df-110">Here you can add WSL distros to your store and control who can install them</span></span>
-* [<span data-ttu-id="871df-111">Использование выбранного метода распространения для развертывания программного обеспечения в компании</span><span class="sxs-lookup"><span data-stu-id="871df-111">Use a distribution method of your choice to deploy the software to your company</span></span>](https://docs.microsoft.com/en-us/microsoft-store/distribute-apps-to-your-employees-microsoft-store-for-business)
-* <span data-ttu-id="871df-112">Обмен данными с пользователями, имеющими доступ к WSL дистрибутивов, которые могут [использовать эти действия](https://docs.microsoft.com/en-us/windows/wsl/install-win10) для установки дистрибутив или дистрибутивов по своему выбору</span><span class="sxs-lookup"><span data-stu-id="871df-112">Communicate to users who have access to WSL distros that they can [use these steps](https://docs.microsoft.com/en-us/windows/wsl/install-win10) to install the distro or distros of their choice</span></span> 
+* [<span data-ttu-id="c56ce-108">Зарегистрируйтесь в Microsoft Store для бизнеса и приступайте к работе</span><span class="sxs-lookup"><span data-stu-id="c56ce-108">Sign up for the Microsoft Store for Business and get started</span></span>](https://docs.microsoft.com/microsoft-store/sign-up-microsoft-store-for-business-overview)
+* <span data-ttu-id="c56ce-109">[Получите сведения об управлении своими продуктами и услугами (включая тем, кто может получать доступ к каким приложениям в вашем личном магазине)](https://docs.microsoft.com/microsoft-store/manage-apps-microsoft-store-for-business-overview).</span><span class="sxs-lookup"><span data-stu-id="c56ce-109">[Manage your products and services (including who can access which apps in your private store)](https://docs.microsoft.com/microsoft-store/manage-apps-microsoft-store-for-business-overview).</span></span> <span data-ttu-id="c56ce-110">Здесь вы можете добавлять дистрибутивы WSL в свое хранилище и контролировать, кто может их устанавливать</span><span class="sxs-lookup"><span data-stu-id="c56ce-110">Here you can add WSL distros to your store and control who can install them</span></span>
+* [<span data-ttu-id="c56ce-111">Используйте выбранный метод распространения для развертывания программного обеспечения в компании</span><span class="sxs-lookup"><span data-stu-id="c56ce-111">Use a distribution method of your choice to deploy the software to your company</span></span>](https://docs.microsoft.com/microsoft-store/distribute-apps-to-your-employees-microsoft-store-for-business)
+* <span data-ttu-id="c56ce-112">Свяжитесь с сотрудниками вашей компании, чтобы они могли использовать эту ссылку на эту документацию для установки WSL: [Установка подсистемы Windows для Linux](./install-win10.md)</span><span class="sxs-lookup"><span data-stu-id="c56ce-112">Communicate to the employees of your company that they can use this documentation link to install WSL: [Install the Windows Subsystem for Linux](./install-win10.md)</span></span>
 
-## <a name="how-to-distribute-a-distro-offline"></a><span data-ttu-id="871df-113">Как распределить дистрибутив в автономном режиме</span><span class="sxs-lookup"><span data-stu-id="871df-113">How to Distribute a Distro Offline</span></span>
+## <a name="how-to-distribute-a-linux-distribution-on-windows-offline"></a><span data-ttu-id="c56ce-113">Как распределять дистрибутив Linux в Windows в автономном режиме</span><span class="sxs-lookup"><span data-stu-id="c56ce-113">How to distribute a Linux distribution on Windows offline</span></span>
 
-<span data-ttu-id="871df-114">Если компьютеры в Организации не имеют доступа к Microsoft Store или Microsoft Store для бизнеса, то можно скачать установщик Linux дистрибутив с автономной лицензией, выполнив следующие действия.</span><span class="sxs-lookup"><span data-stu-id="871df-114">If the computers in your company don’t have access to the Microsoft Store or the Microsoft Store for Business, then you can download the installer of a Linux distro that has an offline license by following these steps.</span></span> 
+<span data-ttu-id="c56ce-114">Если компьютеры в вашей организации не имеют доступа к Microsoft Store или Microsoft Store для бизнеса, можно скачать установщик дистрибутива Linux с автономной лицензией, выполнив следующие действия.</span><span class="sxs-lookup"><span data-stu-id="c56ce-114">If the computers in your company don't have access to the Microsoft Store or the Microsoft Store for Business, then you can download the installer of a Linux distribution that has an offline license by following these steps.</span></span>
 
-### <a name="set-up-an-azure-active-directory-ad-account"></a><span data-ttu-id="871df-115">Настройка учетной записи Azure Active Directory (AD)</span><span class="sxs-lookup"><span data-stu-id="871df-115">Set up an Azure Active Directory (AD) Account</span></span> 
+### <a name="set-up-an-azure-active-directory-account"></a><span data-ttu-id="c56ce-115">Настройка учетной записи Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="c56ce-115">Set up an Azure Active Directory account</span></span>
 
-<span data-ttu-id="871df-116">Для получения установщика Microsoft Store приложений необходимо иметь учетную запись Azure AD и быть глобальным администратором организации.</span><span class="sxs-lookup"><span data-stu-id="871df-116">You need to have an Azure AD account and be the global administrator for your organization to get the installer of Microsoft Store apps.</span></span> <span data-ttu-id="871df-117">Если у вас уже есть учетная запись, этот шаг можно пропустить.</span><span class="sxs-lookup"><span data-stu-id="871df-117">If you already have an account, you can skip this step.</span></span>
+<span data-ttu-id="c56ce-116">Чтобы получить установщик приложений Microsoft Store необходимо [зарегистрироваться для использования учетной записи Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/sign-up-organization?WT.mc_id=windows-c9-niner) и быть глобальным администратором организации.</span><span class="sxs-lookup"><span data-stu-id="c56ce-116">You need to [sign up for an Azure AD account](https://docs.microsoft.com/azure/active-directory/fundamentals/sign-up-organization?WT.mc_id=windows-c9-niner) and be the global administrator for your organization to get the installer of Microsoft Store apps.</span></span> <span data-ttu-id="c56ce-117">Если у вас уже есть учетная запись, этот шаг можно пропустить.</span><span class="sxs-lookup"><span data-stu-id="c56ce-117">If you already have an account, you can skip this step.</span></span>
 
-<span data-ttu-id="871df-118">Инструкции по регистрации учетной записи можно найти здесь: https://docs.microsoft.com/en-us/microsoft-store/sign-up-microsoft-store-for-business</span><span class="sxs-lookup"><span data-stu-id="871df-118">The instructions to register an account can be found here: https://docs.microsoft.com/en-us/microsoft-store/sign-up-microsoft-store-for-business</span></span>
+### <a name="set-up-wsl-using-your-microsoft-store-for-business-account"></a><span data-ttu-id="c56ce-118">Настройка WSL с помощью учетной записи Microsoft Store для бизнеса</span><span class="sxs-lookup"><span data-stu-id="c56ce-118">Set up WSL using your Microsoft Store for Business account</span></span>
 
-### <a name="sign-into-the-store-for-business-and-go-to-the-homepage"></a><span data-ttu-id="871df-119">Войдите в магазин для бизнеса и перейдите на домашнюю страницу.</span><span class="sxs-lookup"><span data-stu-id="871df-119">Sign into the Store for Business and go to the homepage</span></span>
-<span data-ttu-id="871df-120">Вход в систему: www.microsoft.com/business-store</span><span class="sxs-lookup"><span data-stu-id="871df-120">Sign in here: www.microsoft.com/business-store</span></span>
+<span data-ttu-id="c56ce-119">Инструкции по регистрации учетной записи можно найти здесь: https://docs.microsoft.com/microsoft-store/sign-up-microsoft-store-for-business</span><span class="sxs-lookup"><span data-stu-id="c56ce-119">The instructions to register an account are found here: https://docs.microsoft.com/microsoft-store/sign-up-microsoft-store-for-business</span></span>
 
-![Домашняя страница магазина MS Store для бизнеса](media/offlineinstallscreens/1-screen.png)
+1. <span data-ttu-id="c56ce-120">Войдите в Store для бизнеса и перейдите на домашнюю страницу: https://www.microsoft.com/business-store</span><span class="sxs-lookup"><span data-stu-id="c56ce-120">Sign into the Store for Business and go to the homepage: https://www.microsoft.com/business-store</span></span>
 
-### <a name="go-to-manage-settings-and-enable-show-offline-apps"></a><span data-ttu-id="871df-122">Перейдите в раздел Управление настройками > и включите параметр "показывать автономные приложения".</span><span class="sxs-lookup"><span data-stu-id="871df-122">Go to Manage->Settings and enable 'Show offline apps'</span></span>
+    ![Домашняя страница MS Store для бизнеса](media/offlineinstallscreens/1-screen.png)
 
-![Страница параметров магазина MS Store для бизнеса](media/offlineinstallscreens/2-screen.png)
+2. <span data-ttu-id="c56ce-122">Перейдите в меню "Управление" > "Настройки" и включите параметр Show offline apps (Показывать автономные приложения).</span><span class="sxs-lookup"><span data-stu-id="c56ce-122">Go to Manage > Settings and enable 'Show offline apps'.</span></span>
 
-### <a name="go-back-to-the-main-page-by-clicking-shop-for-my-group"></a><span data-ttu-id="871df-124">Вернитесь на главную страницу, щелкнув "магазин для моей группы".</span><span class="sxs-lookup"><span data-stu-id="871df-124">Go back to the main page by clicking 'Shop for my group'</span></span>
+    ![Страница параметров MS Store для бизнеса](media/offlineinstallscreens/2-screen.png)
 
-![Домашняя страница магазина MS Store для бизнеса](media/offlineinstallscreens/1-screen.png)
+3. <span data-ttu-id="c56ce-124">Вернитесь на главную страницу, выбрав "Магазин для моей группы".</span><span class="sxs-lookup"><span data-stu-id="c56ce-124">Go back to the main page by selecting 'Shop for my group'.</span></span>
 
-### <a name="search-for-your-desired-distro-and-select-it"></a><span data-ttu-id="871df-126">Выполните поиск нужных дистрибутив и выберите его.</span><span class="sxs-lookup"><span data-stu-id="871df-126">Search for your desired distro and select it</span></span>
+    ![Домашняя страница MS Store для бизнеса](media/offlineinstallscreens/1-screen.png)
 
-![Домашняя страница магазина MS Store для бизнеса с активным поиском](media/offlineinstallscreens/3-screen.png)
+4. <span data-ttu-id="c56ce-126">Найдите нужный дистрибутив и выберите его.</span><span class="sxs-lookup"><span data-stu-id="c56ce-126">Search for your desired distribution and select it.</span></span>
 
-### <a name="select-an-offline-license-in-the-license-type-dropdown-menu-and-click-get-the-app"></a><span data-ttu-id="871df-128">Выберите лицензию "вне сети" в раскрывающемся меню тип лицензии и щелкните "получить приложение".</span><span class="sxs-lookup"><span data-stu-id="871df-128">Select an ‘Offline’ license in the License type dropdown menu and click ‘Get the app’</span></span>
+    ![Домашняя страница MS Store для бизнеса с активным поиском](media/offlineinstallscreens/3-screen.png)
 
-![Страница продукта Ubuntu для магазина MS Store для бизнеса](media/offlineinstallscreens/4-screen.png)
+5. <span data-ttu-id="c56ce-128">Выберите "Автономная" лицензия в раскрывающемся меню "Тип лицензии" и выберите "Получить приложение".</span><span class="sxs-lookup"><span data-stu-id="c56ce-128">Select an 'Offline' license in the License type dropdown menu and select 'Get the app'.</span></span> <span data-ttu-id="c56ce-129">(Некоторые дистрибутивы Linux могут не предоставлять автономную лицензию).</span><span class="sxs-lookup"><span data-stu-id="c56ce-129">(Some Linux distributions may elect not to provide an offline license).</span></span>
 
-<span data-ttu-id="871df-130">Примечание. Некоторые дистрибутивов могут отказаться от автономной лицензии.</span><span class="sxs-lookup"><span data-stu-id="871df-130">Please note: some distros may elect not to have an offline license</span></span>
+    ![Страница продукта Ubuntu для MS Store для бизнеса](media/offlineinstallscreens/4-screen.png)
 
-### <a name="click-the-manage-button-to-get-to-the-apps-product-page"></a><span data-ttu-id="871df-131">Нажмите кнопку "Управление", чтобы перейти на страницу продукта приложения</span><span class="sxs-lookup"><span data-stu-id="871df-131">Click the ‘Manage’ button to get to the app’s product page</span></span>
+6. <span data-ttu-id="c56ce-131">Нажмите кнопку "Управление", чтобы перейти на страницу продукта приложения.</span><span class="sxs-lookup"><span data-stu-id="c56ce-131">Select the 'Manage' button to get to the app's product page.</span></span>
 
-![Страница продукта Ubuntu для магазина MS Store для бизнеса](media/offlineinstallscreens/5-screen.png)
+    ![Страница продукта Ubuntu для MS Store для бизнеса](media/offlineinstallscreens/5-screen.png)
 
-### <a name="select-your-architecture-and-download-the-package-for-offline-use"></a><span data-ttu-id="871df-133">Выберите архитектуру и скачайте пакет для использования в автономном режиме</span><span class="sxs-lookup"><span data-stu-id="871df-133">Select your architecture and download the package for offline use</span></span>
+7. <span data-ttu-id="c56ce-133">Выберите архитектуру и скачайте пакет для использования в автономном режиме.</span><span class="sxs-lookup"><span data-stu-id="c56ce-133">Select your architecture and download the package for offline use.</span></span>
 
-![Страница сведений о продукте для Microsoft Store для бизнеса Ubuntu](media/offlineinstallscreens/6-screen.png)
+    ![Страница сведений о продукте Ubuntu для Microsoft Store для бизнеса](media/offlineinstallscreens/6-screen.png)
 
-<span data-ttu-id="871df-135">Затем этот установщик можно распространить на любой компьютер, на который необходимо установить WSL.</span><span class="sxs-lookup"><span data-stu-id="871df-135">This installer can then be distributed to any computer where you would like to install WSL.</span></span>
+<span data-ttu-id="c56ce-135">Затем этот установщик можно распространить на любой компьютер, на который необходимо установить WSL.</span><span class="sxs-lookup"><span data-stu-id="c56ce-135">This installer can then be distributed to any computer where you would like to install WSL.</span></span>
