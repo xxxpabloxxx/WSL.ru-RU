@@ -1,79 +1,140 @@
 ---
 title: Установка подсистемы Windows для Linux (WSL) в Windows 10
 description: Инструкции по установке подсистемы Windows для Linux в Windows 10.
-keywords: BashOnWindows, bash, wsl, windows, подсистема windows для linux, windowssubsystem, ubuntu, debian, suse, windows 10, установка
-ms.date: 07/23/2018
+keywords: BashOnWindows, bash, wsl, windows, подсистема windows для linux, windowssubsystem, ubuntu, debian, suse, windows 10, установка, включить, WSL2, версия 2
+ms.date: 05/12/2020
 ms.topic: article
-ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
-ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: 17ca32db23b426ef1367ff9444b5924d9d7e1716
-ms.sourcegitcommit: 39d3a2f0f4184eaec8d8fec740aff800e8ea9ac7
+ms.openlocfilehash: acb83234a90dc5e65c98518b869f29c4ecf973d8
+ms.sourcegitcommit: e6e888f2b88a2d9c105cee46e5ab5b70aa43dd80
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "74200235"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83343916"
 ---
-# <a name="windows-subsystem-for-linux-installation-guide-for-windows-10"></a><span data-ttu-id="d245f-104">Руководство по установке подсистемы Windows для Linux в Windows 10</span><span class="sxs-lookup"><span data-stu-id="d245f-104">Windows Subsystem for Linux Installation Guide for Windows 10</span></span>
+# <a name="windows-subsystem-for-linux-installation-guide-for-windows-10"></a><span data-ttu-id="66d71-104">Руководство по установке подсистемы Windows для Linux в Windows 10</span><span class="sxs-lookup"><span data-stu-id="66d71-104">Windows Subsystem for Linux Installation Guide for Windows 10</span></span>
 
-## <a name="install-the-windows-subsystem-for-linux"></a><span data-ttu-id="d245f-105">Установка подсистемы Windows для Linux</span><span class="sxs-lookup"><span data-stu-id="d245f-105">Install the Windows Subsystem for Linux</span></span>
+## <a name="install-the-windows-subsystem-for-linux"></a><span data-ttu-id="66d71-105">Установка подсистемы Windows для Linux</span><span class="sxs-lookup"><span data-stu-id="66d71-105">Install the Windows Subsystem for Linux</span></span>
 
-<span data-ttu-id="d245f-106">Перед установкой каких-либо дистрибутивов Linux для WSL необходимо убедиться, что включен дополнительный компонент "Подсистема Windows для Linux".</span><span class="sxs-lookup"><span data-stu-id="d245f-106">Before installing any Linux distros for WSL, you must ensure that the "Windows Subsystem for Linux" optional feature is enabled:</span></span>
+<span data-ttu-id="66d71-106">Перед установкой дистрибутивов Linux в Windows необходимо включить дополнительный компонент "Подсистема Windows для Linux".</span><span class="sxs-lookup"><span data-stu-id="66d71-106">Before installing any Linux distributions on Windows, you must enable the "Windows Subsystem for Linux" optional feature.</span></span>
 
-1. <span data-ttu-id="d245f-107">Запустите PowerShell с правами администратора и выполните следующую команду.</span><span class="sxs-lookup"><span data-stu-id="d245f-107">Open PowerShell as Administrator and run:</span></span>
-    ```powershell
-    Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-    ```
+<span data-ttu-id="66d71-107">Запустите PowerShell с правами администратора и выполните следующую команду.</span><span class="sxs-lookup"><span data-stu-id="66d71-107">Open PowerShell as Administrator and run:</span></span>
 
-2. <span data-ttu-id="d245f-108">При появлении соответствующего запроса перезагрузите компьютер.</span><span class="sxs-lookup"><span data-stu-id="d245f-108">Restart your computer when prompted.</span></span>
+```powershell
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+```
 
-## <a name="install-your-linux-distribution-of-choice"></a><span data-ttu-id="d245f-109">Установка дистрибутива Linux по выбору</span><span class="sxs-lookup"><span data-stu-id="d245f-109">Install your Linux Distribution of Choice</span></span>
-<span data-ttu-id="d245f-110">Чтобы скачать и установить предпочтительные дистрибутивы, у вас есть три варианта:</span><span class="sxs-lookup"><span data-stu-id="d245f-110">To download and install your preferred distro(s), you have three choices:</span></span>
-* <span data-ttu-id="d245f-111">Скачайте и установите их из Microsoft Store (см. ниже).</span><span class="sxs-lookup"><span data-stu-id="d245f-111">Download and install from the Microsoft Store (see below)</span></span>
-* <span data-ttu-id="d245f-112">Скачайте и установите их с помощью командной строки или сценария ([ознакомьтесь с инструкциями по установке вручную](install-manual.md)).</span><span class="sxs-lookup"><span data-stu-id="d245f-112">Download and install from the Command-Line/Script ([read the manual installation instructions](install-manual.md))</span></span>
-* <span data-ttu-id="d245f-113">Скачайте их, а затем вручную распакуйте и установите (инструкции для Windows Server доступны [здесь](install-on-server.md)).</span><span class="sxs-lookup"><span data-stu-id="d245f-113">Download and manually unpack and install (for Windows Server - [instructions here](install-on-server.md))</span></span>
+<span data-ttu-id="66d71-108">Чтобы установить только WSL 1, необходимо перезагрузить компьютер и перейти к пункту [Install your Linux distribution of choice](./install-win10.md#install-your-linux-distribution-of-choice) (Установить дистрибутив Linux), в противном случае дождитесь перезапуска и переходите к обновлению до WSL 2.</span><span class="sxs-lookup"><span data-stu-id="66d71-108">To only install WSL 1, you should now restart your machine and move on to [Install your Linux distribution of choice](./install-win10.md#install-your-linux-distribution-of-choice), otherwise wait to restart and move on to update to WSL 2.</span></span> <span data-ttu-id="66d71-109">Узнайте больше о [сравнении WSL 2 и WSL 1](./compare-versions.md).</span><span class="sxs-lookup"><span data-stu-id="66d71-109">Read more about [Comparing WSL 2 and WSL 1](./compare-versions.md).</span></span>
 
-### <a name="windows-10-fall-creators-update-and-later-install-from-the-microsoft-store"></a><span data-ttu-id="d245f-114">Windows 10 Fall Creators Update и более поздние версии: установка из Microsoft Store</span><span class="sxs-lookup"><span data-stu-id="d245f-114">Windows 10 Fall Creators Update and later: Install from the Microsoft Store</span></span>
+## <a name="update-to-wsl-2"></a><span data-ttu-id="66d71-110">Обновление до WSL 2</span><span class="sxs-lookup"><span data-stu-id="66d71-110">Update to WSL 2</span></span>
 
-> <span data-ttu-id="d245f-115">Этот раздел предназначен для сборки 16215 Windows или более поздней версии.</span><span class="sxs-lookup"><span data-stu-id="d245f-115">This section is for Windows build 16215 or later.</span></span>  <span data-ttu-id="d245f-116">Выполните следующие действия, чтобы [узнать номер своей сборки](troubleshooting.md#check-your-build-number).</span><span class="sxs-lookup"><span data-stu-id="d245f-116">Follow these steps to [check your build](troubleshooting.md#check-your-build-number).</span></span> 
+<span data-ttu-id="66d71-111">Чтобы выполнить обновление до WSL 2, необходимо выполнить следующие условия:</span><span class="sxs-lookup"><span data-stu-id="66d71-111">To update to WSL 2, you must meet the follow criteria:</span></span>
 
-1. <span data-ttu-id="d245f-117">Откройте Microsoft Store и выберите предпочтительный дистрибутив Linux.</span><span class="sxs-lookup"><span data-stu-id="d245f-117">Open the Microsoft Store and choose your favorite Linux distribution.</span></span>
+- <span data-ttu-id="66d71-112">Использовать Windows 10 с [обновлением до версии 2004](ms-settings:windowsupdate), **сборкой 19041** или более поздней версии.</span><span class="sxs-lookup"><span data-stu-id="66d71-112">Running Windows 10, [updated to version 2004](ms-settings:windowsupdate), **Build 19041** or higher.</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="66d71-113">Сейчас для обновления до Windows 10 версии 2004 (сборка 19041) потребуется [присоединиться к Программе предварительной оценки Windows](https://insider.windows.com/insidersigninboth/) и выбрать круг Release Preview.</span><span class="sxs-lookup"><span data-stu-id="66d71-113">Currently to update to Windows 10, version 2004 (Build 19041), you will need to [join the Windows Insider program](https://insider.windows.com/insidersigninboth/) and select the "Release Preview" ring.</span></span> <span data-ttu-id="66d71-114">Общедоступный выпуск должен появиться в конце мая.</span><span class="sxs-lookup"><span data-stu-id="66d71-114">The public release should arrive by late May.</span></span>
+
+- <span data-ttu-id="66d71-115">Проверьте версию Windows, нажав **Windows + R**, введите **winver**, выберите **ОК**.</span><span class="sxs-lookup"><span data-stu-id="66d71-115">Check your Windows version by selecting the **Windows logo key + R**, type **winver**, select **OK**.</span></span> <span data-ttu-id="66d71-116">(Или введите команду `ver` в командной строке Windows).</span><span class="sxs-lookup"><span data-stu-id="66d71-116">(Or enter the `ver` command in Windows Command Prompt).</span></span> <span data-ttu-id="66d71-117">[Обновите последнюю версию Windows](ms-settings:windowsupdate), если сборка ниже 19041.</span><span class="sxs-lookup"><span data-stu-id="66d71-117">Please [update to the latest Windows version](ms-settings:windowsupdate) if your build is lower than 19041.</span></span> <span data-ttu-id="66d71-118">[Получите помощник по Центру обновления Windows](https://www.microsoft.com/software-download/windows10).</span><span class="sxs-lookup"><span data-stu-id="66d71-118">[Get Windows Update Assistant](https://www.microsoft.com/software-download/windows10).</span></span>
+
+### <a name="enable-the-virtual-machine-platform-optional-component"></a><span data-ttu-id="66d71-119">Включение необязательного компонента "Virtual Machine Platform" (Платформа виртуальной машины)</span><span class="sxs-lookup"><span data-stu-id="66d71-119">Enable the 'Virtual Machine Platform' optional component</span></span>
+
+<span data-ttu-id="66d71-120">Перед установкой WSL 2 необходимо включить необязательный компонент "Virtual Machine Platform" (Платформа виртуальных машин).</span><span class="sxs-lookup"><span data-stu-id="66d71-120">Before installing WSL 2, you must enable the "Virtual Machine Platform" optional feature.</span></span>
+
+<span data-ttu-id="66d71-121">Запустите PowerShell с правами администратора и выполните следующую команду.</span><span class="sxs-lookup"><span data-stu-id="66d71-121">Open PowerShell as Administrator and run:</span></span>
+
+```powershell
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+```
+
+<span data-ttu-id="66d71-122">**Перезапустите** компьютер, чтобы завершить установку и обновление WSL до WSL 2.</span><span class="sxs-lookup"><span data-stu-id="66d71-122">**Restart** your machine to complete the WSL install and update to WSL 2.</span></span>
+
+### <a name="set-wsl-2-as-your-default-version"></a><span data-ttu-id="66d71-123">Задать WSL 2 в качестве версии по умолчанию</span><span class="sxs-lookup"><span data-stu-id="66d71-123">Set WSL 2 as your default version</span></span>
+
+<span data-ttu-id="66d71-124">Выполните следующую команду в PowerShell, чтобы задать WSL 2 в качестве версии по умолчанию при установке нового дистрибутива Linux:</span><span class="sxs-lookup"><span data-stu-id="66d71-124">Run the following command in Powershell to set WSL 2 as the default version when installing a new Linux distribution:</span></span>
+
+```powershell
+wsl --set-default-version 2
+```
+
+## <a name="install-your-linux-distribution-of-choice"></a><span data-ttu-id="66d71-125">Установка дистрибутива Linux по выбору</span><span class="sxs-lookup"><span data-stu-id="66d71-125">Install your Linux distribution of choice</span></span>
+
+1. <span data-ttu-id="66d71-126">Откройте [Microsoft Store](https://aka.ms/wslstore) и выберите предпочтительный дистрибутив Linux.</span><span class="sxs-lookup"><span data-stu-id="66d71-126">Open the [Microsoft Store](https://aka.ms/wslstore) and select your favorite Linux distribution.</span></span>
 
     ![Представление дистрибутивов Linux в Microsoft Store](media/store.png)
 
-    <span data-ttu-id="d245f-119">Ниже приведены ссылки на страницы Microsoft Store для каждого дистрибутива:</span><span class="sxs-lookup"><span data-stu-id="d245f-119">The following links will open the Microsoft store page for each distribution:</span></span>
+    <span data-ttu-id="66d71-128">Ниже приведены ссылки на страницы Microsoft Store для каждого дистрибутива:</span><span class="sxs-lookup"><span data-stu-id="66d71-128">The following links will open the Microsoft store page for each distribution:</span></span>
 
-    * [<span data-ttu-id="d245f-120">Ubuntu 16.04 LTS</span><span class="sxs-lookup"><span data-stu-id="d245f-120">Ubuntu 16.04 LTS</span></span>](https://www.microsoft.com/store/apps/9pjn388hp8c9)
-    * [<span data-ttu-id="d245f-121">Ubuntu 18.04 LTS</span><span class="sxs-lookup"><span data-stu-id="d245f-121">Ubuntu 18.04 LTS</span></span>](https://www.microsoft.com/store/apps/9N9TNGVNDL3Q)
-    * [<span data-ttu-id="d245f-122">OpenSUSE Leap 15</span><span class="sxs-lookup"><span data-stu-id="d245f-122">OpenSUSE Leap 15</span></span>](https://www.microsoft.com/store/apps/9n1tb6fpvj8c)
-    * [<span data-ttu-id="d245f-123">OpenSUSE Leap 42</span><span class="sxs-lookup"><span data-stu-id="d245f-123">OpenSUSE Leap 42</span></span>](https://www.microsoft.com/store/apps/9njvjts82tjx)
-    * [<span data-ttu-id="d245f-124">SUSE Linux Enterprise Server 12</span><span class="sxs-lookup"><span data-stu-id="d245f-124">SUSE Linux Enterprise Server 12</span></span>](https://www.microsoft.com/store/apps/9p32mwbh6cns)
-    * [<span data-ttu-id="d245f-125">SUSE Linux Enterprise Server 15</span><span class="sxs-lookup"><span data-stu-id="d245f-125">SUSE Linux Enterprise Server 15</span></span>](https://www.microsoft.com/store/apps/9pmw35d7fnlx)
-    * [<span data-ttu-id="d245f-126">Kali Linux</span><span class="sxs-lookup"><span data-stu-id="d245f-126">Kali Linux</span></span>](https://www.microsoft.com/store/apps/9PKR34TNCV07)
-    * [<span data-ttu-id="d245f-127">Debian GNU/Linux</span><span class="sxs-lookup"><span data-stu-id="d245f-127">Debian GNU/Linux</span></span>](https://www.microsoft.com/store/apps/9MSVKQC78PK6)
-    * [<span data-ttu-id="d245f-128">Fedora Remix for WSL</span><span class="sxs-lookup"><span data-stu-id="d245f-128">Fedora Remix for WSL</span></span>](https://www.microsoft.com/store/apps/9n6gdm4k2hnc)
-    * [<span data-ttu-id="d245f-129">Pengwin</span><span class="sxs-lookup"><span data-stu-id="d245f-129">Pengwin</span></span>](https://www.microsoft.com/store/apps/9NV1GV1PXZ6P)
-    * [<span data-ttu-id="d245f-130">Pengwin Enterprise</span><span class="sxs-lookup"><span data-stu-id="d245f-130">Pengwin Enterprise</span></span>](https://www.microsoft.com/store/apps/9N8LP0X93VCP)
-    * [<span data-ttu-id="d245f-131">Alpine WSL</span><span class="sxs-lookup"><span data-stu-id="d245f-131">Alpine WSL</span></span>](https://www.microsoft.com/store/apps/9p804crf0395)
+    - [<span data-ttu-id="66d71-129">Ubuntu 16.04 LTS</span><span class="sxs-lookup"><span data-stu-id="66d71-129">Ubuntu 16.04 LTS</span></span>](https://www.microsoft.com/store/apps/9pjn388hp8c9)
+    - [<span data-ttu-id="66d71-130">Ubuntu 18.04 LTS</span><span class="sxs-lookup"><span data-stu-id="66d71-130">Ubuntu 18.04 LTS</span></span>](https://www.microsoft.com/store/apps/9N9TNGVNDL3Q)
+    - [<span data-ttu-id="66d71-131">openSUSE Leap 15.1</span><span class="sxs-lookup"><span data-stu-id="66d71-131">openSUSE Leap 15.1</span></span>](https://www.microsoft.com/store/apps/9NJFZK00FGKV)
+    - [<span data-ttu-id="66d71-132">SUSE Linux Enterprise Server 12 SP5</span><span class="sxs-lookup"><span data-stu-id="66d71-132">SUSE Linux Enterprise Server 12 SP5</span></span>](https://www.microsoft.com/store/apps/9MZ3D1TRP8T1)
+    - [<span data-ttu-id="66d71-133">SUSE Linux Enterprise Server 15 SP1</span><span class="sxs-lookup"><span data-stu-id="66d71-133">SUSE Linux Enterprise Server 15 SP1</span></span>](https://www.microsoft.com/store/apps/9PN498VPMF3Z)
+    - [<span data-ttu-id="66d71-134">Kali Linux</span><span class="sxs-lookup"><span data-stu-id="66d71-134">Kali Linux</span></span>](https://www.microsoft.com/store/apps/9PKR34TNCV07)
+    - [<span data-ttu-id="66d71-135">Debian GNU/Linux</span><span class="sxs-lookup"><span data-stu-id="66d71-135">Debian GNU/Linux</span></span>](https://www.microsoft.com/store/apps/9MSVKQC78PK6)
+    - [<span data-ttu-id="66d71-136">Fedora Remix for WSL</span><span class="sxs-lookup"><span data-stu-id="66d71-136">Fedora Remix for WSL</span></span>](https://www.microsoft.com/store/apps/9n6gdm4k2hnc)
+    - [<span data-ttu-id="66d71-137">Pengwin</span><span class="sxs-lookup"><span data-stu-id="66d71-137">Pengwin</span></span>](https://www.microsoft.com/store/apps/9NV1GV1PXZ6P)
+    - [<span data-ttu-id="66d71-138">Pengwin Enterprise</span><span class="sxs-lookup"><span data-stu-id="66d71-138">Pengwin Enterprise</span></span>](https://www.microsoft.com/store/apps/9N8LP0X93VCP)
+    - [<span data-ttu-id="66d71-139">Alpine WSL</span><span class="sxs-lookup"><span data-stu-id="66d71-139">Alpine WSL</span></span>](https://www.microsoft.com/store/apps/9p804crf0395)
 
-1. <span data-ttu-id="d245f-132">На странице дистрибутива щелкните "Получить".</span><span class="sxs-lookup"><span data-stu-id="d245f-132">From the distro's page, select "Get"</span></span>
+2. <span data-ttu-id="66d71-140">На странице дистрибутива щелкните "Получить".</span><span class="sxs-lookup"><span data-stu-id="66d71-140">From the distribution's page, select "Get".</span></span>
 
-    ![Представление дистрибутивов Linux в Microsoft Store](media/UbuntuStore.png)
+    ![Дистрибутивы Linux в Microsoft Store](media/UbuntuStore.png)
 
-## <a name="complete-initialization-of-your-distro"></a><span data-ttu-id="d245f-134">Завершение инициализации дистрибутива</span><span class="sxs-lookup"><span data-stu-id="d245f-134">Complete initialization of your distro</span></span>
-<span data-ttu-id="d245f-135">После установки дистрибутива Linux необходимо [единоразово инициализировать новый экземпляр дистрибутива](initialize-distro.md), прежде чем его можно будет использовать.</span><span class="sxs-lookup"><span data-stu-id="d245f-135">Now that your Linux distro is installed, you must [initialize your new distro instance](initialize-distro.md) once, before it can be used.</span></span>
+## <a name="set-up-a-new-distribution"></a><span data-ttu-id="66d71-142">Настройка нового дистрибутива</span><span class="sxs-lookup"><span data-stu-id="66d71-142">Set up a new distribution</span></span>
 
-## <a name="troubleshooting"></a><span data-ttu-id="d245f-136">Устранение неполадок:</span><span class="sxs-lookup"><span data-stu-id="d245f-136">Troubleshooting:</span></span> 
+<span data-ttu-id="66d71-143">При первом запуске недавно установленного дистрибутива Linux откроется окно консоли, и вам будет предложено подождать минуту или две, чтобы файлы распаковались и сохранились на компьютере.</span><span class="sxs-lookup"><span data-stu-id="66d71-143">The first time you launch a newly installed Linux distribution, a console window will open and you'll be asked to wait for a minute or two for files to de-compress and be stored on your PC.</span></span> <span data-ttu-id="66d71-144">Все будущие запуски должны занимать меньше секунды.</span><span class="sxs-lookup"><span data-stu-id="66d71-144">All future launches should take less than a second.</span></span>
 
-<span data-ttu-id="d245f-137">Ниже перечислены возможные ошибки и способы их устранения.</span><span class="sxs-lookup"><span data-stu-id="d245f-137">Below are related errors and suggested fixes.</span></span> <span data-ttu-id="d245f-138">Другие распространенные ошибки и способы их устранения приведены в разделе [Устранение неполадок подсистемы Windows для Linux](troubleshooting.md).</span><span class="sxs-lookup"><span data-stu-id="d245f-138">Refer to the [WSL troubleshooting page](troubleshooting.md) for other common errors and their solutions.</span></span>
+<span data-ttu-id="66d71-145">Затем необходимо будет [создать учетную запись пользователя и пароль для нового дистрибутива Linux](./user-support.md).</span><span class="sxs-lookup"><span data-stu-id="66d71-145">You will then need to [create a user account and password for your new Linux distribution](./user-support.md).</span></span>
 
-* <span data-ttu-id="d245f-139">**Сбой установки с ошибкой 0x80070003**</span><span class="sxs-lookup"><span data-stu-id="d245f-139">**Installation failed with error 0x80070003**</span></span>
-    * <span data-ttu-id="d245f-140">Подсистема Windows для Linux работает только на системном диске (обычно это диск `C:`).</span><span class="sxs-lookup"><span data-stu-id="d245f-140">The Windows Subsystem for Linux only runs on your system drive (usually this is your `C:` drive).</span></span> <span data-ttu-id="d245f-141">Убедитесь, что дистрибутивы хранятся на системном диске.</span><span class="sxs-lookup"><span data-stu-id="d245f-141">Make sure that distros are stored on your system drive:</span></span>  
-    * <span data-ttu-id="d245f-142">Выберите **Параметры** -> **Хранилище** -> **More Storage Settings: (Другие параметры хранилища:) Изменить место сохранения нового содержимого**.
-    ![Изображение параметров системы для установки приложений на диске C:](media/AppStorage.png)</span><span class="sxs-lookup"><span data-stu-id="d245f-142">Open **Settings** -> **Storage** -> **More Storage Settings: Change where new content is saved**
+![Распаковка Ubuntu в консоли Windows](media/UbuntuInstall.png)
+
+## <a name="set-your-distribution-version-to-wsl-1-or-wsl-2"></a><span data-ttu-id="66d71-147">Установите вашу версию дистрибутива на WSL 1 или WSL 2</span><span class="sxs-lookup"><span data-stu-id="66d71-147">Set your distribution version to WSL 1 or WSL 2</span></span>
+
+<span data-ttu-id="66d71-148">Вы можете проверить версию WSL, назначенную каждому из установленных дистрибутивов Linux, открыв командную строку PowerShell и введя команду (доступна только в [сборке Windows 19041](ms-settings:windowsupdate) или более поздней версии): `wsl -l -v`.</span><span class="sxs-lookup"><span data-stu-id="66d71-148">You can check the WSL version assigned to each of the Linux distributions you have installed by opening the PowerShell command line and entering the command (only available in [Windows Build 19041 or higher](ms-settings:windowsupdate)): `wsl -l -v`</span></span>
+
+```bash
+wsl --list --verbose
+```
+
+<span data-ttu-id="66d71-149">Чтобы настроить дистрибутив для одной из версий WSL, выполните:</span><span class="sxs-lookup"><span data-stu-id="66d71-149">To set a distribution to be backed by either version of WSL please run:</span></span>
+
+```bash
+wsl --set-version <distribution name> <versionNumber>
+```
+
+<span data-ttu-id="66d71-150">Не забудьте заменить `<distribution name>` на фактическое имя дистрибутива и `<versionNumber>` с номером "1" или "2".</span><span class="sxs-lookup"><span data-stu-id="66d71-150">Make sure to replace `<distribution name>` with the actual name of your distribution and `<versionNumber>` with the number '1' or '2'.</span></span> <span data-ttu-id="66d71-151">Вы можете всегда вернуться к WSL версии 1, выполнив эту команду и заменив "2" на "1".</span><span class="sxs-lookup"><span data-stu-id="66d71-151">You can change back to WSL 1 at anytime by running the same command as above but replacing the '2' with a '1'.</span></span>
+
+<span data-ttu-id="66d71-152">Кроме того, если вы хотите сделать WSL 2 архитектурой по умолчанию, выполните следующую команду:</span><span class="sxs-lookup"><span data-stu-id="66d71-152">Additionally, if you want to make WSL 2 your default architecture you can do so with this command:</span></span>
+
+```bash
+wsl --set-default-version 2
+```
+
+<span data-ttu-id="66d71-153">Будет установлена версия любого нового дистрибутива, установленного в WSL 2.</span><span class="sxs-lookup"><span data-stu-id="66d71-153">This will set the version of any new distribution installed to WSL 2.</span></span>
+
+## <a name="troubleshooting-installation"></a><span data-ttu-id="66d71-154">Устранение неполадок установки</span><span class="sxs-lookup"><span data-stu-id="66d71-154">Troubleshooting installation</span></span>
+
+<span data-ttu-id="66d71-155">Ниже перечислены возможные ошибки и способы их устранения.</span><span class="sxs-lookup"><span data-stu-id="66d71-155">Below are related errors and suggested fixes.</span></span> <span data-ttu-id="66d71-156">Другие распространенные ошибки и способы их устранения приведены в разделе [Устранение неполадок подсистемы Windows для Linux](troubleshooting.md).</span><span class="sxs-lookup"><span data-stu-id="66d71-156">Refer to the [WSL troubleshooting page](troubleshooting.md) for other common errors and their solutions.</span></span>
+
+- <span data-ttu-id="66d71-157">**Сбой установки с ошибкой 0x80070003**</span><span class="sxs-lookup"><span data-stu-id="66d71-157">**Installation failed with error 0x80070003**</span></span>
+  - <span data-ttu-id="66d71-158">Подсистема Windows для Linux работает только на системном диске (обычно это диск `C:`).</span><span class="sxs-lookup"><span data-stu-id="66d71-158">The Windows Subsystem for Linux only runs on your system drive (usually this is your `C:` drive).</span></span> <span data-ttu-id="66d71-159">Убедитесь, что дистрибутивы хранятся на системном диске.</span><span class="sxs-lookup"><span data-stu-id="66d71-159">Make sure that distributions are stored on your system drive:</span></span>  
+  - <span data-ttu-id="66d71-160">Выберите **Параметры** -> **Хранилище** -> **More Storage Settings: (Другие параметры хранилища:) Изменить место сохранения нового содержимого**.
+    ![Изображение параметров системы для установки приложений на диске C:](media/AppStorage.png)</span><span class="sxs-lookup"><span data-stu-id="66d71-160">Open **Settings** -> **Storage** -> **More Storage Settings: Change where new content is saved**
 ![Picture of system settings to install apps on C: drive](media/AppStorage.png)</span></span>
-    
-    
- * <span data-ttu-id="d245f-143">**Сбой WslRegisterDistribution с ошибкой 0x8007019e**</span><span class="sxs-lookup"><span data-stu-id="d245f-143">**WslRegisterDistribution failed with error 0x8007019e**</span></span>   
-  * <span data-ttu-id="d245f-144">Дополнительный компонент "Подсистема Windows для Linux" не включен.</span><span class="sxs-lookup"><span data-stu-id="d245f-144">The Windows Subsystem for Linux optional component is not enabled:</span></span> 
-   * <span data-ttu-id="d245f-145">Выберите **Панель управления** -> **Программы и компоненты** -> **Включение или отключение компонентов Windows** и установите флажок **Подсистема Windows для Linux** или используйте командлет PowerShell, упомянутый в начале этой статьи.</span><span class="sxs-lookup"><span data-stu-id="d245f-145">Open **Control Panel** -> **Programs and Features** -> **Turn Windows Feature on or off** -> Check **Windows Subsystem for Linux** or using the PowerShell cmdlet mentioned at the begining of this article.</span></span>
+
+- <span data-ttu-id="66d71-161">**Сбой WslRegisterDistribution с ошибкой 0x8007019e**</span><span class="sxs-lookup"><span data-stu-id="66d71-161">**WslRegisterDistribution failed with error 0x8007019e**</span></span>
+  - <span data-ttu-id="66d71-162">Дополнительный компонент "Подсистема Windows для Linux" не включен.</span><span class="sxs-lookup"><span data-stu-id="66d71-162">The Windows Subsystem for Linux optional component is not enabled:</span></span>
+  - <span data-ttu-id="66d71-163">Выберите **Панель управления** -> **Программы и компоненты** -> **Включение или отключение компонентов Windows** и установите флажок **Подсистема Windows для Linux** или используйте командлет PowerShell, упомянутый в начале этой статьи.</span><span class="sxs-lookup"><span data-stu-id="66d71-163">Open **Control Panel** -> **Programs and Features** -> **Turn Windows Feature on or off** -> Check **Windows Subsystem for Linux** or using the PowerShell cmdlet mentioned at the begining of this article.</span></span>
+
+- <span data-ttu-id="66d71-164">**Сбой установки с ошибкой 0x80070003 или ошибкой 0x80370102.**</span><span class="sxs-lookup"><span data-stu-id="66d71-164">**Installation failed with error 0x80070003 or error 0x80370102**</span></span>
+  - <span data-ttu-id="66d71-165">Убедитесь, что в BIOS вашего компьютера включена виртуализация.</span><span class="sxs-lookup"><span data-stu-id="66d71-165">Please make sure that virtualization is enabled inside of your computer's BIOS.</span></span> <span data-ttu-id="66d71-166">Расположение этого параметра зависит от компьютера, но обычно он находится в разделе настроек ЦП в BIOS.</span><span class="sxs-lookup"><span data-stu-id="66d71-166">The instructions on how to do this will vary from computer to computer, and will most likely be under CPU related options.</span></span>
+
+- <span data-ttu-id="66d71-167">**При попытке обновления возникает ошибка `Invalid command line option: wsl --set-version Ubuntu 2`.**</span><span class="sxs-lookup"><span data-stu-id="66d71-167">**Error when trying to upgrade: `Invalid command line option: wsl --set-version Ubuntu 2`**</span></span>
+  - <span data-ttu-id="66d71-168">Убедитесь, что у вас включена подсистема Windows для Linux и используется сборка Windows 19041 или более поздней версии.</span><span class="sxs-lookup"><span data-stu-id="66d71-168">Please make sure that you have the Windows Subsystem for Linux enabled, and that you're using Windows Build version 19041 or higher.</span></span> <span data-ttu-id="66d71-169">Чтобы включить WSL, выполните эту команду в командной строке PowerShell с правами администратора: `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`.</span><span class="sxs-lookup"><span data-stu-id="66d71-169">To enable WSL run this command in a Powershell prompt with admin privileges: `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`.</span></span> <span data-ttu-id="66d71-170">Полную инструкцию по установке WSL см. [здесь](./install-win10.md).</span><span class="sxs-lookup"><span data-stu-id="66d71-170">You can find the full WSL install instructions [here](./install-win10.md).</span></span>
+
+- <span data-ttu-id="66d71-171">**Запрошенную операцию не удалось выполнить из-за ограничения системы виртуального диска. Файлы виртуального жесткого диска должны быть распакованными, незашифрованными и не разреженными.**</span><span class="sxs-lookup"><span data-stu-id="66d71-171">**The requested operation could not be completed due to a virtual disk system limitation. Virtual hard disk files must be uncompressed and unencrypted and must not be sparse.**</span></span>
+  - <span data-ttu-id="66d71-172">Чтобы получить обновленные сведения, проверьте [поток GitHub WSL #4103](https://github.com/microsoft/WSL/issues/4103), где отслеживается эта проблема.</span><span class="sxs-lookup"><span data-stu-id="66d71-172">Please check [WSL Github thread #4103](https://github.com/microsoft/WSL/issues/4103) where this issue is being tracked for updated information.</span></span>
+
+- <span data-ttu-id="66d71-173">**Термин WSL не распознан как имя командлета, функции, файла скрипта или действующей программы.**</span><span class="sxs-lookup"><span data-stu-id="66d71-173">**The term 'wsl' is not recognized as the name of a cmdlet, function, script file, or operable program.**</span></span>
+  - <span data-ttu-id="66d71-174">Убедитесь, что установлен дополнительный компонент [Подсистема Windows для Linux](./install-win10.md#enable-the-virtual-machine-platform-optional-component).</span><span class="sxs-lookup"><span data-stu-id="66d71-174">Ensure that the [Windows Subsystem for Linux Optional Component is installed](./install-win10.md#enable-the-virtual-machine-platform-optional-component).</span></span> <span data-ttu-id="66d71-175">Кроме того, если вы используете устройство Arm64 и выполняете эту команду в PowerShell, вы получите эту ошибку.</span><span class="sxs-lookup"><span data-stu-id="66d71-175">Additionally, if you are using an Arm64 device and running this command from PowerShell, you will receive this error.</span></span> <span data-ttu-id="66d71-176">Вместо этого запустите `wsl.exe` из [PowerShell Core](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-6) или командной строки.</span><span class="sxs-lookup"><span data-stu-id="66d71-176">Instead run `wsl.exe` from [PowerShell Core](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-6), or Command Prompt.</span></span>
