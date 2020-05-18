@@ -1,38 +1,41 @@
 ---
 title: Обновление ядра Linux в WSL 2
 description: Инструкции по обновлению ядра Linux в WSL 2 вручную
-keywords: BashOnWindows, bash, wsl, windows, подсистема windows для linux, windowssubsystem, ubuntu, wsl.conf, wslconfig
+keywords: WSL, Windows, ядро Linux, подсистема Windows для Linux, ядро
 ms.date: 03/12/2020
 ms.topic: article
-ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.localizationpriority: high
-ms.custom: seodec18
-ms.openlocfilehash: a1a2f23fb05c426f80878e12e82026a96c71354e
-ms.sourcegitcommit: 39d3a2f0f4184eaec8d8fec740aff800e8ea9ac7
+ms.openlocfilehash: 89e5755699938b7797aa65a5f3131f93e3e31796
+ms.sourcegitcommit: e6e888f2b88a2d9c105cee46e5ab5b70aa43dd80
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "79447741"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83343836"
 ---
 # <a name="updating-the-wsl-2-linux-kernel"></a>Обновление ядра Linux в WSL 2
 
-Чтобы вручную обновить ядро Linux в WSL 2, выполните описанные ниже действия. 
+Чтобы вручную обновить ядро Linux в WSL 2, выполните описанные ниже действия.
+
+> [!NOTE] 
+> Если установщику не удается найти WSL 1, щелкните правой кнопкой мыши установщик обновления ядра Linux, а затем нажмите кнопку "Удалить" и запустите установщик повторно.
 
 ## <a name="download-the-linux-kernel-update-package"></a>Скачивание пакета обновления ядра Linux
 
-Щелкните [эту ссылку](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi), чтобы скачать последнюю версию пакета обновления ядра Linux в WSL 2 для компьютеров x64.
+[Скачайте последнюю версию пакета обновления ядра Linux в WSL 2](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi) для 64-разрядных компьютеров.
 
-> [!NOTE] 
-> Если вы используете компьютер ARM64, вместо этого скачайте [этот пакет](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_arm64.msi).
+> [!NOTE]
+> Если вы используете компьютер ARM64, вместо этого скачайте [пакет ARM64](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_arm64.msi).
 
 ## <a name="install-the-linux-kernel-update-package"></a>Установка пакета обновления ядра Linux
 
 Чтобы установить пакет обновления ядра Linux:
 
-    1. Запустите пакет обновления, скачанный на предыдущем этапе.
-    2. Появится запрос на повышение уровня разрешений. Нажмите кнопку "Да", чтобы утвердить эту установку.
-    3. По завершении установки можно приступить к использованию WSL 2.
+  1. Запустите пакет обновления, скачанный на предыдущем этапе.
+
+  2. Появится запрос на повышение уровня разрешений. Нажмите кнопку "Да", чтобы утвердить эту установку.
+
+  3. По завершении установки можно приступить к использованию WSL 2.
 
 ## <a name="future-plans-for-updating-the-wsl2-linux-kernel"></a>Дальнейшие планы по обновлению ядра Linux в WSL 2
 
-Дополнительные сведения об этих изменениях см. в [этой записи](https://devblogs.microsoft.com/commandline/wsl2-will-be-generally-available-in-windows-10-version-2004) блога, посвященного [командной строке Windows](https://aka.ms/cliblog).
+Дополнительные сведения см. в статье об [изменениях процесса установки обновления ядра Linux в WSL 2](https://devblogs.microsoft.com/commandline/wsl2-will-be-generally-available-in-windows-10-version-2004), доступной в блоге, [посвященному командной строке Windows](https://aka.ms/cliblog).

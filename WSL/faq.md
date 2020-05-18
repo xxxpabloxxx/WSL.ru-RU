@@ -6,12 +6,12 @@ ms.date: 9/4/2018
 ms.topic: article
 ms.assetid: 129101ed-b88a-43c2-b6a2-cd2c4ff6fee1
 ms.localizationpriority: high
-ms.openlocfilehash: 5651b0869ff97899a768985ce6efa006afa77a9b
-ms.sourcegitcommit: 39d3a2f0f4184eaec8d8fec740aff800e8ea9ac7
+ms.openlocfilehash: 3c3681b0e0e8317917b4ec7c37c9bb2f0bbe9c95
+ms.sourcegitcommit: e6e888f2b88a2d9c105cee46e5ab5b70aa43dd80
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "77624938"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83343906"
 ---
 # <a name="frequently-asked-questions-about-windows-subsystem-for-linux"></a>Часто задаваемые вопросы о подсистеме Windows для Linux
 
@@ -202,9 +202,9 @@ sudo update-locale LANG=en_US.UTF8
 ## <a name="how-do-i-access-a-port-from-wsl-in-windows"></a>Как получить доступ к порту из WSL в Windows?
 WSL использует IP-адрес Windows, так как работает в Windows. Поэтому вы можете получить доступ к любым портам на localhost. Например, если вы предоставляете веб-содержимое через порт 1234, то вы можете открыть адрес https://localhost:1234 в браузере для Windows.
 
-## <a name="how-can-i-back-up-my-wsl-distros"></a>Как можно создать резервную копию дистрибутивов WSL?
+## <a name="how-can-i-back-up-my-wsl-distros-or-move-them-from-one-drive-to-another"></a>Как выполнить резервное копирование дистрибутивов WSL или переместить их с одного диска на другой?
 
-Лучший способ резервного копирования дистрибутивов доступен в Windows версии 1809 и более поздних версиях. Вы можете экспортировать весь дистрибутив в архив tarball с помощью команды `wsl --export`. Затем этот дистрибутив можно импортировать обратно в WSL с помощью команды `wsl --import`. Это позволяет создавать резервные копии и сохранять состояния дистрибутивов WSL. 
+Лучший способ резервного копирования или переноса дистрибутивов — использование команд импорта и экспорта, доступных в Windows версии 1809 и более поздних версиях. Вы можете экспортировать весь дистрибутив в архив tarball с помощью команды `wsl --export`. Затем этот дистрибутив можно импортировать обратно в WSL с помощью команды `wsl --import`, которая позволяет присвоить имя новому расположению на диске для импорта. Благодаря этому можно создавать резервные копии и сохранять состояния дистрибутивов WSL или переносить дистрибутивы. 
 
 Обратите внимание на то, что традиционные службы резервного копирования, которые создают резервные копии файлов в папках AppData (например, программа архивации данных), не повредят файлы Linux.
 
