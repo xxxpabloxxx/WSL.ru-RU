@@ -5,12 +5,12 @@ keywords: BashOnWindows, bash, wsl, windows, подсистема windows для
 ms.date: 05/12/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: acb83234a90dc5e65c98518b869f29c4ecf973d8
-ms.sourcegitcommit: e6e888f2b88a2d9c105cee46e5ab5b70aa43dd80
+ms.openlocfilehash: ec24bbe6ed3ecc4413e623d12d12f9a92c6db9e6
+ms.sourcegitcommit: f0b33cdd1ce7b461e7f657d44e9798094ef55b55
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83343916"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83683029"
 ---
 # <a name="windows-subsystem-for-linux-installation-guide-for-windows-10"></a>Руководство по установке подсистемы Windows для Linux в Windows 10
 
@@ -93,13 +93,13 @@ wsl --set-default-version 2
 
 Вы можете проверить версию WSL, назначенную каждому из установленных дистрибутивов Linux, открыв командную строку PowerShell и введя команду (доступна только в [сборке Windows 19041](ms-settings:windowsupdate) или более поздней версии): `wsl -l -v`.
 
-```bash
+```powershell
 wsl --list --verbose
 ```
 
 Чтобы настроить дистрибутив для одной из версий WSL, выполните:
 
-```bash
+```powershell
 wsl --set-version <distribution name> <versionNumber>
 ```
 
@@ -107,7 +107,7 @@ wsl --set-version <distribution name> <versionNumber>
 
 Кроме того, если вы хотите сделать WSL 2 архитектурой по умолчанию, выполните следующую команду:
 
-```bash
+```powershell
 wsl --set-default-version 2
 ```
 
