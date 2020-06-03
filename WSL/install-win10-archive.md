@@ -7,12 +7,12 @@ ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: 9cd38fbe3781fd0cd45bcd52c278de548d3da38f
-ms.sourcegitcommit: 3fb40fd65b34a5eb26b213a0df6a3b2746b7a9b4
+ms.openlocfilehash: 6ed12ba9d63d3f4038b67489035e13113a372928
+ms.sourcegitcommit: 9f12e168b80775cd967f22f97376e51043c3667e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83270552"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84301205"
 ---
 # <a name="install-windows-subsystem-for-linux"></a>Установка подсистемы Windows для Linux
 
@@ -36,7 +36,7 @@ ms.locfileid: "83270552"
 
 - Скачайте и установите их из Microsoft Store (см. ниже).
 - [Скачайте и установите вручную с помощью командной строки.](install-manual.md)
-- [Установите в Windows Server]](install-on-server.md).
+- [Установка в Windows Server](install-on-server.md)
 
 ### <a name="install-from-the-microsoft-store"></a>установка из Microsoft Store
 
