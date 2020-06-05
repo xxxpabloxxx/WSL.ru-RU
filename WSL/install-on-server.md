@@ -5,12 +5,12 @@ keywords: BashOnWindows, bash, wsl, windows, подсистема windows для
 ms.date: 05/12/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 86fd7de0ef45af760f46bb2a18932f513b813609
-ms.sourcegitcommit: 1b6191351bbf9e95f3c28fc67abe4bf1bcfd3336
+ms.openlocfilehash: 805b7d266020c62e0c6f58889541517d44db3726
+ms.sourcegitcommit: 90f7caeefe886bf6c0ba2b90c1b56b5f9795ad1b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83270888"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84153079"
 ---
 # <a name="windows-server-installation-guide"></a>Руководство по установке Windows Server
 
@@ -29,7 +29,7 @@ ms.locfileid: "83270888"
 
 **Если вам нужна 100 % совместимость с системными вызовами и более быстрая производительность ввода-вывода, ознакомьтесь со сведениями ниже, чтобы установить WSL 2!**
 
-Подсистема WSL 2 доступна только в Windows 10 версии 2004, сборки 19041 или выше. Вам потребуется [обновить версию Windows](ms-settings:windowsupdate), а также [присоединиться к Программе предварительной оценки Windows](https://insider.windows.com/insidersigninboth/) и выбрать круг Release Preview, пока в мае не выйдет общедоступный выпуск.
+Подсистема WSL 2 доступна только в Windows 10 версии 2004, сборки 19041 или выше. Может потребоваться [обновить версию Windows](ms-settings:windowsupdate).
 
 **В случае продолжения работы с WSL 1 перезагрузите компьютер, когда появится соответствующее сообщение, и продолжите установку [здесь](./install-on-server.md#download-a-linux-distribution)** .
 

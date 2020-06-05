@@ -5,12 +5,12 @@ keywords: BashOnWindows, bash, wsl, windows, windowssubsystem, gnu, linux, ubunt
 ms.date: 05/12/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 299caaaeb1bac60d2af780dfdd10a64b218ab1f1
-ms.sourcegitcommit: 1b6191351bbf9e95f3c28fc67abe4bf1bcfd3336
+ms.openlocfilehash: aa656d2e5a301d3f5519065246ba99941e74f642
+ms.sourcegitcommit: 53e6a01cbb989dc1aeaba465af4730afe71beb40
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83270858"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84256689"
 ---
 # <a name="comparing-wsl-2-and-wsl-1"></a>Сравнение WSL 2 и WSL 1
 
@@ -28,12 +28,15 @@ WSL 2 использует последнюю и самую новую техн
  Управляемая виртуальная машина| ❌ | ✅
  Полнофункциональное ядро Linux| ❌ |✅
  Полная совместимость системных вызовов| ❌ | ✅
- Запуск с помощью VM Ware и VirtualBox| ✅ |❌
+ Запуск с использованием текущих версий VM Ware и VirtualBox| ✅ | ❌
  Производительность в файловых системах ОС| ✅ | ❌
 
 Уже используете WSL 1 и хотите выполнить обновление до WSL 2? Следуйте инструкциям, чтобы выполнить [обновление до WSL 2](./install-win10.md#update-to-wsl-2)!
 
-Подсистема WSL 2 доступна только в Windows 10 версии 2004, сборки 19041 или выше. Вам потребуется [обновить версию Windows](ms-settings:windowsupdate), а также [присоединиться к Программе предварительной оценки Windows](https://insider.windows.com/insidersigninboth/) и выбрать круг Release Preview, пока в мае не выйдет общедоступный выпуск.
+Подсистема WSL 2 доступна только в Windows 10 версии 2004, сборки 19041 или выше. Проверьте версию Windows, нажав **Windows + R**, введите **winver**, выберите **ОК**. (Или введите команду `ver` в командной строке Windows). Может потребоваться [выполнить обновление до последней версии Windows](ms-settings:windowsupdate). Для сборок ниже 19041 WSL не поддерживается.
+
+> [!NOTE]
+> WSL 2 будет работать с [предварительными версиями VM Ware](https://blogs.vmware.com/workstation/2020/01/vmware-workstation-tech-preview-20h1.html) и [VirtualBox 6.x](https://www.virtualbox.org/wiki/Changelog-6.0).
 
 ## <a name="use-the-linux-file-system-for-faster-performance"></a>Использование файловой системы Linux для повышения производительности
 

@@ -1,18 +1,16 @@
 ---
 title: Скачивание дистрибутивов подсистемы Windows для Linux (WSL) вручную
 description: Инструкции по скачиванию дистрибутивов подсистемы Windows для Linux вручную.
-keywords: BashOnWindows, bash, wsl, windows, подсистема windows для linux, WSL, подсистема windows, дистрибутив, ubuntu, openSUSE, SLES, debian, kali
-ms.date: 07/24/2018
+keywords: wsl, подсистема windows для linux, установка вручную, microsoft store, windows 10s, curl, add-appxpackage, long-term servicing, ltsc
+ms.date: 05/28/2020
 ms.topic: article
-ms.assetid: 9281ffa2-4fa9-4078-bf6f-b51c967617e3
-ms.custom: seodec18
-ms.localizationpriority: high
-ms.openlocfilehash: b1720d01d492f1dccce8c2e1d2ff430f7769a42e
-ms.sourcegitcommit: 3fb40fd65b34a5eb26b213a0df6a3b2746b7a9b4
+ms.localizationpriority: medium
+ms.openlocfilehash: 621b2619d6c62e0b6c4e53f7791fc587c1c8f878
+ms.sourcegitcommit: 09f5eb0f6062642e5c86deb1f34307ce3429163a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83235821"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84211720"
 ---
 # <a name="manually-download-windows-subsystem-for-linux-distro-packages"></a>Скачивание пакетов дистрибутива подсистемы Windows для Linux вручную
 
@@ -40,7 +38,7 @@ ms.locfileid: "83235821"
 При желании вы также можете скачать предпочтительные дистрибутивы с помощью командной строки.
 
  ### <a name="download-using-powershell"></a>Скачивание с помощью PowerShell
- Чтобы скачать дистрибутивы с помощью PowerShell, используйте командлет [Invoke-WebRequest](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/invoke-webrequest). Ниже приведены инструкции по скачиванию Ubuntu 16.04.
+ Чтобы скачать дистрибутивы с помощью PowerShell, используйте командлет [Invoke-WebRequest](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/invoke-webrequest?view=powershell-5.1). Ниже приведены инструкции по скачиванию Ubuntu 16.04.
 
 ```powershell
 Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1604 -OutFile Ubuntu.appx -UseBasicParsing
@@ -68,4 +66,4 @@ Add-AppxPackage .\app_name.appx
 
 Если вы используете сервер Windows, инструкции по установке можно найти на странице документации [Windows Server](install-on-server.md).
 
-После установки дистрибутива ознакомьтесь со страницей c [этапами инициализации](initialize-distro.md), чтобы инициализировать новый дистрибутив.
+После установки дистрибутива следуйте обычным инструкциям по [обновлению до WSL 2](./install-win10.md#update-to-wsl-2) или [создайте новую учетную запись пользователя и пароль](./user-support.md).

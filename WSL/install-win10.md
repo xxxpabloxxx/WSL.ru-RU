@@ -5,12 +5,12 @@ keywords: BashOnWindows, bash, wsl, windows, подсистема windows для
 ms.date: 05/12/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: ec24bbe6ed3ecc4413e623d12d12f9a92c6db9e6
-ms.sourcegitcommit: f0b33cdd1ce7b461e7f657d44e9798094ef55b55
+ms.openlocfilehash: 3914e8d3be84f922424cba1000ea45ea8ce22cd8
+ms.sourcegitcommit: 09f5eb0f6062642e5c86deb1f34307ce3429163a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83683029"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84211730"
 ---
 # <a name="windows-subsystem-for-linux-installation-guide-for-windows-10"></a>Руководство по установке подсистемы Windows для Linux в Windows 10
 
@@ -31,9 +31,6 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 Чтобы выполнить обновление до WSL 2, необходимо выполнить следующие условия:
 
 - Использовать Windows 10 с [обновлением до версии 2004](ms-settings:windowsupdate), **сборкой 19041** или более поздней версии.
-
-> [!IMPORTANT]
-> Сейчас для обновления до Windows 10 версии 2004 (сборка 19041) потребуется [присоединиться к Программе предварительной оценки Windows](https://insider.windows.com/insidersigninboth/) и выбрать круг Release Preview. Общедоступный выпуск должен появиться в конце мая.
 
 - Проверьте версию Windows, нажав **Windows + R**, введите **winver**, выберите **ОК**. (Или введите команду `ver` в командной строке Windows). [Обновите последнюю версию Windows](ms-settings:windowsupdate), если сборка ниже 19041. [Получите помощник по Центру обновления Windows](https://www.microsoft.com/software-download/windows10).
 
@@ -57,6 +54,9 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 wsl --set-default-version 2
 ```
 
+> [!NOTE]
+> Обновление с WSL 1 до WSL 2 может занять несколько минут в зависимости от размера целевого дистрибутива.
+
 ## <a name="install-your-linux-distribution-of-choice"></a>Установка дистрибутива Linux по выбору
 
 1. Откройте [Microsoft Store](https://aka.ms/wslstore) и выберите предпочтительный дистрибутив Linux.
@@ -67,6 +67,7 @@ wsl --set-default-version 2
 
     - [Ubuntu 16.04 LTS](https://www.microsoft.com/store/apps/9pjn388hp8c9)
     - [Ubuntu 18.04 LTS](https://www.microsoft.com/store/apps/9N9TNGVNDL3Q)
+    - [Ubuntu 20.04 LTS](https://www.microsoft.com/store/apps/9n6svws3rx71)
     - [openSUSE Leap 15.1](https://www.microsoft.com/store/apps/9NJFZK00FGKV)
     - [SUSE Linux Enterprise Server 12 SP5](https://www.microsoft.com/store/apps/9MZ3D1TRP8T1)
     - [SUSE Linux Enterprise Server 15 SP1](https://www.microsoft.com/store/apps/9PN498VPMF3Z)

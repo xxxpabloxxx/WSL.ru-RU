@@ -5,18 +5,18 @@ keywords: BashOnWindows, bash, wsl, wsl2, windows, подсистема Windows 
 ms.date: 05/12/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: cd1ae62543d8e1c98e9a55394d4824adb0fef638
-ms.sourcegitcommit: 1b6191351bbf9e95f3c28fc67abe4bf1bcfd3336
+ms.openlocfilehash: f74be1e61efa39f67093004584a1fdef69b5eb48
+ms.sourcegitcommit: 90f7caeefe886bf6c0ba2b90c1b56b5f9795ad1b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83270868"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84153098"
 ---
 # <a name="whats-new-in-wsl-2"></a>Новые возможности в WSL 2
 
 WSL 2 — это новая версия архитектуры в WSL, которая изменяет способ взаимодействия дистрибутивов Linux с Windows. Основными приоритетами WSL 2 является увеличение производительности файловой системы и добавление полной совместимости системных вызовов. Каждый дистрибутив Linux может работать как дистрибутив WSL 1 или WSL 2 и переключаться между ними в любое время. WSL 2 — это основная модернизированная архитектура базовой архитектуры, которая использует технологию виртуализации и ядро Linux для реализации новых возможностей.
 
-Подсистема WSL 2 доступна только в Windows 10 версии 2004, сборки 19041 или выше. Вам потребуется [обновить версию Windows](ms-settings:windowsupdate), а также [присоединиться к Программе предварительной оценки Windows](https://insider.windows.com/insidersigninboth/) и выбрать круг Release Preview, пока в мае не выйдет общедоступный выпуск.
+Подсистема WSL 2 доступна только в Windows 10 версии 2004, сборки 19041 или выше. Может потребоваться [обновить версию Windows](ms-settings:windowsupdate).
 
 [Обновление от WSL 1 до WSL 2](./install-win10.md#update-to-wsl-2)
 
