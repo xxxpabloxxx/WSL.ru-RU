@@ -16,6 +16,12 @@
       href: install-on-server.md
     - name: Создание учетной записи пользователя и пароля
       href: user-support.md
+- name: Учебники
+  items:
+    - name: Начало работы с VS Code
+      href: tutorials/wsl-vscode.md
+    - name: Начало работы с Git
+      href: tutorials/wsl-git.md
 - name: Практическое руководство
   items:
     - name: Команды взаимодействия
