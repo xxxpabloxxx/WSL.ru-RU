@@ -5,12 +5,12 @@ keywords: WSL, Windows, виндовссубсистем, GNU, Linux, bash, Git,
 ms.date: 06/04/2020
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 94166371fc0928d6be3b3cfd6cb595c6fac76608
-ms.sourcegitcommit: d95bdbc2fea991ba14a4c9ec53ee0ec19d6bbdb4
+ms.openlocfilehash: 687a12186d11343a2d4131e0fdeeef3bcec902fb
+ms.sourcegitcommit: 5d3898772851e6ac9a310f219cc0d71278f95d22
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "84457796"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84671015"
 ---
 # <a name="get-started-using-git-on-windows-subsystem-for-linux"></a>Приступая к работе с Git в подсистеме Windows для Linux
 
@@ -18,12 +18,12 @@ Git — это наиболее часто используемая систем
 
 ## <a name="git-can-be-installed-on-windows-and-on-wsl"></a>Git можно установить в Windows и на WSL
 
-Важно. при включении WSL и установке дистрибутива Linux устанавливается новая файловая система, отделенная от Windows NTFS C:\. диск на компьютере. В Linux буквы дисков не задаются. Они получают точки подключения. Корневой каталог файловой системы `/` — это точка подключения корневого раздела или папки в случае с WSL. Не все в разделе `/` — это один и тот же диск. Например, на моем ноутбуке я установил две версии Ubuntu (20,04 и 18,01), а также Debian. Если открыть эти дистрибутивы, выберите корневой каталог с командой `cd ~` , а затем введите команду `explorer.exe .` , откроется Проводник Windows и отобразится путь к каталогу для этого дистрибутива.
+Важно. при включении WSL и установке дистрибутива Linux устанавливается новая файловая система, отделенная от Windows NTFS C:\. диск на компьютере. В Linux буквы дисков не задаются. Они получают точки подключения. Корневой каталог файловой системы `/` — это точка подключения корневого раздела или папки в случае с WSL. Не все в разделе `/` — это один и тот же диск. Например, на моем ноутбуке я установил две версии Ubuntu (20,04 и 18,04), а также Debian. Если открыть эти дистрибутивы, выберите корневой каталог с командой `cd ~` , а затем введите команду `explorer.exe .` , откроется Проводник Windows и отобразится путь к каталогу для этого дистрибутива.
 
 | Дистрибутив Linux | Путь Windows к домашней папке Access |
 | ----------- | ----------- |
 | Ubuntu 20.04 | `\\wsl$\Ubuntu-20.04\home\username` |
-| Ubuntu 18,01 | `\\wsl$\Ubuntu-18.04\home\username` |
+| Ubuntu 18.04 | `\\wsl$\Ubuntu-18.04\home\username` |
 | Debian | `\\wsl$\Debian\home\username` |
 | Windows PowerShell | `C:\Users\username` |
 
