@@ -43,4 +43,8 @@
 - name: Диагностика
   href: troubleshooting.md
 - name: Заметки о выпуске
-  href: release-notes.md
+  items:
+    - name: Общие заметки о выпуске
+      href: release-notes.md
+    - name: Заметки о выпуске ядра Linux
+      href: kernel-release-notes.md
