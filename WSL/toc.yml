@@ -22,6 +22,8 @@
       href: tutorials/wsl-vscode.md
     - name: Начало работы с Git
       href: tutorials/wsl-git.md
+    - name: "Настройка ускорения с помощью GPU (NVIDIA CUDA\_/ DirectML)"
+      href: tutorials/gpu-compute.md
 - name: Практическое руководство
   items:
     - name: Команды взаимодействия
