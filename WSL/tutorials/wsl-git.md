@@ -5,12 +5,12 @@ keywords: WSL, Windows, виндовссубсистем, GNU, Linux, bash, Git,
 ms.date: 06/04/2020
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 687a12186d11343a2d4131e0fdeeef3bcec902fb
-ms.sourcegitcommit: 5d3898772851e6ac9a310f219cc0d71278f95d22
+ms.openlocfilehash: 550355ea77c97d68130c8d85e9aef2a6b49ffe63
+ms.sourcegitcommit: eaceda3589b9bd777e0fead5ef33bb16060a55d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84671015"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84978247"
 ---
 # <a name="get-started-using-git-on-windows-subsystem-for-linux"></a>Приступая к работе с Git в подсистеме Windows для Linux
 
@@ -23,7 +23,7 @@ Git — это наиболее часто используемая систем
 | Дистрибутив Linux | Путь Windows к домашней папке Access |
 | ----------- | ----------- |
 | Ubuntu 20.04 | `\\wsl$\Ubuntu-20.04\home\username` |
-| Ubuntu 18.04 | `\\wsl$\Ubuntu-18.04\home\username` |
+| Ubuntu 18.04 | `\\wsl$\Ubuntu-18.04\home\username` |
 | Debian | `\\wsl$\Debian\home\username` |
 | Windows PowerShell | `C:\Users\username` |
 
@@ -36,13 +36,32 @@ Git — это наиболее часто используемая систем
 
 ## <a name="installing-git"></a>Установка Git
 
-Git уже установлен с большей частью подсистемы Windows для дистрибутивов Linux, однако может потребоваться обновление до последней версии и потребуется настроить файл конфигурации Git.
+Git уже установлен с большей частью подсистемы Windows для дистрибутивов Linux, однако может потребоваться обновление до последней версии. Вам также потребуется настроить файл конфигурации Git.
 
-Сведения об установке Git см. на сайте [скачивания Git для Linux](https://git-scm.com/download/linux) . Каждый дистрибутив Linux имеет собственный диспетчер пакетов и команду install. Например, чтобы установить Git в дистрибутиве Alpine, используйте: `apk add git` . Также может потребоваться [установить Git для Windows](https://git-scm.com/download/win) , если вы этого еще не сделали.
+Сведения об установке Git см. на сайте [скачивания Git для Linux](https://git-scm.com/download/linux) . Каждый дистрибутив Linux имеет собственный диспетчер пакетов и команду install.
+
+Для получения последней стабильной версии GIt в Ubuntu/Debian введите команду:
+
+```bash
+sudo apt-get install git
+```
+
+> [!NOTE]
+> Также может потребоваться [установить Git для Windows](https://git-scm.com/download/win) , если вы этого еще не сделали.
 
 ## <a name="git-config-file-setup"></a>Настройка файла конфигурации Git
 
-Чтобы настроить файл конфигурации Git, откройте командную строку, в которой вы работаете, и введите: `git config --global user.name "Your Name"` , а затем — `git config --global user.email "youremail@domain.com"` . Замените содержимое в кавычках на имя и адрес электронной почты, которые использовались для создания учетной записи Git.
+Чтобы настроить файл конфигурации Git, откройте командную строку, в которой вы работаете, и задайте свое имя с помощью этой команды (заменив "Ваше имя" на имя пользователя Git):
+
+```bash
+ `git config --global user.name "Your Name"`
+```
+
+Задайте свою электронную почту с помощью этой команды (заменив " youremail@domain.com " на адрес электронной почты, используемый в вашей учетной записи Git):
+
+```bash
+`git config --global user.email "youremail@domain.com"`
+```
 
 > [!TIP]
 > Если у вас еще нет учетной записи Git, вы можете [зарегистрироваться на сайте GitHub](https://github.com/join). Если вы никогда не использовали Git, обратитесь к [руководствам по GitHub](https://guides.github.com/). Они помогут вам приступить к работе. Если вам нужно изменить файл конфигурации Git, это можно сделать с помощью встроенного текстового редактора, такого как nano: `nano ~/.gitconfig`.
@@ -61,9 +80,12 @@ git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec
 
 Теперь при всех операциях Git, выполняемых в дистрибутиве WSL, будет использоваться диспетчер учетных данных. Если у вас уже есть кэшированные учетные данные для узла, к ним будет выполняться доступ из диспетчера учетных данных. В противном случае отобразится диалоговое окно с запросом учетных данных, даже если вы работаете в консоли Linux.
 
+> [!NOTE]
+> Если вы используете ключ GPG для защиты подписывания кода, вам может потребоваться [связать ключ GPG с вашим адресом электронной почты GitHub](https://help.github.com/en/github/authenticating-to-github/associating-an-email-with-your-gpg-key).
+
 ## <a name="adding-a-git-ignore-file"></a>Добавление файла игнорирования Git
 
-Рекомендуется добавить gitignore- [файл](https://help.github.com/en/articles/ignoring-files) в проекты. GitHub предлагает [набор полезных шаблонов. gitignore](https://github.com/github/gitignore) с рекомендуемыми настройками файлов gitignore, организованными в соответствии с вашим вариантом использования.
+Рекомендуется добавить gitignore- [файл](https://help.github.com/en/articles/ignoring-files) в проекты. GitHub предлагает [набор полезных шаблонов. gitignore](https://github.com/github/gitignore) с рекомендуемыми настройками файлов gitignore, организованными в соответствии с вашим вариантом использования. Например, вот [шаблон gitignore по умолчанию GitHub для проекта Node.js](https://github.com/github/gitignore/blob/master/Node.gitignore).
 
 Если вы решили [создать репозиторий с помощью веб-сайта GitHub](https://help.github.com/articles/create-a-repo), доступны флажки для инициализации репозитория с файлом readme, gitignore-файлом, настроенным для конкретного типа проекта, и вариантами добавления лицензии, если это необходимо.
 
