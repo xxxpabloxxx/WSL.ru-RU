@@ -5,12 +5,12 @@ keywords: BashOnWindows, bash, wsl, windows, подсистема windows для
 ms.date: 05/12/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 805b7d266020c62e0c6f58889541517d44db3726
-ms.sourcegitcommit: 90f7caeefe886bf6c0ba2b90c1b56b5f9795ad1b
+ms.openlocfilehash: ebcd7f6b10d2b734b1f2a66f64a5e3292855bcf4
+ms.sourcegitcommit: 5d3898772851e6ac9a310f219cc0d71278f95d22
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84153079"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84671024"
 ---
 # <a name="windows-server-installation-guide"></a>Руководство по установке Windows Server
 
@@ -25,20 +25,6 @@ ms.locfileid: "84153079"
 ```powershell
     Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 
-```
-
-**Если вам нужна 100 % совместимость с системными вызовами и более быстрая производительность ввода-вывода, ознакомьтесь со сведениями ниже, чтобы установить WSL 2!**
-
-Подсистема WSL 2 доступна только в Windows 10 версии 2004, сборки 19041 или выше. Может потребоваться [обновить версию Windows](ms-settings:windowsupdate).
-
-**В случае продолжения работы с WSL 1 перезагрузите компьютер, когда появится соответствующее сообщение, и продолжите установку [здесь](./install-on-server.md#download-a-linux-distribution)** .
-
-## <a name="enable-the-virtual-machine-platform-optional-component"></a>Включение необязательного компонента "Virtual Machine Platform" (Платформа виртуальной машины)
-
-Убедитесь, что установлен дополнительный компонент "Virtual Machine Platform" (Платформа виртуальных машин). Это можно сделать, выполнив следующую команду в PowerShell:
-
-```powershell
-dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
 ## <a name="download-a-linux-distribution"></a>Скачивание дистрибутива Linux
