@@ -5,12 +5,12 @@ keywords: BashOnWindows, bash, wsl, windows, windowssubsystem, gnu, linux, ubunt
 ms.date: 05/12/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: aa656d2e5a301d3f5519065246ba99941e74f642
-ms.sourcegitcommit: 53e6a01cbb989dc1aeaba465af4730afe71beb40
+ms.openlocfilehash: bbd5b36f7857d136d3eb2f75eb3d1a36ac2b94f7
+ms.sourcegitcommit: eaceda3589b9bd777e0fead5ef33bb16060a55d2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84256689"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84978267"
 ---
 # <a name="comparing-wsl-2-and-wsl-1"></a>Сравнение WSL 2 и WSL 1
 
@@ -28,7 +28,7 @@ WSL 2 использует последнюю и самую новую техн
  Управляемая виртуальная машина| ❌ | ✅
  Полнофункциональное ядро Linux| ❌ |✅
  Полная совместимость системных вызовов| ❌ | ✅
- Запуск с использованием текущих версий VM Ware и VirtualBox| ✅ | ❌
+ Запуск с использованием текущих версий VMWare и VirtualBox| ✅ | ❌
  Производительность в файловых системах ОС| ✅ | ❌
 
 Уже используете WSL 1 и хотите выполнить обновление до WSL 2? Следуйте инструкциям, чтобы выполнить [обновление до WSL 2](./install-win10.md#update-to-wsl-2)!
@@ -36,7 +36,7 @@ WSL 2 использует последнюю и самую новую техн
 Подсистема WSL 2 доступна только в Windows 10 версии 2004, сборки 19041 или выше. Проверьте версию Windows, нажав **Windows + R**, введите **winver**, выберите **ОК**. (Или введите команду `ver` в командной строке Windows). Может потребоваться [выполнить обновление до последней версии Windows](ms-settings:windowsupdate). Для сборок ниже 19041 WSL не поддерживается.
 
 > [!NOTE]
-> WSL 2 будет работать с [предварительными версиями VM Ware](https://blogs.vmware.com/workstation/2020/01/vmware-workstation-tech-preview-20h1.html) и [VirtualBox 6.x](https://www.virtualbox.org/wiki/Changelog-6.0).
+> WSL 2 будет работать с [предварительными версиями VMWare](https://blogs.vmware.com/workstation/2020/01/vmware-workstation-tech-preview-20h1.html) и [VirtualBox 6.x](https://www.virtualbox.org/wiki/Changelog-6.0).
 
 ## <a name="use-the-linux-file-system-for-faster-performance"></a>Использование файловой системы Linux для повышения производительности
 

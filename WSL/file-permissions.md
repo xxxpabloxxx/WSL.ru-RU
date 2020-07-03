@@ -6,12 +6,12 @@ ms.date: 01/14/2020
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.localizationpriority: high
-ms.openlocfilehash: 66cded36fb7182a54a05e7794250808665bd4cf1
-ms.sourcegitcommit: 3fb40fd65b34a5eb26b213a0df6a3b2746b7a9b4
+ms.openlocfilehash: 81d4cfa1ae57cdd077ba8cbd614111881724718a
+ms.sourcegitcommit: f1b049a1276782d4f2754f46a8d2025b598a0784
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83235853"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85336077"
 ---
 # <a name="file-permissions-for-wsl"></a>Разрешения файлов для WSL
 
@@ -108,4 +108,4 @@ WSL может добавлять четыре расширенных атриб
 
 Вы можете настроить разрешения файлов в дисках Windows с помощью параметров подключения в wsl.conf. Параметры подключения позволяют задать маски разрешений `umask`, `dmask` и `fmask`. `umask` применяется ко всем файлам, `dmask` — только к каталогам, а `fmask` — только к файлам. Затем эти маски разрешений подвергаются логической операции ИЛИ во время применения к файлам, например: Если у вас есть значение `umask` для `023` и значение `fmask` для `022`, то полученная маска разрешений для файлов будет `023`.
 
-Дополнительные инструкции см. в разделе [Настройка параметров запуска с помощью wslconf](./wsl-config.md#configure-launch-settings-with-wslconf).
+Дополнительные инструкции см. в разделе [Настройка параметров запуска дистрибутива с помощью wslconf](./wsl-config.md#configure-per-distro-launch-settings-with-wslconf).

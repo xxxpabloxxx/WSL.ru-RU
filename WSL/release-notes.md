@@ -6,14 +6,30 @@ author: benhillis
 ms.date: 05/15/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 3df4d4b4e0c542a3e87306c01a14b7073eb5e677
-ms.sourcegitcommit: 3fb40fd65b34a5eb26b213a0df6a3b2746b7a9b4
+ms.openlocfilehash: 2fcf24719f037a29bab7652fc75ac82cc0b6176a
+ms.sourcegitcommit: 031a74801e03a90aed4b34c4fd5bfe964fc30994
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83235945"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "84942598"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Заметки о выпуске подсистемы Windows для Linux
+
+## <a name="build-20150"></a>Сборка 20150
+Общие сведения о сборке Windows 20150 см. в [блоге о Windows](https://blogs.windows.com/windowsexperience/2020/06/17/announcing-windows-10-insider-preview-build-20150/).
+
+* Сведения о вычислениях GPU WSL2 см. в [блоге о Windows](https://blogs.windows.com/windowsexperience/2020/06/17/announcing-windows-10-insider-preview-build-20150/).
+* Добавлен параметр wsl.exe --install командной строки для быстрой настройки WSL.
+* Добавлен параметр командной строки wsl.exe --update для управления обновлениями ядра WSL2. 
+* Используйте WSL2 в качестве значения по умолчанию.
+* Увеличено время ожидания корректного завершения работы виртуальной машины WSL2.
+* Исправлено состояние гонки virtio-9p при сопоставлении памяти устройства.
+* Не запускайте сервер 9p с повышенными привилегиями, если контроль учетных записей отключен.
+
+## <a name="build-19640"></a>Сборка 19640
+Общие сведения о сборке Windows 19640 см. в [блоге о Windows](https://blogs.windows.com/windowsexperience/2020/06/03/announcing-windows-10-insider-preview-build-19640/).
+
+* [WSL2] Улучшения стабильности для virtio-9p (drvfs).
 
 ## <a name="build-19555"></a>Сборка 19555
 Общие сведения о сборке Windows 19555 см. в [блоге Windows](https://blogs.windows.com/windowsexperience/2020/01/30/announcing-windows-10-insider-preview-build-19555/).

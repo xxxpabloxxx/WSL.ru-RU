@@ -6,23 +6,25 @@ ms.date: 05/12/2020
 ms.topic: article
 ms.assetid: 3cefe0db-7616-4848-a2b6-9296746a178b
 ms.localizationpriority: high
-ms.openlocfilehash: 90a661c408cacbef95a869ac896a40381120d52e
-ms.sourcegitcommit: 1b6191351bbf9e95f3c28fc67abe4bf1bcfd3336
+ms.openlocfilehash: 75da6389beec4af7ac684ec7ee2ef31431e14071
+ms.sourcegitcommit: f1b049a1276782d4f2754f46a8d2025b598a0784
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83270798"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85336067"
 ---
 # <a name="what-is-the-windows-subsystem-for-linux"></a>Что такое подсистема Windows для Linux
 
-Подсистема Windows для Linux позволяет разработчикам запускать среду GNU/Linux, включая большинство программ командной строки, служебных программ и приложений, непосредственно в Windows без каких-либо изменений, избавляя от необходимости использовать отдельную виртуальную машину.
+Подсистема Windows для Linux позволяет разработчикам запускать среду GNU/Linux с большинством программ командной строки, служебных программ и приложений непосредственно в Windows без каких-либо изменений и необходимости использовать традиционную виртуальную машину или двойную загрузку.
 
 Можно сделать следующее.
 
 * Выберите предпочтительные дистрибутивы GNU/Linux [из Microsoft Store](https://aka.ms/wslstore).
 * Запускайте средства командной строки, например `grep`, `sed`, `awk`, или другие двоичные файлы ELF-64.
 * Запускайте сценарии Bash Shell и приложения командной строки GNU/Linux, включая:  
-    * инструменты: vim, emacs, tmux; *Языки [NodeJS](https://docs.microsoft.com/windows/nodejs/setup-on-wsl2), Javascript, [Python](https://docs.microsoft.com/windows/python/web-frameworks), Ruby, C/C++, C# & F#, Rust, Go, и т.д. *Службы: SSHD, MySQL, Apache, lighttpd, [MongoDB](https://docs.microsoft.com/windows/nodejs/databases), [PostgreSQL](https://docs.microsoft.com/windows/python/databases).
+    * инструменты: vim, emacs, tmux;
+    * языки: [NodeJS](https://docs.microsoft.com/windows/nodejs/setup-on-wsl2), Javascript, [Python](https://docs.microsoft.com/windows/python/web-frameworks), Ruby, C/C++, C# и F#, Rust, Go и пр.
+    * Службы. SSHD, MySQL, Apache, lighttpd, [MongoDB](https://docs.microsoft.com/windows/nodejs/databases), [PostgreSQL](https://docs.microsoft.com/windows/python/databases).
 * Установите дополнительное программное обеспечение с помощью собственного диспетчера пакетов дистрибутивов GNU/Linux.
 * Вызывайте приложения Windows с помощью оболочки командной строки, похожей на UNIX.
 * Вызывайте приложения GNU/Linux в Windows.

@@ -4,12 +4,12 @@ description: Описывается взаимодействие Windows с ди
 ms.date: 05/12/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: b1c7a64a86cf088159d1abee3b341328151428f6
-ms.sourcegitcommit: 1b6191351bbf9e95f3c28fc67abe4bf1bcfd3336
+ms.openlocfilehash: 2a9b6c8ac65fe28e029ada7f86475c44220a93fe
+ms.sourcegitcommit: cb8a61e7de08b1c18622fc78bc5dfa38786e921a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83270848"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84663137"
 ---
 # <a name="windows-interoperability-with-linux"></a>Взаимодействие Windows с Linux
 
@@ -147,6 +147,7 @@ notepad.exe C:\\temp\\foo.txt
 * она используется совместно и существует в средах Windows и WSL;
 * это список переменных среды, которые совместно используют Windows и WSL;
 * она позволяет форматировать список переменных среды для корректного использования в Windows и WSL.
+* она может использоваться в потоке между WSL и Win32.
 
 > [!NOTE]
 > До выпуска сборки 17063 единственной переменной среды Windows,, к которой могла получить доступ WSL, была `PATH` (это позволяло запускать исполняемые файлы Win32 из WSL). Начиная со сборки 17063, `WSLENV` поддерживается.
@@ -163,6 +164,8 @@ notepad.exe C:\\temp\\foo.txt
 * `/w` указывает, что эту переменную среды следует добавлять только при запуске Win32 из WSL.
 
 При необходимости флаги можно комбинировать.
+
+[Узнайте больше о WSLENV](https://devblogs.microsoft.com/commandline/share-environment-vars-between-wsl-and-windows/), ознакомившись с часто задаваемыми вопросами и примерами установки значения WSLENV для объединения других предварительно определенных переменных среды с суффиксом в виде косой чертой и флагами для указания способа перевода значения и передачи переменных скрипту. В этой статье также показано, как настроить среду разработки с помощью [языка программирования Go](https://golang.org/) для совместного использования GOPATH с WSL и Win32.
 
 ## <a name="disable-interoperability"></a>Отключение взаимодействия
 
