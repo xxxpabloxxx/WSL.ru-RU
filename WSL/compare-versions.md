@@ -7,7 +7,6 @@ ms.topic: article
 ms.localizationpriority: high
 ms.openlocfilehash: bbd5b36f7857d136d3eb2f75eb3d1a36ac2b94f7
 ms.sourcegitcommit: eaceda3589b9bd777e0fead5ef33bb16060a55d2
-ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/18/2020
 ms.locfileid: "84978267"
@@ -97,7 +96,7 @@ WSL 2 использует упрощенную служебную виртуа
 
 ### <a name="accessing-linux-networking-apps-from-windows-localhost"></a>Доступ к сетевым приложениям Linux из Windows (localhost)
 
-Если вы создаете сетевое приложение (например, приложение, работающее на NodeJS или SQL Server) в дистрибутиве Linux, вы можете получить к нему доступ из приложения Windows (например, используя Edge или Chrome) с помощью `localhost` (как обычно это и происходит).
+Если вы создаете сетевое приложение (например, приложение, работающее на NodeJS или SQL Server) в дистрибутиве Linux, вы можете получить к нему доступ из приложения Windows (например, используя Microsoft Edge или Chrome) с помощью `localhost` (как обычно это и происходит).
 
 Тем не менее, если вы используете более раннюю версию Windows (сборка 18945 или меньше), вам потребуется получить IP-адрес виртуальной машины узла Linux (или [обновить ее до последней версии Windows](ms-settings:windowsupdate)).
 
