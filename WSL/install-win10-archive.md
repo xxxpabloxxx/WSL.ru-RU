@@ -1,20 +1,17 @@
 ---
-title: Установка подсистемы Windows для Linux (WSL) в Windows 10
-description: Инструкции по установке подсистемы Windows для Linux в Windows 10.
-keywords: BashOnWindows, bash, wsl, windows, подсистема windows для linux, windowssubsystem, ubuntu, debian, suse, windows 10, установка
+title: Архивные инструкции WSL
 ms.date: 07/23/2018
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
-ms.custom: seodec18
-ms.localizationpriority: high
-ms.openlocfilehash: 6ed12ba9d63d3f4038b67489035e13113a372928
-ms.sourcegitcommit: 9f12e168b80775cd967f22f97376e51043c3667e
-ms.translationtype: HT
+ROBOTS: NOINDEX
+ms.openlocfilehash: 1de614dccbbb8d0ef1b9ac070f6ec90281339858
+ms.sourcegitcommit: 16ffb1a096a4a7fbb77c58f92258051930cc82da
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84301205"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86157960"
 ---
-# <a name="install-windows-subsystem-for-linux"></a>Установка подсистемы Windows для Linux
+# <a name="archived-instructions"></a>Архивированные инструкции
 
 В этом руководстве описано, как установить подсистему Windows для Linux (WSL) на компьютере под управлением Windows 10.
 
