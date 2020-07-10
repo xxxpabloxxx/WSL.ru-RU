@@ -5,12 +5,12 @@ keywords: BashOnWindows, bash, wsl, windows, windowssubsystem, ubuntu
 ms.date: 01/20/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 9028f1e89e92da94d82b16603b3af60876a4cb86
-ms.sourcegitcommit: 39d3a2f0f4184eaec8d8fec740aff800e8ea9ac7
+ms.openlocfilehash: cc8f032a99fb087b7ef614dd3a3574cb8ee3f2da
+ms.sourcegitcommit: ba52d673c123fe8ae61e872a33e218cfc30a1f82
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "79318148"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86033067"
 ---
 # <a name="troubleshooting-windows-subsystem-for-linux"></a>Устранение неполадок подсистемы Windows для Linux
 
@@ -39,6 +39,41 @@ ms.locfileid: "79318148"
 Наконец, если ваша проблема связана с терминалом Windows, консолью Windows или интерфейсом командной строки, используйте репозиторий терминалов Windows: https://github.com/microsoft/terminal
 
 ## <a name="common-issues"></a>Распространенные проблемы
+
+### <a name="cannot-access-wsl-files-from-windows"></a>Не удается получить доступ к файлам WSL из Windows
+Файловый сервер протокола 9p предоставляет службу на стороне Linux, которая позволяет Windows получить доступ к файловой системе Linux. Если вы не можете получить доступ к WSL с помощью `\\wsl$` в Windows, возможно, это вызвано неправильным запуском 9P.
+
+Чтобы убедиться в этом, можно проверить журналы запуска с помощью команды `dmesg |grep 9p`. Если ошибки есть, отобразятся сведения о них. Вывод выглядит следующим образом: 
+
+```
+[    0.363323] 9p: Installing v9fs 9p2000 file system support
+[    0.363336] FS-Cache: Netfs '9p' registered for caching
+[    0.398989] 9pnet: Installing 9P2000 support
+```
+
+Дополнительные сведения об этой ошибке см. в [этом потоке GitHub](https://github.com/microsoft/wsl/issues/5307).
+
+### <a name="cant-start-wsl-2-distro-and-only-see-wsl-2-in-output"></a>Не удается запустить дистрибутив WSL 2 — отображается только WSL 2 в выходных данных
+Если язык интерфейса не английский, возможно, отображается усеченная версия текста ошибки.
+
+```powershell
+C:\Users\me>wsl
+WSL 2
+```
+
+Чтобы устранить эту проблему, перейдите по адресу `https://aka.ms/wsl2kernel` и установите ядро вручную, следуя инструкциям на этой странице документации. 
+
+### <a name="please-enable-the-virtual-machine-platform-windows-feature-and-ensure-virtualization-is-enabled-in-the-bios"></a>Включите компонент платформы виртуальных машин Windows и убедитесь, что в BIOS включена виртуализация.
+
+1. Проверка [требований к системе Hyper-V](https://docs.microsoft.com/windows-server/virtualization/hyper-v/system-requirements-for-hyper-v-on-windows#:~:text=on%20Windows%20Server.-,General%20requirements,the%20processor%20must%20have%20SLAT.)
+2. Если компьютер является виртуальной машиной, включите [вложенную виртуализацию](https://docs.microsoft.com/windows/wsl/wsl2-faq#can-i-run-wsl-2-in-a-virtual-machine) вручную. Запустите PowerShell с правами администратора и выполните следующую команду: 
+
+```powershell
+Set-VMProcessor -VMName <VMName> -ExposeVirtualizationExtensions $true
+```
+
+3. Следуйте рекомендациям производителя компьютера, чтобы включить виртуализацию. Как правило, для проверки того, что эти функции включены в ЦП, может использоваться BIOS системы. 
+4. Перезагрузите компьютер после включения дополнительного компонента `Virtual Machine Platform`. 
 
 ### <a name="bash-loses-network-connectivity-once-connected-to-a-vpn"></a>Bash утрачивает подключение к сети после подключения к сети VPN
 

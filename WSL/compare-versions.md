@@ -5,11 +5,12 @@ keywords: BashOnWindows, bash, wsl, windows, windowssubsystem, gnu, linux, ubunt
 ms.date: 05/12/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: bbd5b36f7857d136d3eb2f75eb3d1a36ac2b94f7
-ms.sourcegitcommit: eaceda3589b9bd777e0fead5ef33bb16060a55d2
+ms.openlocfilehash: 8354e9c35d1e97f38c4cf6aa53a861c2c5e290be
+ms.sourcegitcommit: 386d47a1c53a85b91f5a2b0f1f99ce2c46b20a77
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84978267"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86093274"
 ---
 # <a name="comparing-wsl-2-and-wsl-1"></a>Сравнение WSL 2 и WSL 1
 
@@ -24,10 +25,10 @@ WSL 2 использует последнюю и самую новую техн
  Интеграция Windows и Linux| ✅|✅
  Быстрый запуск| ✅ | ✅
  Незначительный расход ресурсов| ✅ |✅
+ Запуск с использованием текущих версий VMWare и VirtualBox| ✅ | ✅
  Управляемая виртуальная машина| ❌ | ✅
  Полнофункциональное ядро Linux| ❌ |✅
  Полная совместимость системных вызовов| ❌ | ✅
- Запуск с использованием текущих версий VMWare и VirtualBox| ✅ | ❌
  Производительность в файловых системах ОС| ✅ | ❌
 
 Уже используете WSL 1 и хотите выполнить обновление до WSL 2? Следуйте инструкциям, чтобы выполнить [обновление до WSL 2](./install-win10.md#update-to-wsl-2)!
@@ -35,7 +36,7 @@ WSL 2 использует последнюю и самую новую техн
 Подсистема WSL 2 доступна только в Windows 10 версии 2004, сборки 19041 или выше. Проверьте версию Windows, нажав **Windows + R**, введите **winver**, выберите **ОК**. (Или введите команду `ver` в командной строке Windows). Может потребоваться [выполнить обновление до последней версии Windows](ms-settings:windowsupdate). Для сборок ниже 19041 WSL не поддерживается.
 
 > [!NOTE]
-> WSL 2 будет работать с [предварительными версиями VMWare](https://blogs.vmware.com/workstation/2020/01/vmware-workstation-tech-preview-20h1.html) и [VirtualBox 6.x](https://www.virtualbox.org/wiki/Changelog-6.0).
+> WSL 2 будет работать с [VMWare 15.5.5+](https://blogs.vmware.com/workstation/2020/05/vmware-workstation-now-supports-hyper-v-mode.html) и [VirtualBox 6+](https://www.virtualbox.org/wiki/Changelog-6.0).
 
 ## <a name="use-the-linux-file-system-for-faster-performance"></a>Использование файловой системы Linux для повышения производительности
 

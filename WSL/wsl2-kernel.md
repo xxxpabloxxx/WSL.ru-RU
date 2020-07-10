@@ -5,12 +5,12 @@ keywords: WSL, Windows, ядро Linux, подсистема Windows для Linu
 ms.date: 03/12/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 1628bea2f1bae590928b055425413e5b085dffef
-ms.sourcegitcommit: 90f7caeefe886bf6c0ba2b90c1b56b5f9795ad1b
+ms.openlocfilehash: bef722f5653380d9f6d104f1a7c116a7599658c9
+ms.sourcegitcommit: ba52d673c123fe8ae61e872a33e218cfc30a1f82
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84153044"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86033047"
 ---
 # <a name="updating-the-wsl-2-linux-kernel"></a>Обновление ядра Linux в WSL 2
 
@@ -39,3 +39,23 @@ ms.locfileid: "84153044"
 ## <a name="future-plans-for-updating-the-wsl2-linux-kernel"></a>Дальнейшие планы по обновлению ядра Linux в WSL 2
 
 Дополнительные сведения см. в статье об [изменениях процесса установки обновления ядра Linux в WSL 2](https://devblogs.microsoft.com/commandline/wsl2-will-be-generally-available-in-windows-10-version-2004), доступной в блоге, [посвященному командной строке Windows](https://aka.ms/cliblog).
+
+## <a name="troubleshooting"></a>Диагностика
+
+### <a name="this-update-only-applies-to-machines-with-the-windows-subsystem-for-linux"></a>Это обновление применяется только к компьютерам с подсистемой Windows для Linux.
+Чтобы установить ядро MSI, сначала нужно включить WSL. В случае сбоя отображается следующее сообщение: `This update only applies to machines with the Windows Subsytem for Linux`. 
+
+Есть три возможные причины, по которым вы видите это сообщение:
+
+1. Вы используете старую версию Windows, которая не поддерживает WSL 2. Проверьте [требования к WSL 2](https://docs.microsoft.com/windows/wsl/install-win10#update-to-wsl-2) и выполните обновление, чтобы включить поддержку WSL 2. 
+2. `Windows Subsystem for Linux` не включена. См. статью [Руководство по установке подсистемы Windows для Linux в Windows 10](https://docs.microsoft.com/windows/wsl/install-win10).
+3. После включения `Windows Subsystem for Linux` нужно перезагрузить компьютер. Сделайте это и повторите попытку.
+
+### `WSL 2 requires an update to its kernel component. For information please visit https://aka.ms/wsl2kernel`
+
+Если ядро отсутствует в %SystemRoot%\system32\lxss\tools\,, может возникнуть описанная выше ошибка.
+
+Есть несколько способов устранения этой проблемы:
+
+1. Установите ядро Linux вручную, следуя инструкциям: https://aka.ms/wsl2kernel.
+2. Перейдите в раздел "Установка и удаление программ", а затем удалите и снова установите MSI.
