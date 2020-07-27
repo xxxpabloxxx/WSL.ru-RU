@@ -5,12 +5,12 @@ keywords: BashOnWindows, bash, wsl, windows, подсистема windows для
 ms.date: 05/12/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 222afa3ee2a4e8948cd0159d794fc7a4375e7ba7
-ms.sourcegitcommit: 16ffb1a096a4a7fbb77c58f92258051930cc82da
+ms.openlocfilehash: 73e3b982cd29558fdc86bd499f9a4c51a9d22e83
+ms.sourcegitcommit: 97cc93f8e26391c09a31a4ab42c4b5e9d98d1c32
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86157940"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86948698"
 ---
 # <a name="windows-subsystem-for-linux-installation-guide-for-windows-10"></a>Руководство по установке подсистемы Windows для Linux в Windows 10
 
@@ -48,7 +48,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 ### <a name="set-wsl-2-as-your-default-version"></a>Задать WSL 2 в качестве версии по умолчанию
 
-Выполните следующую команду в PowerShell, чтобы задать WSL 2 в качестве версии по умолчанию при установке нового дистрибутива Linux:
+Откройте PowerShell от имени администратора и выполните следующую команду, чтобы задать WSL 2 в качестве версии по умолчанию при установке нового дистрибутива Linux:
 
 ```powershell
 wsl --set-default-version 2

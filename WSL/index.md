@@ -4,14 +4,16 @@ description: Изучите документацию по подсистеме W
 keywords: BashOnWindows, bash, wsl, windows, windowssubsystem, gnu, linux
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: eac5ab3a4406d7e3b1ba89c0d9e6212fa602d852
-ms.sourcegitcommit: 3fb40fd65b34a5eb26b213a0df6a3b2746b7a9b4
+ms.openlocfilehash: 81ff05f03172e3e3a167ffba4ce846ec2edb3d1c
+ms.sourcegitcommit: 97cc93f8e26391c09a31a4ab42c4b5e9d98d1c32
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83270492"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86948588"
 ---
 # <a name="windows-subsystem-for-linux-documentation"></a>Документация по подсистеме Windows для Linux
+
+Подсистема Windows для Linux позволяет разработчикам запускать среду GNU/Linux с большинством программ командной строки, служебных программ и приложений непосредственно в Windows без каких-либо изменений и необходимости использовать традиционную виртуальную машину или двойную загрузку.
 
 ## <a name="learn-more-here"></a>Дополнительные сведения
 

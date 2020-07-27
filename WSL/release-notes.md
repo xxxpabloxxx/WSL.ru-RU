@@ -6,14 +6,24 @@ author: benhillis
 ms.date: 05/15/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 2fcf24719f037a29bab7652fc75ac82cc0b6176a
-ms.sourcegitcommit: 031a74801e03a90aed4b34c4fd5bfe964fc30994
+ms.openlocfilehash: 1de8f5e287d70c4992e9e6694d8980cbd305957b
+ms.sourcegitcommit: 97cc93f8e26391c09a31a4ab42c4b5e9d98d1c32
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84942598"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86948688"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Заметки о выпуске подсистемы Windows для Linux
+
+## <a name="build-20175"></a>Сборка 20175
+Общие сведения о сборке Windows 20175 доступны в [блоге о Windows](https://blogs.windows.com/windowsexperience/2020/07/22/announcing-windows-10-insider-preview-build-20175/).
+
+* В качестве выделяемого по умолчанию объема памяти виртуальной машины WSL2 теперь используется 50 % от памяти узла или 8 ГБ в зависимости от того, что меньше [GH 4166].
+* Префикс \\\\wsl$ изменен на \\\\wsl для поддержки синтаксического анализа URI. Старый путь \\\\wsl$ по-прежнему поддерживается.
+* В архитектуре AMD64 вложенная виртуализация для WSL2 включена по умолчанию. Вы можете отключить ее с помощью команды %userprofile%\\.wslconfig ([wsl2] nestedVirtualization=false).
+* По запросу wsl.exe --update запускается Центр обновления Майкрософт.
+* В DrvFs поддерживается переименование файлов, доступных только для чтения.
+* Сообщения об ошибках всегда выводятся на правильной странице кода.
 
 ## <a name="build-20150"></a>Сборка 20150
 Общие сведения о сборке Windows 20150 см. в [блоге о Windows](https://blogs.windows.com/windowsexperience/2020/06/17/announcing-windows-10-insider-preview-build-20150/).
@@ -1547,13 +1557,13 @@ wslconfig.exe /terminate <DistributionName>
 ### <a name="new-feature-windows--ubuntu-interoperability"></a>Новая функция: взаимодействие Ubuntu и Windows
 Теперь двоичные файлы Windows можно вызывать непосредственно из командной строки WSL.  Это дает пользователям возможность взаимодействовать со средой и системой Windows способом, который ранее был невозможен.  Например, теперь пользователи могут выполнять следующие команды.
 
-    ```
-    $ export PATH=$PATH:/mnt/c/Windows/System32
-    $ notepad.exe
-    $ ipconfig.exe | grep IPv4 | cut -d: -f2
-    $ ls -la | findstr.exe foo.txt
-    $ cmd.exe /c dir
-    ```
+```bash
+$ export PATH=$PATH:/mnt/c/Windows/System32
+$ notepad.exe
+$ ipconfig.exe | grep IPv4 | cut -d: -f2
+$ ls -la | findstr.exe foo.txt
+$ cmd.exe /c dir
+```
 
 Дополнительные сведения:
 
