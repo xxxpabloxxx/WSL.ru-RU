@@ -2,16 +2,16 @@
 title: Сведения о подсистеме Windows для Linux
 description: Сведения о подсистеме Windows для Linux, различных версиях и способах их использования.
 keywords: BashOnWindows, bash, wsl, windows, windowssubsystem, gnu, linux
-ms.date: 05/12/2020
+ms.date: 07/21/2020
 ms.topic: article
 ms.assetid: 3cefe0db-7616-4848-a2b6-9296746a178b
-ROBOTS: NOINDEX
-ms.openlocfilehash: ddc242360adf67e3c5b6cd14d35fb6c869b83b2d
-ms.sourcegitcommit: 97cc93f8e26391c09a31a4ab42c4b5e9d98d1c32
+ms.localizationpriority: high
+ms.openlocfilehash: 512b5dc96892e2b66721e5e164301f2e9be6cd65
+ms.sourcegitcommit: b494c8a76f867d69fa7fff4878c4e38140eaeb8a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86948628"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87235458"
 ---
 # <a name="what-is-the-windows-subsystem-for-linux"></a>Что такое подсистема Windows для Linux
 
@@ -24,10 +24,17 @@ ms.locfileid: "86948628"
 * Запускайте сценарии Bash Shell и приложения командной строки GNU/Linux, включая:  
     * инструменты: vim, emacs, tmux;
     * языки: [NodeJS](https://docs.microsoft.com/windows/nodejs/setup-on-wsl2), Javascript, [Python](https://docs.microsoft.com/windows/python/web-frameworks), Ruby, C/C++, C# и F#, Rust, Go и пр.
-    * Службы. SSHD, MySQL, Apache, lighttpd, [MongoDB](https://docs.microsoft.com/windows/nodejs/databases), [PostgreSQL](https://docs.microsoft.com/windows/python/databases).
+    * Службы. SSHD, [MySQL](./tutorials/wsl-database.md), Apache, lighttpd, [MongoDB](./tutorials/wsl-database.md), [PostgreSQL](./tutorials/wsl-database.md).
 * Установите дополнительное программное обеспечение с помощью собственного диспетчера пакетов дистрибутивов GNU/Linux.
 * Вызывайте приложения Windows с помощью оболочки командной строки, похожей на UNIX.
 * Вызывайте приложения GNU/Linux в Windows.
+
+> [!div class="nextstepaction"]
+> [Установка WSL](install-win10.md)
+
+<br>
+
+> [!VIDEO https://www.youtube.com/embed/48k317kOxqg]
 
 ## <a name="what-is-wsl-2"></a>Что такое WSL 2?
 
@@ -36,6 +43,10 @@ WSL 2 — это новая версия архитектуры подсист
 Эта новая архитектура изменяет способ взаимодействия этих двоичных файлов Linux с Windows и с оборудованием компьютера, но по-прежнему предоставляет то же взаимодействие с пользователем, что и WSL 1 (текущая общедоступная версия).
 
 Отдельные дистрибутивы Linux можно запускать с архитектурой WSL 1 или WSL 2. Каждый дистрибутив можно обновить или использовать на более старой версии в любое время, кроме того вы можете запустить дистрибутивы WSL 1 и WSL 2 параллельно. WSL 2 использует совершенно новую архитектуру, которая дает преимущества от работы с реальным ядром Linux.
+
+<br>
+
+> [!VIDEO https://www.youtube.com/embed/MrZolfGm8Zk]
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
