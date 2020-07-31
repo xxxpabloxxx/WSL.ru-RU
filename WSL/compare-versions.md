@@ -1,16 +1,16 @@
 ---
-title: Сравнение WSL версий 1 и 2
-description: Сведения о подсистеме Windows для Linux, различных версиях и способах их использования.
+title: Сравнение WSL 2 и WSL 1
+description: Сравните версии 1 и 2 подсистемы Windows для Linux. Совет. Версия 2 работает с фактическим ядром Linux и обеспечивает более высокую производительность. Но версия 1 подходит больше, если используются файловые системы и Windows, и Linux.
 keywords: BashOnWindows, bash, wsl, windows, windowssubsystem, gnu, linux, ubuntu, debian, suse, windows 10, изменения взаимодействия с пользователем, WSL 2, ядро linux, сетевые приложения, localhost, IPv6, виртуальный жесткий диск, VHD, ограничения VHD, ошибка VHD
 ms.date: 07/22/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 139bf2200b47f7d1465312f16ed0a3449491dc89
-ms.sourcegitcommit: 97cc93f8e26391c09a31a4ab42c4b5e9d98d1c32
+ms.openlocfilehash: ea2c92030a895076be17ad2b99fe34719f84a47f
+ms.sourcegitcommit: b494c8a76f867d69fa7fff4878c4e38140eaeb8a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86948648"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87235468"
 ---
 # <a name="comparing-wsl-1-and-wsl-2"></a>Сравнение WSL 1 и WSL 2
 
