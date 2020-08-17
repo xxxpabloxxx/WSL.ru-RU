@@ -6,14 +6,23 @@ author: benhillis
 ms.date: 05/15/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 1de8f5e287d70c4992e9e6694d8980cbd305957b
-ms.sourcegitcommit: 97cc93f8e26391c09a31a4ab42c4b5e9d98d1c32
+ms.openlocfilehash: 751f7dd73abeefe7be0406c17b95158ee21b9199
+ms.sourcegitcommit: b79bf1d5f158f09e858184a6dfd096e212c1a231
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86948688"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88161046"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Заметки о выпуске подсистемы Windows для Linux
+
+## <a name="build-20190"></a>Сборка 20190
+Общие сведения о сборке Windows 20190 доступны в [блоге о Windows](https://blogs.windows.com/windowsexperience/2020/08/12/announcing-windows-10-insider-preview-build-20190/).
+
+* Исправлена ошибка, препятствующая запуску экземпляров WSL1 [GH 5633].
+* Исправлена ошибка с зависанием при перенаправлении выходных данных процесса Windows [GH 5648].
+* Добавлен параметр %userprofile%\\.wslconfig для управления временем ожидания при простое виртуальной машины (wsl2.vmIdleTimeout=<время_в_миллисекундах>).
+* Включена поддержка запуска псевдонимов выполнения приложений из WSL.
+* Включена поддержка установки ядра WSL2 и дистрибутивов с помощью команды wsl.exe --install.
 
 ## <a name="build-20175"></a>Сборка 20175
 Общие сведения о сборке Windows 20175 доступны в [блоге о Windows](https://blogs.windows.com/windowsexperience/2020/07/22/announcing-windows-10-insider-preview-build-20175/).
