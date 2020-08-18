@@ -53,7 +53,7 @@ ms.locfileid: "86033047"
 
 ### `WSL 2 requires an update to its kernel component. For information please visit https://aka.ms/wsl2kernel`
 
-Если ядро отсутствует в %SystemRoot%\system32\lxss\tools\,, может возникнуть описанная выше ошибка.
+Если ядро отсутствует в %SystemRoot%\system32\lxss\tools\, может возникнуть описанная выше ошибка.
 
 Есть несколько способов устранения этой проблемы:
 
